@@ -6,9 +6,12 @@ import multiprocessing
 import tensorflow as tf
 
 from mySettings import get_lstm_settings
-from myModels import get_lstm_model
+from myModels import get_lstm_model, Seq2SeqTransformer
 from myDataGenerator import lstmDataGenerator
 from utilities import getAllMarkers, rotateArray
+
+import torch
+import torch.nn as nn
 
 # %% User inputs.
 # Select case you want to train, see mySettings for case-specific settings.
@@ -26,7 +29,7 @@ else:
     pathMain = os.getcwd()
 pathData = os.path.join(pathMain, "Data")
 pathData_all = os.path.join(pathData, "data_CS230")
-pathTrainedModels = os.path.join(pathMain, "trained_models_LSTM")
+pathTrainedModels = os.path.join(pathMain, "trained_models_Transformer")
 os.makedirs(pathTrainedModels, exist_ok=True)
 pathCModel = os.path.join(pathTrainedModels, "")
 
@@ -260,19 +263,70 @@ train_generator = lstmDataGenerator(partition['train'], pathData_all, **params)
 val_generator = lstmDataGenerator(partition['val'], pathData_all, **params)
 
 # %% Initialize model.   
-model = get_lstm_model(input_dim=nFeature_markers+nAddFeatures, output_dim=nResponse_markers,
-                       nHiddenLayers=nHLayers, nHUnits=nHUnits, learning_r=learning_r, loss_f=loss_f,
-                       bidirectional=bidirectional)
+params = {}
+params["src_dim"] = nFeature_markers+nAddFeatures
+params["trg_dim"] = nResponse_markers
+params["nhead"] = 4
+params["num_encoder_layers"] = 2 
+params["num_decoder_layers"] = 32
+params["hidden_dim"] = 128
+params["batch_first"] = True
+params["dim_feedforward"] = 256
+params["dropout"] = 0.1
+model = Seq2SeqTransformer(**params)
+
 
 # %% Train model.
 if runTraining:
-    callback = tf.keras.callbacks.EarlyStopping(
-        monitor='val_loss', patience=3, verbose=1, mode="auto",
-        restore_best_weights=True)
-    history = model.fit(train_generator, validation_data=val_generator, 
-                        epochs=nEpochs, batch_size=batchSize, verbose=2,
-                        use_multiprocessing=use_multiprocessing, workers=nWorkers,
-                        callbacks=[callback])
+    criterion = nn.MSELoss()
+    optimizer = torch.optim.AdamW(model.parameters())
+
+
+    for epoch in range(nEpochs):
+        running_loss = 0.0
+        model.train()
+
+        # run training steps
+        for i, data in enumerate(train_generator):
+            src, trg = data
+            trg = np.pad(trg, ((0,0),(1,0),(0,0)))
+            src = torch.from_numpy(src).to(torch.float32)
+            trg = torch.from_numpy(trg).to(torch.float32)
+            optimizer.zero_grad()
+
+            src_mask = torch.zeros((src.shape[1], src.shape[1]))
+            trg_mask = nn.Transformer.generate_square_subsequent_mask(trg.shape[1])
+            trg_out = model(src, trg, src_mask, trg_mask)
+
+            loss = criterion(trg_out[:, :-1,:], trg[:,1:,:])
+            loss.backward()
+            running_loss += loss
+            optimizer.step()
+
+        train_mse = running_loss / len(train_generator)
+        
+        # run eval steps
+        running_loss = 0.0
+        model.eval()  
+        for i, data in enumerate(val_generator):
+            src, trg = data
+            trg = np.pad(trg, ((0,0),(1,0),(0,0)))
+            src = torch.from_numpy(src).to(torch.float32)
+            trg = torch.from_numpy(trg).to(torch.float32)
+
+            src_mask = torch.zeros((src.shape[1], src.shape[1]))
+            trg_mask = nn.Transformer.generate_square_subsequent_mask(trg.shape[1])
+            trg_out = model(src, trg, src_mask, trg_mask)
+
+            loss = criterion(trg_out[:, :-1,:], trg[:,1:,:])
+            running_loss += loss
+        
+        eval_mse = running_loss / len(val_generator)
+        print(f"epoch {epoch + 1:2d}, train loss: {train_mse:.8f}, eval loss {eval_mse:.8f}")
+
+        train_generator.on_epoch_end()
+        val_generator.on_epoch_end()
+
 
 # %% Save model.
 if saveTrainedModel:

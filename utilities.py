@@ -68,8 +68,13 @@ def plotLossOverEpochs(history):
     plt.ylabel('loss (mean squared error)')
     plt.xlabel('Epoch Number');
     plt.legend(('Training','Evaluation'))
+    plt.xticks(range(0,30,2))
+    plt.ylim(0.00001, 0.00020)
     plt.show()
-    
+    plt.title('mean_squared_error')
+    plt.savefig("plt_akshit.jpg") 
+
+
 # Partition dataset.
 def getPartition(idxDatasets, scaleFactors, infoData, subjectSplit, idxFold):
     

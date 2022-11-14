@@ -15,7 +15,8 @@ case = "reference"
 # %% Paths.
 if platform.system() == 'Linux':
     # To use docker.
-    pathMain = '/augmenter-cs230'
+   # pathMain = '/augmenter-cs230'
+   pathMain = os.getcwd()
 else:
     pathMain = os.getcwd()
 pathTrainedModels = os.path.join(pathMain, "trained_models_LSTM", '')

@@ -36,7 +36,7 @@ def get_lstm_settings(a):
              "nHUnits": 96,
              "nHLayers": 2,
              "nEpochs": 50,
-             "batchSize": 64,
+             "batchSize": 32,
              "idxFold": 0,
              'learning_r': 5e-05,
              "mean_subtraction": True,
