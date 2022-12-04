@@ -1,0 +1,12 @@
+boto3
+einops
+matplotlib
+numpy
+tape-proteins
+tensorflow
+tensorflow-datasets
+torch
+torchvision
+transformers
+tqdm
+wandb
