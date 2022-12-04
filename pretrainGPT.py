@@ -115,7 +115,7 @@ if augmenter_type == 'fullBody':
 elif augmenter_type == 'lowerExtremity':
     if poseDetector == 'OpenPose':
         from utilities import getOpenPoseMarkers_lowerExtremity
-        _, _, idx_in_all_feature_markers, idx_in_all_response_markers = (
+        feature_markers, _, idx_in_all_feature_markers, idx_in_all_response_markers = (
             getOpenPoseMarkers_lowerExtremity())
     elif poseDetector == 'mmpose':
         from utilities import getMMposeMarkers_lowerExtremity
@@ -274,7 +274,35 @@ if torch.cuda.is_available():
 else:
     device = 'cpu'
 
-model = PretrainedGPT2(src_dim = 47, trg_dim = 105, output_hidden_dim = 256, dropout = 0.1).to(device)
+new_features = [("Neck", "RShoulder"),
+                ("Neck", "LShoulder"),
+                ("RShoulder", "LShoulder"),
+#                ("RShoulder", "RElbow"),
+#                ("LShoulder", "LElbow"),
+#                ("RElbow", "RWrist"),
+#                ("LElbow", "LWrist"),
+                ("RShoulder", "RHip"),
+                ("LShoulder", "LHip"),
+                ("LHip", "RHip"),
+                ("LHip", "LKnee"),
+                ("RHip", "RKnee"),
+                ("RKnee", "RAnkle"),
+                ("LKnee", "LAnkle"),
+                ("RAnkle", "RHeel"),
+                ("LAnkle", "LHeel"),
+                ("RHeel", "RSmallToe"),
+                ("LHeel", "LSmallToe"),
+                ("RHeel", "RBigToe"),
+                ("LHeel", "LBigToe")]
+
+use_novel = False
+
+src_dim = nFeature_markers + nAddFeatures
+trg_dim = nResponse_markers
+if use_novel:
+    src_dim += len(new_features)
+
+model = PretrainedGPT2(src_dim = src_dim, trg_dim = trg_dim, output_hidden_dim = 256, dropout = 0.1).to(device)
 
 def RMSELoss(yhat,y):
     return torch.sqrt(torch.mean((yhat-y)**2))
@@ -282,6 +310,14 @@ def RMSELoss(yhat,y):
 def l1_Loss(yhat,y):
     return (torch.mean(torch.abs(yhat-y)))
 
+
+new_features_idx = [(feature_markers.index(x), feature_markers.index(y)) for x,y in new_features]
+new_features_idx = [[x*3, x*3+1, x*3+2] for x,_ in new_features_idx], [[y*3, y*3+1, y*3+2] for _,y in new_features_idx]
+new_features_idx = torch.tensor(new_features_idx[0]).to(device), torch.tensor(new_features_idx[1]).to(device)
+
+def add_novelty(x, new_features_idx):
+    novel_features = (x[:,:, new_features_idx[0]] - x[:,:,new_features_idx[1]]).norm(dim = 3)
+    return torch.cat((x, novel_features), dim = 2)
 
 optimizer = torch.optim.AdamW(model.parameters(), lr = 1e-4)
 
@@ -298,7 +334,10 @@ for epoch in range(nEpochs):
 
         x = torch.from_numpy(x).to(device=device, dtype=torch.float32)
         y = torch.from_numpy(y).to(device=device, dtype=torch.float32)
-    
+
+        if use_novel:
+            x = add_novelty(x, new_features_idx)
+
         optimizer.zero_grad()
     
         output = model(x)
@@ -323,10 +362,13 @@ for epoch in range(nEpochs):
             data_eval = val_generator[i_eval]
             x_eval = (data_eval[0])
             y_eval  = (data_eval[1])
-
+    
             x_eval  = torch.from_numpy(x_eval).to(device=device, dtype=torch.float32)
             y_eval  = torch.from_numpy(y_eval).to(device=device, dtype=torch.float32)
     
+            if use_novel:
+                x_eval = add_novelty(x_eval, new_features_idx)
+
             output_eval = model(x_eval)
     
             loss  = RMSELoss(output_eval, y_eval)

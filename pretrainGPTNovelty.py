@@ -315,6 +315,39 @@ for layer in (gpt2, in_layer, out_layer, out_layer2):
 
 print(len(train_generator))
 
+new_features = [("Neck", "RShoulder"), 
+                ("Neck", "LShoulder"), 
+                ("RShoulder", "LShoulder"), 
+                ("RShoulder", "RElbow"), 
+                ("LShoulder", "LElbow"), 
+                ("RElbow", "RWrist"), 
+                ("LElbow", "LWrist"), 
+                ("RShoulder", "RHip"), 
+                ("LShoulder", "LHip"), 
+                ("LHip", "RHip"),
+                ("LHip", "LKnee"),
+                ("RHip", "RKnee"),
+                ("RKnee", "RAnkle"),
+                ("LKnee", "LAnkle"),
+                ("RAnkle", "RHeel"),
+                ("LAnkle", "LHeel"),
+                ("RHeel", "RSmallToe"),
+                ("LHeel", "LSmallToe"),
+                ("RHeel", "RBigToe"),
+                ("LHeel", "LBigToe")]
+
+new_features_idx = [(feature_markers_all.index(x), feature_markers_all.index(y)) for x,y in new_features]
+new_features_idx = [[x*3, x*3+1, x*3+2] for x,_ in new_features_idx], [[y*3, y*3+1, y*3+2] for _,y in new_features_idx]
+new_features_idx = torch.tensor(new_features_idx[0]).to(device), torch.tensor(new_features_idx[1]).to(device)
+
+print(new_features_idx)
+
+def add_novelty(x, new_features_idx):
+    batch_size = x.size(0)
+    novel_features = (x[:,:, new_features_idx[0]] - x[:,:,new_features_idx[1]]).norm(dim = 3)
+    return torch.cat((x, novel_features), dim = 2)
+
+
 for epoch in range(nEpochs):
     print("XXXXXXXXXXXXXXXXXXXXX Epoch No. =  ", epoch)
     running_loss_plot = 0.0
@@ -323,28 +356,11 @@ for epoch in range(nEpochs):
         x = (data[0])
         y = (data[1])
 
-        neck_rShoulder = np.sqrt((x[:,:,0,None] - x[:,:,3,None])**2 + (x[:,:,1,None] - x[:,:,4,None])**2 + (x[:,:,2,None] - x[:,:,5,None])**2)
-        neck_lShoulder = np.sqrt((x[:,:,0,None] - x[:,:,6,None])**2 + (x[:,:,1,None] - x[:,:,7,None])**2 + (x[:,:,2,None] - x[:,:,8,None])**2)
-        rShoulder_lShoulder = np.sqrt((x[:,:,3,None] - x[:,:,6,None])**2 + (x[:,:,4,None] - x[:,:,7,None])**2 + (x[:,:,5,None] - x[:,:,8,None])**2)
-        rShoulder_rHip = np.sqrt((x[:,:,3,None] - x[:,:,9,None])**2 + (x[:,:,4,None] - x[:,:,10,None])**2 + (x[:,:,5,None] - x[:,:,11,None])**2)
-        lShoulder_lHip = np.sqrt((x[:,:,6,None] - x[:,:,12,None])**2 + (x[:,:,7,None] - x[:,:,13,None])**2 + (x[:,:,8,None] - x[:,:,14,None])**2)
-        rHip_lHip = np.sqrt((x[:,:,9,None] - x[:,:,12,None])**2 + (x[:,:,10,None] - x[:,:,13,None])**2 + (x[:,:,11,None] - x[:,:,14,None])**2)
-        rHip_rKnee = np.sqrt((x[:,:,9,None] - x[:,:,15,None])**2 + (x[:,:,10,None] - x[:,:,16,None])**2 + (x[:,:,11,None] - x[:,:,17,None])**2)
-        lHip_lKnee = np.sqrt((x[:,:,12,None] - x[:,:,18,None])**2 + (x[:,:,13,None] - x[:,:,19,None])**2 + (x[:,:,14,None] - x[:,:,20,None])**2)
-        rKnee_rAnkle = np.sqrt((x[:,:,15,None] - x[:,:,21,None])**2 + (x[:,:,16,None] - x[:,:,22,None])**2 + (x[:,:,17,None] - x[:,:,23,None])**2)
-        lKnee_lAnkle = np.sqrt((x[:,:,18,None] - x[:,:,24,None])**2 + (x[:,:,19,None] - x[:,:,25,None])**2 + (x[:,:,20,None] - x[:,:,26,None])**2)
-        rAnkle_rHeel = np.sqrt((x[:,:,21,None] - x[:,:,27,None])**2 + (x[:,:,22,None] - x[:,:,28,None])**2 + (x[:,:,23,None] - x[:,:,29,None])**2)
-        rHeel_rSmallToe = np.sqrt((x[:,:,27,None] - x[:,:,33,None])**2 + (x[:,:,28,None] - x[:,:,34,None])**2 + (x[:,:,29,None] - x[:,:,35,None])**2)
-        rHeel_rBigToe = np.sqrt((x[:,:,27,None] - x[:,:,39,None])**2 + (x[:,:,28,None] - x[:,:,40,None])**2 + (x[:,:,29,None] - x[:,:,41,None])**2)
-        lAnkle_lHeel = np.sqrt((x[:,:,24,None] - x[:,:,30,None])**2 + (x[:,:,25,None] - x[:,:,31,None])**2 + (x[:,:,26,None] - x[:,:,32,None])**2)
-        lHeel_lSmallToe = np.sqrt((x[:,:,30,None] - x[:,:,36,None])**2 + (x[:,:,31,None] - x[:,:,37,None])**2 + (x[:,:,32,None] - x[:,:,38,None])**2)
-        lHeel_lBigToe = np.sqrt((x[:,:,30,None] - x[:,:,42,None])**2 + (x[:,:,31,None] - x[:,:,43,None])**2 + (x[:,:,32,None] - x[:,:,44,None])**2)
-        x = np.concatenate((x, neck_rShoulder,neck_lShoulder, rShoulder_lShoulder,rShoulder_rHip,lShoulder_lHip, rHip_lHip,rHip_rKnee,lHip_lKnee,rKnee_rAnkle,lKnee_lAnkle, rAnkle_rHeel, rHeel_rSmallToe, rHeel_rBigToe, lAnkle_lHeel, lHeel_lSmallToe, lHeel_lBigToe), axis=2)
-        
-
         x = torch.from_numpy(x).to(device=device, dtype=torch.float32)
         y = torch.from_numpy(y).to(device=device, dtype=torch.float32)
-    
+        
+        x = add_novelty(x, new_features_idx)
+
         #print("x = ", x.shape)
         #print("y = ", y.shape)
         embeddings = in_layer(x)
@@ -381,30 +397,12 @@ for epoch in range(nEpochs):
             x_eval = (data_eval[0])
             y_eval  = (data_eval[1])
 
-
-            neck_rShoulder = np.sqrt((x_eval[:,:,0,None] - x_eval[:,:,3,None])**2 + (x_eval[:,:,1,None] - x_eval[:,:,4,None])**2 + (x_eval[:,:,2,None] - x_eval[:,:,5,None])**2)
-            neck_lShoulder = np.sqrt((x_eval[:,:,0,None] - x_eval[:,:,6,None])**2 + (x_eval[:,:,1,None] - x_eval[:,:,7,None])**2 + (x_eval[:,:,2,None] - x_eval[:,:,8,None])**2)
-            rShoulder_lShoulder = np.sqrt((x_eval[:,:,3,None] - x_eval[:,:,6,None])**2 + (x_eval[:,:,4,None] - x_eval[:,:,7,None])**2 + (x_eval[:,:,5,None] - x_eval[:,:,8,None])**2)
-            rShoulder_rHip = np.sqrt((x_eval[:,:,3,None] - x_eval[:,:,9,None])**2 + (x_eval[:,:,4,None] - x_eval[:,:,10,None])**2 + (x_eval[:,:,5,None] - x_eval[:,:,11,None])**2)
-            lShoulder_lHip = np.sqrt((x_eval[:,:,6,None] - x_eval[:,:,12,None])**2 + (x_eval[:,:,7,None] - x_eval[:,:,13,None])**2 + (x_eval[:,:,8,None] - x_eval[:,:,14,None])**2)
-            rHip_lHip = np.sqrt((x_eval[:,:,9,None] - x_eval[:,:,12,None])**2 + (x_eval[:,:,10,None] - x_eval[:,:,13,None])**2 + (x_eval[:,:,11,None] - x_eval[:,:,14,None])**2)
-            rHip_rKnee = np.sqrt((x_eval[:,:,9,None] - x_eval[:,:,15,None])**2 + (x_eval[:,:,10,None] - x_eval[:,:,16,None])**2 + (x_eval[:,:,11,None] - x_eval[:,:,17,None])**2)
-            lHip_lKnee = np.sqrt((x_eval[:,:,12,None] - x_eval[:,:,18,None])**2 + (x_eval[:,:,13,None] - x_eval[:,:,19,None])**2 + (x_eval[:,:,14,None] - x_eval[:,:,20,None])**2)
-            rKnee_rAnkle = np.sqrt((x_eval[:,:,15,None] - x_eval[:,:,21,None])**2 + (x_eval[:,:,16,None] - x_eval[:,:,22,None])**2 + (x_eval[:,:,17,None] - x_eval[:,:,23,None])**2)
-            lKnee_lAnkle = np.sqrt((x_eval[:,:,18,None] - x_eval[:,:,24,None])**2 + (x_eval[:,:,19,None] - x_eval[:,:,25,None])**2 + (x_eval[:,:,20,None] - x_eval[:,:,26,None])**2)
-            rAnkle_rHeel = np.sqrt((x_eval[:,:,21,None] - x_eval[:,:,27,None])**2 + (x_eval[:,:,22,None] - x_eval[:,:,28,None])**2 + (x_eval[:,:,23,None] - x_eval[:,:,29,None])**2)
-            rHeel_rSmallToe = np.sqrt((x_eval[:,:,27,None] - x_eval[:,:,33,None])**2 + (x_eval[:,:,28,None] - x_eval[:,:,34,None])**2 + (x_eval[:,:,29,None] - x_eval[:,:,35,None])**2)
-            rHeel_rBigToe = np.sqrt((x_eval[:,:,27,None] - x_eval[:,:,39,None])**2 + (x_eval[:,:,28,None] - x_eval[:,:,40,None])**2 + (x_eval[:,:,29,None] - x_eval[:,:,41,None])**2)
-            lAnkle_lHeel = np.sqrt((x_eval[:,:,24,None] - x_eval[:,:,30,None])**2 + (x_eval[:,:,25,None] - x_eval[:,:,31,None])**2 + (x_eval[:,:,26,None] - x_eval[:,:,32,None])**2)
-            lHeel_lSmallToe = np.sqrt((x_eval[:,:,30,None] - x_eval[:,:,36,None])**2 + (x_eval[:,:,31,None] - x_eval[:,:,37,None])**2 + (x_eval[:,:,32,None] - x_eval[:,:,38,None])**2)
-            lHeel_lBigToe = np.sqrt((x_eval[:,:,30,None] - x_eval[:,:,42,None])**2 + (x_eval[:,:,31,None] - x_eval[:,:,43,None])**2 + (x_eval[:,:,32,None] - x_eval[:,:,44,None])**2)
-            x_eval = np.concatenate((x_eval, neck_rShoulder,neck_lShoulder, rShoulder_lShoulder,rShoulder_rHip,lShoulder_lHip, rHip_lHip,rHip_rKnee,lHip_lKnee,rKnee_rAnkle,lKnee_lAnkle, rAnkle_rHeel, rHeel_rSmallToe, rHeel_rBigToe, lAnkle_lHeel, lHeel_lSmallToe, lHeel_lBigToe), axis=2)
-            
-
-
             x_eval  = torch.from_numpy(x_eval).to(device=device, dtype=torch.float32)
             y_eval  = torch.from_numpy(y_eval).to(device=device, dtype=torch.float32)
-    
+   
+
+            x_eval = add_novelty(x_eval, new_features_idx)
+
             #print("x = ", x.shape)
             #print("y = ", y.shape)
             embeddings_eval = in_layer(x_eval)
