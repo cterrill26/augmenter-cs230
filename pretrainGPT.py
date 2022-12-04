@@ -335,10 +335,10 @@ for epoch in range(nEpochs):
     
         a = out_layer(hidden_state)
         #print("a = ", a.shape)
-        a_relu = nn.functional.relu(a)
+       # a_relu = nn.functional.relu(a)
     
-        output_inter = out_layer2(a_relu)
-        output = nn.functional.relu(output_inter)
+        output = out_layer2(a)
+        #output = nn.functional.relu(output_inter)
     
         loss = RMSELoss(output,y)
         loss_plot = RMSELoss(output, y)
@@ -373,10 +373,10 @@ for epoch in range(nEpochs):
     
             a_eval = out_layer(hidden_state_eval)
             #print("a = ", a.shape)
-            a_eval_relu = nn.functional.relu(a_eval)
+            #a_eval_relu = nn.functional.relu(a_eval)
             
-            output_inter_eval  = out_layer2(a_eval_relu)
-            output_eval = nn.functional.relu(output_inter_eval)
+            output_eval  = out_layer2(a_eval)
+            #output_eval = nn.functional.relu(output_inter_eval)
     
             loss_eval_plot  = RMSELoss(output_eval, y_eval)
             
