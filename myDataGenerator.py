@@ -1,10 +1,9 @@
 import numpy as np
-from tensorflow import keras
 import os
 from utilities import rotateArray
 
 # Inspired from https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly
-class lstmDataGenerator(keras.utils.Sequence):
+class lstmDataGenerator():
     'Generates data for Keras'
     def __init__(self, list_IDs, pathData, batch_size=64, dim_f=(30,59), 
                  dim_r=(30,87), shuffle=True, noise_bool=False, noise_type='',

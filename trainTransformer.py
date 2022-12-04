@@ -3,10 +3,9 @@ import numpy as np
 import pickle
 import platform
 import multiprocessing
-import tensorflow as tf
 
 from mySettings import get_lstm_settings
-from myModels import get_lstm_model, Seq2SeqTransformer
+from myTransformers import Seq2SeqTransformer
 from myDataGenerator import lstmDataGenerator
 from utilities import getAllMarkers, rotateArray
 
@@ -270,10 +269,10 @@ params["nhead"] = 4
 params["num_encoder_layers"] = 2 
 params["num_decoder_layers"] = 32
 params["hidden_dim"] = 128
-params["batch_first"] = True
+params["batch_first"] = False
 params["dim_feedforward"] = 256
 params["dropout"] = 0.1
-model = Seq2SeqTransformer(**params)
+model = Seq2SeqTransformer(**params).cuda()
 
 
 # %% Train model.
@@ -287,42 +286,47 @@ if runTraining:
         model.train()
 
         # run training steps
-        for i, data in enumerate(train_generator):
-            src, trg = data
-            trg = np.pad(trg, ((0,0),(1,0),(0,0)))
-            src = torch.from_numpy(src).to(torch.float32)
-            trg = torch.from_numpy(trg).to(torch.float32)
+        for i in range(len(train_generator)):
+            src, trg = train_generator[i]
+            #trg = np.pad(trg, ((0,0),(1,0),(0,0)))
+            src = torch.from_numpy(src).cuda().to(torch.float32).swapaxes(0, 1)
+            trg = torch.from_numpy(trg).cuda().to(torch.float32).swapaxes(0, 1)
             optimizer.zero_grad()
 
-            src_mask = torch.zeros((src.shape[1], src.shape[1]))
-            trg_mask = nn.Transformer.generate_square_subsequent_mask(trg.shape[1])
+            src_mask = torch.zeros((src.shape[0], src.shape[0])).cuda()
+            trg_mask = nn.Transformer.generate_square_subsequent_mask(trg.shape[0]).cuda()
             trg_out = model(src, trg, src_mask, trg_mask)
 
-            loss = criterion(trg_out[:, :-1,:], trg[:,1:,:])
+            #loss = criterion(trg_out[:, :-1,:], trg[:,1:,:])
+            loss = criterion(trg_out, trg)
             loss.backward()
-            running_loss += loss
+            running_loss += float(loss)
             optimizer.step()
 
+            if i % 10 == 9:
+                print(f"step {i+1}, loss {float(loss):.8f}")
         train_mse = running_loss / len(train_generator)
         
         # run eval steps
-        running_loss = 0.0
         model.eval()  
-        for i, data in enumerate(val_generator):
-            src, trg = data
-            trg = np.pad(trg, ((0,0),(1,0),(0,0)))
-            src = torch.from_numpy(src).to(torch.float32)
-            trg = torch.from_numpy(trg).to(torch.float32)
+        with torch.no_grad():
+            running_loss = 0.0
+            for i in range(len(val_generator)):
+                src, trg = val_generator[i]
+                #trg = np.pad(trg, ((0,0),(1,0),(0,0)))
+                src = torch.from_numpy(src).cuda().to(torch.float32).swapaxes(0, 1)
+                trg = torch.from_numpy(trg).cuda().to(torch.float32).swapaxes(0, 1)
 
-            src_mask = torch.zeros((src.shape[1], src.shape[1]))
-            trg_mask = nn.Transformer.generate_square_subsequent_mask(trg.shape[1])
-            trg_out = model(src, trg, src_mask, trg_mask)
+                src_mask = torch.zeros((src.shape[0], src.shape[0])).cuda()
+                trg_mask = nn.Transformer.generate_square_subsequent_mask(trg.shape[0]).cuda()
+                trg_out = model(src, trg, src_mask, trg_mask)
 
-            loss = criterion(trg_out[:, :-1,:], trg[:,1:,:])
-            running_loss += loss
+                #loss = criterion(trg_out[:, :-1,:], trg[:,1:,:])
+                loss = criterion(trg_out, trg)
+                running_loss += float(loss)
         
-        eval_mse = running_loss / len(val_generator)
-        print(f"epoch {epoch + 1:2d}, train loss: {train_mse:.8f}, eval loss {eval_mse:.8f}")
+            eval_mse = running_loss / len(val_generator)
+            print(f"epoch {epoch + 1:2d}, train loss: {train_mse:.8f}, eval loss {eval_mse:.8f}")
 
         train_generator.on_epoch_end()
         val_generator.on_epoch_end()
@@ -330,14 +334,7 @@ if runTraining:
 
 # %% Save model.
 if saveTrainedModel:
-    model_json = model.to_json()
-    with open(pathCModel + str(case) + "_model.json", "w") as json_file:
-        json_file.write(model_json)    
-    # Save weights
-    model.save_weights(pathCModel + str(case) + "_weights.h5")
-    # Save history
-    with open(pathCModel + str(case) + "_history", 'wb') as file_pi:
-        pickle.dump(history.history, file_pi)   
+    torch.save(model.state_dict(), pathCModel + str(case) + "_model.pth")
     # Save mean and std used for data processing. 
     if mean_subtraction:
         np.save(os.path.join(pathTrainedModels, 
