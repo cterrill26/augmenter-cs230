@@ -318,7 +318,8 @@ print(len(train_generator))
 for epoch in range(nEpochs):
     print("XXXXXXXXXXXXXXXXXXXXX Epoch No. =  ", epoch)
     running_loss_plot = 0.0
-    for i, data in enumerate(train_generator):
+    for i in range(len(train_generator)):
+        data = train_generator[i]
         x = (data[0])
         y = (data[1])
 
@@ -335,9 +336,9 @@ for epoch in range(nEpochs):
     
         a = out_layer(hidden_state)
         #print("a = ", a.shape)
-       # a_relu = nn.functional.relu(a)
+        a_relu = nn.functional.relu(a)
     
-        output = out_layer2(a)
+        output = out_layer2(a_relu)
         #output = nn.functional.relu(output_inter)
     
         loss = RMSELoss(output,y)
@@ -356,7 +357,8 @@ for epoch in range(nEpochs):
     
     with torch.no_grad():
         running_loss_eval_plot = 0.0
-        for i_eval, data_eval in enumerate(val_generator):
+        for i_eval in range(len(val_generator)):
+            data_eval = val_generator[i_eval]
             x_eval = (data_eval[0])
             y_eval  = (data_eval[1])
 
@@ -373,9 +375,9 @@ for epoch in range(nEpochs):
     
             a_eval = out_layer(hidden_state_eval)
             #print("a = ", a.shape)
-            #a_eval_relu = nn.functional.relu(a_eval)
+            a_eval_relu = nn.functional.relu(a_eval)
             
-            output_eval  = out_layer2(a_eval)
+            output_eval  = out_layer2(a_eval_relu)
             #output_eval = nn.functional.relu(output_inter_eval)
     
             loss_eval_plot  = RMSELoss(output_eval, y_eval)
