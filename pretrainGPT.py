@@ -3,10 +3,9 @@ import numpy as np
 import pickle
 import platform
 import multiprocessing
-import tensorflow as tf
 
 from mySettings import get_lstm_settings
-from myModels import get_lstm_model
+from myTransformers import PretrainedGPT2
 from myDataGenerator import lstmDataGenerator
 from utilities import getAllMarkers, rotateArray
 
@@ -264,11 +263,6 @@ val_generator = lstmDataGenerator(partition['val'], pathData_all, **params)
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
-import torch.nn as nn
-
-from transformers.models.gpt2.modeling_gpt2 import GPT2Model
-
-
 import gc
 
 gc.collect()
@@ -280,24 +274,7 @@ if torch.cuda.is_available():
 else:
     device = 'cpu'
 
-gpt2 = GPT2Model.from_pretrained('gpt2')  # loads a pretrained GPT-2 base model
-in_layer = nn.Linear(47, 768)           # map bit to GPT-2 embedding dim of 768
-out_layer = nn.Linear(768, 47)# predict logits
-#out_layer_relu = nn.functional.relu()
-out_layer2 = nn.Linear(47, 105)
-#out_layer2_relu = nn.functional.relu()
-#out_layer3 = nn.Linear(80,105)
-
-
-
-for name, param in gpt2.named_parameters():
-    # freeze all parameters except the layernorm and positional embeddings
-    if 'ln' in name or 'wpe' in name:
-        param.requires_grad = True
-    else:
-        #param.requires_grad = False
-        param.requires_grad = False
-
+model = PretrainedGPT2(src_dim = 47, trg_dim = 105, output_hidden_dim = 256, dropout = 0.1).to(device)
 
 def RMSELoss(yhat,y):
     return torch.sqrt(torch.mean((yhat-y)**2))
@@ -306,18 +283,14 @@ def l1_Loss(yhat,y):
     return (torch.mean(torch.abs(yhat-y)))
 
 
-params = list(gpt2.parameters()) + list(in_layer.parameters()) + list(out_layer.parameters()) + list(out_layer2.parameters())
-optimizer = torch.optim.Adam(params)
-
-for layer in (gpt2, in_layer, out_layer, out_layer2):
-    layer.to(device=device)
-    layer.train()
+optimizer = torch.optim.AdamW(model.parameters(), lr = 1e-4)
 
 print(len(train_generator))
 
 for epoch in range(nEpochs):
-    print("XXXXXXXXXXXXXXXXXXXXX Epoch No. =  ", epoch)
+    print("XXXXXXXXXXXXXXXXXXXXX Epoch No. =  ", epoch + 1)
     running_loss_plot = 0.0
+    model.train()
     for i in range(len(train_generator)):
         data = train_generator[i]
         x = (data[0])
@@ -326,37 +299,26 @@ for epoch in range(nEpochs):
         x = torch.from_numpy(x).to(device=device, dtype=torch.float32)
         y = torch.from_numpy(y).to(device=device, dtype=torch.float32)
     
-        #print("x = ", x.shape)
-        #print("y = ", y.shape)
-        embeddings = in_layer(x)
-        #print('embeddings = ', embeddings.shape)
-
-        hidden_state = gpt2(inputs_embeds=embeddings).last_hidden_state
-        #print('hidden_state = ', hidden_state.shape)
+        optimizer.zero_grad()
     
-        a = out_layer(hidden_state)
-        #print("a = ", a.shape)
-        a_relu = nn.functional.relu(a)
-    
-        output = out_layer2(a_relu)
+        output = model(x)
         #output = nn.functional.relu(output_inter)
     
         loss = RMSELoss(output,y)
-        loss_plot = RMSELoss(output, y)
     
-        optimizer.zero_grad()
         loss.backward()
+        running_loss_plot += float(loss)
         optimizer.step()
         
-        if i % 10 == 0:
-            print("Train RMSE loss after epoch:" + str(epoch) + ", batch: " + str(i) + " = ", loss_plot)
+        if i % 100 == 99:
+            print("Train RMSE loss after epoch:" + str(epoch+1) + ", batch: " + str(i+1) + " = ", float(loss))
 
-        running_loss_plot += loss_plot
     train_mse_plot = running_loss_plot / len(train_generator)
-    print("Train RMSE loss after an epoch:" + str(epoch) + "(averaged across batches)  = ", train_mse_plot)
+    print("Train RMSE loss after an epoch:" + str(epoch+1) + "(averaged across batches)  = ", train_mse_plot)
     
     with torch.no_grad():
         running_loss_eval_plot = 0.0
+        model.eval()
         for i_eval in range(len(val_generator)):
             data_eval = val_generator[i_eval]
             x_eval = (data_eval[0])
@@ -365,27 +327,11 @@ for epoch in range(nEpochs):
             x_eval  = torch.from_numpy(x_eval).to(device=device, dtype=torch.float32)
             y_eval  = torch.from_numpy(y_eval).to(device=device, dtype=torch.float32)
     
-            #print("x = ", x.shape)
-            #print("y = ", y.shape)
-            embeddings_eval = in_layer(x_eval)
-            #print('embeddings = ', embeddings.shape)
-
-            hidden_state_eval = gpt2(inputs_embeds=embeddings_eval).last_hidden_state
-            #print('hidden_state = ', hidden_state.shape)
+            output_eval = model(x_eval)
     
-            a_eval = out_layer(hidden_state_eval)
-            #print("a = ", a.shape)
-            a_eval_relu = nn.functional.relu(a_eval)
-            
-            output_eval  = out_layer2(a_eval_relu)
-            #output_eval = nn.functional.relu(output_inter_eval)
-    
-            loss_eval_plot  = RMSELoss(output_eval, y_eval)
-            
-            if i_eval % 10 == 0:
-                print("Eval RMSE loss after epoch:" + str(epoch) + ", batch: " + str(i_eval )+  " = ", loss_eval_plot)
+            loss  = RMSELoss(output_eval, y_eval)
+            running_loss_eval_plot += float(loss)
 
-            running_loss_eval_plot += loss_eval_plot 
         eval_mse_plot = running_loss_eval_plot / len(val_generator)
         print(f"epoch {epoch + 1:2d}, train loss: {train_mse_plot:.8f}, eval loss {eval_mse_plot:.8f}")
 

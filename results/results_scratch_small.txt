@@ -1,0 +1,396 @@
+step 100, loss 0.04963673
+step 200, loss 0.03178745
+step 300, loss 0.05229279
+step 400, loss 0.04336445
+step 500, loss 0.02673278
+step 600, loss 0.03137914
+step 700, loss 0.01814971
+step 800, loss 0.01765249
+epoch  1, train loss: 0.03164560, eval loss 0.01502887
+step 100, loss 0.03178458
+step 200, loss 0.02069448
+step 300, loss 0.01827134
+step 400, loss 0.01815308
+step 500, loss 0.01582121
+step 600, loss 0.01698764
+step 700, loss 0.01473705
+step 800, loss 0.02157597
+epoch  2, train loss: 0.01538188, eval loss 0.01538952
+step 100, loss 0.01738404
+step 200, loss 0.01345292
+step 300, loss 0.01251732
+step 400, loss 0.01555150
+step 500, loss 0.01527905
+step 600, loss 0.01145739
+step 700, loss 0.01546606
+step 800, loss 0.01756188
+epoch  3, train loss: 0.01208513, eval loss 0.00962716
+step 100, loss 0.01374494
+step 200, loss 0.01598092
+step 300, loss 0.01886124
+step 400, loss 0.01835973
+step 500, loss 0.00761704
+step 600, loss 0.01038871
+step 700, loss 0.02329437
+step 800, loss 0.00887830
+epoch  4, train loss: 0.01110584, eval loss 0.00821017
+step 100, loss 0.01067740
+step 200, loss 0.01866558
+step 300, loss 0.01163066
+step 400, loss 0.01140886
+step 500, loss 0.01163850
+step 600, loss 0.01211877
+step 700, loss 0.00844890
+step 800, loss 0.00641835
+epoch  5, train loss: 0.00994089, eval loss 0.00740564
+step 100, loss 0.01437065
+step 200, loss 0.01393397
+step 300, loss 0.01210605
+step 400, loss 0.01377590
+step 500, loss 0.01156852
+step 600, loss 0.00715216
+step 700, loss 0.00629680
+step 800, loss 0.00702983
+epoch  6, train loss: 0.00936121, eval loss 0.00953439
+step 100, loss 0.00595753
+step 200, loss 0.00652638
+step 300, loss 0.01223124
+step 400, loss 0.01214052
+step 500, loss 0.01493596
+step 600, loss 0.00973739
+step 700, loss 0.01081061
+step 800, loss 0.00589322
+epoch  7, train loss: 0.00875429, eval loss 0.00976795
+step 100, loss 0.01132736
+step 200, loss 0.00620091
+step 300, loss 0.01366980
+step 400, loss 0.00973563
+step 500, loss 0.00585850
+step 600, loss 0.01073617
+step 700, loss 0.01390890
+step 800, loss 0.00982604
+epoch  8, train loss: 0.00867204, eval loss 0.00931134
+step 100, loss 0.01373458
+step 200, loss 0.01098686
+step 300, loss 0.00951437
+step 400, loss 0.01374418
+step 500, loss 0.01081194
+step 600, loss 0.00862733
+step 700, loss 0.00629076
+step 800, loss 0.01231863
+epoch  9, train loss: 0.00829416, eval loss 0.00787438
+step 100, loss 0.00559145
+step 200, loss 0.00816328
+step 300, loss 0.01183022
+step 400, loss 0.00974839
+step 500, loss 0.00878771
+step 600, loss 0.00946121
+step 700, loss 0.00819466
+step 800, loss 0.00992037
+epoch 10, train loss: 0.00782352, eval loss 0.00686544
+step 100, loss 0.01015639
+step 200, loss 0.00524483
+step 300, loss 0.00875664
+step 400, loss 0.01313288
+step 500, loss 0.00611222
+step 600, loss 0.01024894
+step 700, loss 0.00853673
+step 800, loss 0.00874523
+epoch 11, train loss: 0.00786828, eval loss 0.00763679
+step 100, loss 0.00518830
+step 200, loss 0.00569029
+step 300, loss 0.00801041
+step 400, loss 0.00821213
+step 500, loss 0.00859179
+step 600, loss 0.01105002
+step 700, loss 0.01316915
+step 800, loss 0.00771560
+epoch 12, train loss: 0.00748535, eval loss 0.00683554
+step 100, loss 0.00743389
+step 200, loss 0.00800684
+step 300, loss 0.00800579
+step 400, loss 0.00969960
+step 500, loss 0.00486010
+step 600, loss 0.00485960
+step 700, loss 0.00531249
+step 800, loss 0.00540911
+epoch 13, train loss: 0.00705304, eval loss 0.00700495
+step 100, loss 0.00909380
+step 200, loss 0.00940852
+step 300, loss 0.00958350
+step 400, loss 0.00798446
+step 500, loss 0.00454628
+step 600, loss 0.01168449
+step 700, loss 0.00997830
+step 800, loss 0.00819169
+epoch 14, train loss: 0.00714578, eval loss 0.00805268
+step 100, loss 0.00631314
+step 200, loss 0.00783087
+step 300, loss 0.00868732
+step 400, loss 0.00834650
+step 500, loss 0.01115664
+step 600, loss 0.00875032
+step 700, loss 0.00913824
+step 800, loss 0.00764313
+epoch 15, train loss: 0.00694117, eval loss 0.00701726
+step 100, loss 0.00508999
+step 200, loss 0.00884040
+step 300, loss 0.00886411
+step 400, loss 0.00472926
+step 500, loss 0.01039553
+step 600, loss 0.00832795
+step 700, loss 0.00862146
+step 800, loss 0.00536828
+epoch 16, train loss: 0.00671456, eval loss 0.00863568
+step 100, loss 0.00868839
+step 200, loss 0.00476584
+step 300, loss 0.00560494
+step 400, loss 0.01282560
+step 500, loss 0.00937289
+step 600, loss 0.00815994
+step 700, loss 0.00757324
+step 800, loss 0.00868304
+epoch 17, train loss: 0.00666681, eval loss 0.00658125
+step 100, loss 0.00940205
+step 200, loss 0.00660131
+step 300, loss 0.00828461
+step 400, loss 0.00802275
+step 500, loss 0.00863981
+step 600, loss 0.00463679
+step 700, loss 0.00595377
+step 800, loss 0.00756961
+epoch 18, train loss: 0.00684542, eval loss 0.00664547
+step 100, loss 0.00743961
+step 200, loss 0.00934550
+step 300, loss 0.00456816
+step 400, loss 0.00730542
+step 500, loss 0.00467884
+step 600, loss 0.00691066
+step 700, loss 0.00719323
+step 800, loss 0.00790260
+epoch 19, train loss: 0.00634868, eval loss 0.00751259
+step 100, loss 0.01096596
+step 200, loss 0.00450947
+step 300, loss 0.00649707
+step 400, loss 0.01299392
+step 500, loss 0.00889706
+step 600, loss 0.01078334
+step 700, loss 0.00674473
+step 800, loss 0.00830829
+epoch 20, train loss: 0.00645117, eval loss 0.00869543
+step 100, loss 0.01032821
+step 200, loss 0.00952912
+step 300, loss 0.01280521
+step 400, loss 0.00915935
+step 500, loss 0.00902708
+step 600, loss 0.00892864
+step 700, loss 0.01486427
+step 800, loss 0.00820675
+epoch 21, train loss: 0.00633628, eval loss 0.00698750
+step 100, loss 0.00644429
+step 200, loss 0.00772970
+step 300, loss 0.00977326
+step 400, loss 0.00699588
+step 500, loss 0.00447446
+step 600, loss 0.00726256
+step 700, loss 0.00863705
+step 800, loss 0.00784506
+epoch 22, train loss: 0.00627822, eval loss 0.00707565
+step 100, loss 0.00828819
+step 200, loss 0.00660362
+step 300, loss 0.00662355
+step 400, loss 0.00496141
+step 500, loss 0.00634560
+step 600, loss 0.00788196
+step 700, loss 0.00594612
+step 800, loss 0.00641955
+epoch 23, train loss: 0.00602522, eval loss 0.00622978
+step 100, loss 0.00803667
+step 200, loss 0.00864796
+step 300, loss 0.00746980
+step 400, loss 0.00614569
+step 500, loss 0.00461251
+step 600, loss 0.00408591
+step 700, loss 0.00841910
+step 800, loss 0.00638545
+epoch 24, train loss: 0.00600543, eval loss 0.00851728
+step 100, loss 0.00438494
+step 200, loss 0.00821468
+step 300, loss 0.00853112
+step 400, loss 0.00458442
+step 500, loss 0.00441253
+step 600, loss 0.00794843
+step 700, loss 0.01354162
+step 800, loss 0.00435759
+epoch 25, train loss: 0.00600065, eval loss 0.00708023
+step 100, loss 0.00630470
+step 200, loss 0.00441542
+step 300, loss 0.00647109
+step 400, loss 0.00851365
+step 500, loss 0.00418143
+step 600, loss 0.00859061
+step 700, loss 0.00617733
+step 800, loss 0.00433638
+epoch 26, train loss: 0.00592960, eval loss 0.00668761
+step 100, loss 0.00400890
+step 200, loss 0.00640421
+step 300, loss 0.00420433
+step 400, loss 0.00704958
+step 500, loss 0.00418011
+step 600, loss 0.00637050
+step 700, loss 0.00913713
+step 800, loss 0.00606050
+epoch 27, train loss: 0.00582123, eval loss 0.00775869
+step 100, loss 0.00920468
+step 200, loss 0.00777511
+step 300, loss 0.00724296
+step 400, loss 0.01196229
+step 500, loss 0.00682955
+step 600, loss 0.00409659
+step 700, loss 0.00477416
+step 800, loss 0.00666708
+epoch 28, train loss: 0.00592807, eval loss 0.00653392
+step 100, loss 0.00658099
+step 200, loss 0.00457297
+step 300, loss 0.00710466
+step 400, loss 0.00775365
+step 500, loss 0.00718194
+step 600, loss 0.00431246
+step 700, loss 0.00633218
+step 800, loss 0.00728192
+epoch 29, train loss: 0.00563649, eval loss 0.00773320
+step 100, loss 0.01048877
+step 200, loss 0.01901758
+step 300, loss 0.00467414
+step 400, loss 0.00473167
+step 500, loss 0.00620617
+step 600, loss 0.00456758
+step 700, loss 0.00610183
+step 800, loss 0.01128742
+epoch 30, train loss: 0.00584027, eval loss 0.00669469
+step 100, loss 0.00886845
+step 200, loss 0.00680745
+step 300, loss 0.00766228
+step 400, loss 0.00723928
+step 500, loss 0.00922402
+step 600, loss 0.00715581
+step 700, loss 0.00678479
+step 800, loss 0.00759383
+epoch 31, train loss: 0.00560370, eval loss 0.00713706
+step 100, loss 0.00814430
+step 200, loss 0.00613049
+step 300, loss 0.00493290
+step 400, loss 0.00388467
+step 500, loss 0.01100438
+step 600, loss 0.00484585
+step 700, loss 0.00591880
+step 800, loss 0.00930170
+epoch 32, train loss: 0.00567622, eval loss 0.00688181
+step 100, loss 0.00742689
+step 200, loss 0.00703877
+step 300, loss 0.01007650
+step 400, loss 0.00783594
+step 500, loss 0.00775691
+step 600, loss 0.00644009
+step 700, loss 0.01113382
+step 800, loss 0.00669727
+epoch 33, train loss: 0.00557695, eval loss 0.00669181
+step 100, loss 0.00802877
+step 200, loss 0.00432636
+step 300, loss 0.00590714
+step 400, loss 0.00734915
+step 500, loss 0.00871597
+step 600, loss 0.00750932
+step 700, loss 0.00714479
+step 800, loss 0.00588907
+epoch 34, train loss: 0.00566878, eval loss 0.00707812
+step 100, loss 0.00722776
+step 200, loss 0.00672022
+step 300, loss 0.01013034
+step 400, loss 0.00802654
+step 500, loss 0.00401081
+step 600, loss 0.00757323
+step 700, loss 0.00560600
+step 800, loss 0.00728679
+epoch 35, train loss: 0.00546759, eval loss 0.00735635
+step 100, loss 0.00742061
+step 200, loss 0.00813505
+step 300, loss 0.00677071
+step 400, loss 0.00404852
+step 500, loss 0.00789761
+step 600, loss 0.00443263
+step 700, loss 0.00386041
+step 800, loss 0.00594205
+epoch 36, train loss: 0.00554779, eval loss 0.00738884
+step 100, loss 0.00724859
+step 200, loss 0.00972888
+step 300, loss 0.00638469
+step 400, loss 0.00433156
+step 500, loss 0.00622601
+step 600, loss 0.00615141
+step 700, loss 0.00613087
+step 800, loss 0.00404007
+epoch 37, train loss: 0.00548359, eval loss 0.00733316
+step 100, loss 0.00741318
+step 200, loss 0.00664299
+step 300, loss 0.00365270
+step 400, loss 0.00397640
+step 500, loss 0.00590094
+step 600, loss 0.00674904
+step 700, loss 0.00613072
+step 800, loss 0.00722997
+epoch 38, train loss: 0.00523230, eval loss 0.00708231
+step 100, loss 0.00408091
+step 200, loss 0.00403552
+step 300, loss 0.00392411
+step 400, loss 0.00949515
+step 500, loss 0.00644418
+step 600, loss 0.00740417
+step 700, loss 0.00426640
+step 800, loss 0.00543710
+epoch 39, train loss: 0.00547054, eval loss 0.00656186
+step 100, loss 0.00527524
+step 200, loss 0.00412845
+step 300, loss 0.00770153
+step 400, loss 0.00539304
+step 500, loss 0.00660078
+step 600, loss 0.00366650
+step 700, loss 0.00615049
+step 800, loss 0.00373278
+epoch 40, train loss: 0.00514916, eval loss 0.00698106
+step 100, loss 0.00896597
+step 200, loss 0.00545640
+step 300, loss 0.00536912
+step 400, loss 0.00583453
+step 500, loss 0.00797443
+step 600, loss 0.00804038
+step 700, loss 0.00676780
+step 800, loss 0.00617331
+epoch 41, train loss: 0.00529476, eval loss 0.00670048
+step 100, loss 0.00832806
+step 200, loss 0.00601644
+step 300, loss 0.00364086
+step 400, loss 0.00623660
+step 500, loss 0.00395451
+step 600, loss 0.00653070
+step 700, loss 0.00668924
+step 800, loss 0.00659201
+epoch 42, train loss: 0.00506249, eval loss 0.00591800
+step 100, loss 0.00345648
+step 200, loss 0.00651931
+step 300, loss 0.00717226
+step 400, loss 0.00618536
+step 500, loss 0.00427948
+step 600, loss 0.00444558
+step 700, loss 0.00739162
+step 800, loss 0.00375703
+epoch 43, train loss: 0.00518986, eval loss 0.00627885
+step 100, loss 0.00710244
+step 200, loss 0.00581354
+step 300, loss 0.00569327
+step 400, loss 0.00730149
+step 500, loss 0.00598319
+step 600, loss 0.00840914
+step 700, loss 0.00364538
+step 800, loss 0.00403625
+epoch 44, train loss: 0.00503960, eval loss 0.00643206

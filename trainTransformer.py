@@ -265,9 +265,9 @@ val_generator = lstmDataGenerator(partition['val'], pathData_all, **params)
 params = {}
 params["src_dim"] = nFeature_markers+nAddFeatures
 params["trg_dim"] = nResponse_markers
-params["nhead"] = 4
+params["nhead"] = 2
 params["num_encoder_layers"] = 2 
-params["num_decoder_layers"] = 32
+params["num_decoder_layers"] = 2
 params["hidden_dim"] = 128
 params["batch_first"] = False
 params["dim_feedforward"] = 256
@@ -298,12 +298,12 @@ if runTraining:
             trg_out = model(src, trg, src_mask, trg_mask)
 
             #loss = criterion(trg_out[:, :-1,:], trg[:,1:,:])
-            loss = criterion(trg_out, trg)
+            loss = torch.sqrt(criterion(trg_out, trg))
             loss.backward()
             running_loss += float(loss)
             optimizer.step()
 
-            if i % 10 == 9:
+            if i % 100 == 99:
                 print(f"step {i+1}, loss {float(loss):.8f}")
         train_mse = running_loss / len(train_generator)
         
@@ -322,7 +322,7 @@ if runTraining:
                 trg_out = model(src, trg, src_mask, trg_mask)
 
                 #loss = criterion(trg_out[:, :-1,:], trg[:,1:,:])
-                loss = criterion(trg_out, trg)
+                loss = torch.sqrt(criterion(trg_out, trg))
                 running_loss += float(loss)
         
             eval_mse = running_loss / len(val_generator)
