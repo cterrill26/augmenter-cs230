@@ -319,7 +319,7 @@ def add_novelty(x, new_features_idx):
     novel_features = (x[:,:, new_features_idx[0]] - x[:,:,new_features_idx[1]]).norm(dim = 3)
     return torch.cat((x, novel_features), dim = 2)
 
-optimizer = torch.optim.AdamW(model.parameters(), lr = 1e-4)
+optimizer = torch.optim.AdamW(model.parameters())
 
 print(len(train_generator))
 
