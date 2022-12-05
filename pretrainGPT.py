@@ -283,7 +283,7 @@ new_features = [("Neck", "RShoulder"),
 
 ##THESE ARE THE ONLY HYPERPARAMETERS THAT MATTER NOW
 intermediate_width = 256
-activation = "sigmoid" # can be "relu", "sigmoid", or "tanh"
+activation = "relu" # can be "relu", "sigmoid", or "tanh"
 loss_function = "rmse" # can be "rmse", "l1", or "log_cosh"
 batch_size = 128
 learning_rate = 1e-3
