@@ -346,13 +346,6 @@ def add_novelty(x, new_features_idx):
 
 optimizer = torch.optim.AdamW(model.parameters(), lr = learning_rate)
 
-intermediate_width = 256
-activation = "relu" # can be "relu", "sigmoid", or "tanh"
-loss_function = "rmse" # can be "rmse", "l1", or "log_cosh"
-batch_size = 128
-learning_rate = 1e-3
-use_novel = False
-gpt_frozen = True
 print(f"Intermediate width: {intermediate_width}, activation: {activation}, loss function: {loss_function}, batch size: {batch_size}, learning rate: {learning_rate}, use novelty: {use_novel}, gpt frozen: {gpt_frozen}, epochs: {nEpochs}")
 print(f"Train steps per epoch: {len(train_generator)}")
 
