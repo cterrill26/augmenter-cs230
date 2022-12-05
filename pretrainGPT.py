@@ -407,4 +407,3 @@ for epoch in range(nEpochs):
 
     train_generator.on_epoch_end()
     val_generator.on_epoch_end()
-
