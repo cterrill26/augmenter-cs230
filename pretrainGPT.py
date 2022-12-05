@@ -8,6 +8,8 @@ from mySettings import get_lstm_settings
 from myTransformers import PretrainedGPT2
 from myDataGenerator import lstmDataGenerator
 from utilities import getAllMarkers, rotateArray
+from torch import nn
+import math
 
 # %% User inputs.
 # Select case you want to train, see mySettings for case-specific settings.
@@ -38,8 +40,7 @@ scaleFactors = settings["scaleFactors"]
 nHUnits = settings["nHUnits"]
 nHLayers = settings["nHLayers"]
 nEpochs = settings["nEpochs"]
-batchSize = settings["batchSize"]
-print(batchSize)
+#batchSize = settings["batchSize"]
 idxFold = settings["idxFold"] 
 mean_subtraction = settings["mean_subtraction"]
 std_normalization = settings["std_normalization"]
@@ -242,22 +243,6 @@ else:
     
 # %% Initialize data generators.
 # https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly
-params = {'dim_f': (desired_nFrames,nFeature_markers+nAddFeatures),
-          'dim_r': (desired_nFrames,nResponse_markers),
-          'batch_size': batchSize,
-          'shuffle': True,
-          'noise_bool': noise_bool,
-          'noise_type': noise_type,
-          'noise_magnitude': noise_magnitude,
-          'mean_subtraction': mean_subtraction,
-          'std_normalization': std_normalization,
-          'features_mean': features_mean,
-          'features_std': features_std,
-          'idx_features': idx_in_all_features,
-          'idx_responses': idx_in_all_responses,
-          'rotations': rotations}
-train_generator = lstmDataGenerator(partition['train'], pathData_all, **params)
-val_generator = lstmDataGenerator(partition['val'], pathData_all, **params)
 
 
 import matplotlib.pyplot as plt
@@ -295,21 +280,61 @@ new_features = [("Neck", "RShoulder"),
                 ("RHeel", "RBigToe"),
                 ("LHeel", "LBigToe")]
 
+
+##THESE ARE THE ONLY HYPERPARAMETERS THAT MATTER NOW
+intermediate_width = 256
+activation = "sigmoid" # can be "relu", "sigmoid", or "tanh"
+loss_function = "rmse" # can be "rmse", "l1", or "log_cosh"
+batch_size = 128
+learning_rate = 1e-3
 use_novel = False
+gpt_frozen = True
+##END OF PARAMETERS
+
+
+params = {'dim_f': (desired_nFrames,nFeature_markers+nAddFeatures),
+          'dim_r': (desired_nFrames,nResponse_markers),
+          'batch_size': batch_size,
+          'shuffle': True,
+          'noise_bool': noise_bool,
+          'noise_type': noise_type,
+          'noise_magnitude': noise_magnitude,
+          'mean_subtraction': mean_subtraction,
+          'std_normalization': std_normalization,
+          'features_mean': features_mean,
+          'features_std': features_std,
+          'idx_features': idx_in_all_features,
+          'idx_responses': idx_in_all_responses,
+          'rotations': rotations}
+train_generator = lstmDataGenerator(partition['train'], pathData_all, **params)
+val_generator = lstmDataGenerator(partition['val'], pathData_all, **params)
 
 src_dim = nFeature_markers + nAddFeatures
 trg_dim = nResponse_markers
 if use_novel:
     src_dim += len(new_features)
 
-model = PretrainedGPT2(src_dim = src_dim, trg_dim = trg_dim, output_hidden_dim = 256, dropout = 0.1).to(device)
+model = PretrainedGPT2(src_dim = src_dim, trg_dim = trg_dim, output_hidden_dim = intermediate_width, dropout = 0.1, activation = activation, gpt_frozen = gpt_frozen).to(device)
 
-def RMSELoss(yhat,y):
-    return torch.sqrt(torch.mean((yhat-y)**2))
+mse_loss = nn.MSELoss()
+def rmse_loss(yhat,y):
+    return torch.sqrt(mse_loss(yhat, y))
 
-def l1_Loss(yhat,y):
-    return (torch.mean(torch.abs(yhat-y)))
+l1_loss = nn.L1Loss()
 
+def log_cosh_loss(y_pred, y_true):
+    def _log_cosh(x):
+        return x + torch.nn.functional.softplus(-2. * x) - math.log(2.0)
+    return torch.mean(_log_cosh(y_pred - y_true))
+
+if loss_function == "rmse":
+    loss_fc = rmse_loss
+elif loss_function == "l1":
+    loss_fc = l1_loss
+elif loss_function == "log_cosh":
+    loss_fc = log_cosh_loss
+else:
+    raise Exception(f"Unkown loss {loss_function}")
 
 new_features_idx = [(feature_markers.index(x), feature_markers.index(y)) for x,y in new_features]
 new_features_idx = [[x*3, x*3+1, x*3+2] for x,_ in new_features_idx], [[y*3, y*3+1, y*3+2] for _,y in new_features_idx]
@@ -319,63 +344,66 @@ def add_novelty(x, new_features_idx):
     novel_features = (x[:,:, new_features_idx[0]] - x[:,:,new_features_idx[1]]).norm(dim = 3)
     return torch.cat((x, novel_features), dim = 2)
 
-optimizer = torch.optim.AdamW(model.parameters())
+optimizer = torch.optim.AdamW(model.parameters(), lr = learning_rate)
 
-print(len(train_generator))
+print(f"Batch size: {batch_size}")
+print(f"Train steps per epoch: {len(train_generator)}")
 
 for epoch in range(nEpochs):
-    print("XXXXXXXXXXXXXXXXXXXXX Epoch No. =  ", epoch + 1)
-    running_loss_plot = 0.0
+    print(f"XXXXXXXXXXXXXXXXXXXXX Epoch {epoch+1}/{nEpochs}")
+    running_loss = 0.0
+    running_rmse = 0.0
     model.train()
     for i in range(len(train_generator)):
-        data = train_generator[i]
-        x = (data[0])
-        y = (data[1])
+        optimizer.zero_grad()
+
+        x,y = train_generator[i]
 
         x = torch.from_numpy(x).to(device=device, dtype=torch.float32)
         y = torch.from_numpy(y).to(device=device, dtype=torch.float32)
 
         if use_novel:
             x = add_novelty(x, new_features_idx)
-
-        optimizer.zero_grad()
     
         output = model(x)
-        #output = nn.functional.relu(output_inter)
     
-        loss = RMSELoss(output,y)
+        loss = loss_fc(output,y)
+        rmse = rmse_loss(output,y)
     
         loss.backward()
-        running_loss_plot += float(loss)
+        running_loss += float(loss)
+        running_rmse += float(rmse)
         optimizer.step()
         
         if i % 100 == 99:
-            print("Train RMSE loss after epoch:" + str(epoch+1) + ", batch: " + str(i+1) + " = ", float(loss))
+            print(f"epoch: {epoch+1}, step: {i+1}, rmse_loss: {float(rmse):.8f}, {loss_function}_loss {float(loss):.8f}")
 
-    train_mse_plot = running_loss_plot / len(train_generator)
-    print("Train RMSE loss after an epoch:" + str(epoch+1) + "(averaged across batches)  = ", train_mse_plot)
+    train_loss = running_loss  / len(train_generator)
+    train_rmse = running_rmse / len(train_generator)
     
+    running_loss = 0.0
+    running_rmse = 0.0
     with torch.no_grad():
-        running_loss_eval_plot = 0.0
         model.eval()
-        for i_eval in range(len(val_generator)):
-            data_eval = val_generator[i_eval]
-            x_eval = (data_eval[0])
-            y_eval  = (data_eval[1])
+        for i in range(len(val_generator)):
+            x,y = val_generator[i]
     
-            x_eval  = torch.from_numpy(x_eval).to(device=device, dtype=torch.float32)
-            y_eval  = torch.from_numpy(y_eval).to(device=device, dtype=torch.float32)
+            x  = torch.from_numpy(x).to(device=device, dtype=torch.float32)
+            y  = torch.from_numpy(y).to(device=device, dtype=torch.float32)
     
             if use_novel:
-                x_eval = add_novelty(x_eval, new_features_idx)
+                x = add_novelty(x, new_features_idx)
 
-            output_eval = model(x_eval)
+            output = model(x)
     
-            loss  = RMSELoss(output_eval, y_eval)
-            running_loss_eval_plot += float(loss)
+            loss = loss_fc(output,y)
+            rmse = rmse_loss(output,y)
+            running_loss += float(loss)
+            running_rmse += float(rmse)
 
-        eval_mse_plot = running_loss_eval_plot / len(val_generator)
-        print(f"epoch {epoch + 1:2d}, train loss: {train_mse_plot:.8f}, eval loss {eval_mse_plot:.8f}")
+        eval_loss = running_loss  / len(val_generator)
+        eval_rmse = running_rmse / len(val_generator)
+        print(f"epoch: {epoch+1}, train rmse_loss: {float(train_rmse):.8f}, train {loss_function}_loss {float(train_loss):.8f}, eval rmse_loss: {float(eval_rmse):.8f}, eval {loss_function}_loss {float(eval_loss):.8f}")
 
     train_generator.on_epoch_end()
     val_generator.on_epoch_end()

@@ -52,6 +52,8 @@ class PretrainedGPT2(nn.Module):
             src_dim: int,
             trg_dim: int,
             output_hidden_dim: int,
+            gpt_frozen: bool = True,
+            activation: str = "relu",
             dropout: float = 0.1
             ):
         super(PretrainedGPT2, self).__init__()
@@ -60,19 +62,30 @@ class PretrainedGPT2(nn.Module):
         self.out_layer1 = nn.Linear(self.gpt2.embed_dim, output_hidden_dim)
         self.out_layer1_dropout = nn.Dropout(dropout)
         self.out_layer2 = nn.Linear(output_hidden_dim, trg_dim)
-        
-        for name, param in self.gpt2.named_parameters():
-        # freeze all parameters except the layernorm and positional embeddings
-            if 'ln' in name or 'wpe' in name:
-                param.requires_grad = True
-            else:
-                param.requires_grad = False
+       
+
+        if activation.lower() == "relu":
+            self.activation = nn.ReLU()
+        elif activation.lower() == "tanh":
+            self.activation = nn.Tanh()
+        elif activation.lower() == "sigmoid":
+            self.activation = nn.Sigmoid()
+        else:
+            raise Exception(f"Activation {activation} is not known")
+
+        if gpt_frozen:
+            for name, param in self.gpt2.named_parameters():
+            # freeze all parameters except the layernorm and positional embeddings
+                if 'ln' in name or 'wpe' in name:
+                    param.requires_grad = True
+                else:
+                    param.requires_grad = False
 
     def forward(self, src: Tensor):
         x = self.in_layer(src)
         x = self.gpt2(inputs_embeds=x).last_hidden_state
         x = self.out_layer1(x)
-        x = nn.functional.relu(x)
+        x = self.activation(x)
         x = self.out_layer1_dropout(x)
         x = self.out_layer2(x)
         return x

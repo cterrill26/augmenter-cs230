@@ -35,7 +35,7 @@ def get_lstm_settings(a):
              "scaleFactors": [0.9, 0.95, 1., 1.05, 1.1],
              "nHUnits": 96,
              "nHLayers": 2,
-             "nEpochs": 80,
+             "nEpochs":50,
              "batchSize": 256,
              "idxFold": 0,
              'learning_r': 5e-05,
