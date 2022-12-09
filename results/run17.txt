@@ -1,0 +1,1802 @@
+Intermediate width: 256, activation: relu, loss function: rmse, batch size: 128, learning rate: 3e-05, use novelty: False, gpt frozen: True, epochs: 200
+Train steps per epoch: 1650
+XXXXXXXXXXXXXXXXXXXXX Epoch 1/200
+epoch: 1, step: 100, rmse_loss: 0.29899341, rmse_loss 0.29899341
+epoch: 1, step: 200, rmse_loss: 0.15111908, rmse_loss 0.15111908
+epoch: 1, step: 300, rmse_loss: 0.11909087, rmse_loss 0.11909087
+epoch: 1, step: 400, rmse_loss: 0.12050175, rmse_loss 0.12050175
+epoch: 1, step: 500, rmse_loss: 0.07564902, rmse_loss 0.07564902
+epoch: 1, step: 600, rmse_loss: 0.08010054, rmse_loss 0.08010054
+epoch: 1, step: 700, rmse_loss: 0.07366040, rmse_loss 0.07366040
+epoch: 1, step: 800, rmse_loss: 0.06603744, rmse_loss 0.06603744
+epoch: 1, step: 900, rmse_loss: 0.05983272, rmse_loss 0.05983272
+epoch: 1, step: 1000, rmse_loss: 0.04330174, rmse_loss 0.04330174
+epoch: 1, step: 1100, rmse_loss: 0.05323490, rmse_loss 0.05323490
+epoch: 1, step: 1200, rmse_loss: 0.03823342, rmse_loss 0.03823342
+epoch: 1, step: 1300, rmse_loss: 0.03626623, rmse_loss 0.03626623
+epoch: 1, step: 1400, rmse_loss: 0.04564341, rmse_loss 0.04564341
+epoch: 1, step: 1500, rmse_loss: 0.04454488, rmse_loss 0.04454488
+epoch: 1, step: 1600, rmse_loss: 0.04246489, rmse_loss 0.04246489
+epoch: 1, train rmse_loss: 0.10302070, train rmse_loss 0.10302070, eval rmse_loss: 0.02138288, eval rmse_loss 0.02138288
+XXXXXXXXXXXXXXXXXXXXX Epoch 2/200
+epoch: 2, step: 100, rmse_loss: 0.03083774, rmse_loss 0.03083774
+epoch: 2, step: 200, rmse_loss: 0.02895267, rmse_loss 0.02895267
+epoch: 2, step: 300, rmse_loss: 0.03867695, rmse_loss 0.03867695
+epoch: 2, step: 400, rmse_loss: 0.03782143, rmse_loss 0.03782143
+epoch: 2, step: 500, rmse_loss: 0.03763481, rmse_loss 0.03763481
+epoch: 2, step: 600, rmse_loss: 0.03640176, rmse_loss 0.03640176
+epoch: 2, step: 700, rmse_loss: 0.02530039, rmse_loss 0.02530039
+epoch: 2, step: 800, rmse_loss: 0.02585642, rmse_loss 0.02585642
+epoch: 2, step: 900, rmse_loss: 0.03362623, rmse_loss 0.03362623
+epoch: 2, step: 1000, rmse_loss: 0.03340084, rmse_loss 0.03340084
+epoch: 2, step: 1100, rmse_loss: 0.03287958, rmse_loss 0.03287958
+epoch: 2, step: 1200, rmse_loss: 0.03155940, rmse_loss 0.03155940
+epoch: 2, step: 1300, rmse_loss: 0.03174470, rmse_loss 0.03174470
+epoch: 2, step: 1400, rmse_loss: 0.03275980, rmse_loss 0.03275980
+epoch: 2, step: 1500, rmse_loss: 0.02242076, rmse_loss 0.02242076
+epoch: 2, step: 1600, rmse_loss: 0.02210356, rmse_loss 0.02210356
+epoch: 2, train rmse_loss: 0.02920908, train rmse_loss 0.02920908, eval rmse_loss: 0.01598643, eval rmse_loss 0.01598643
+XXXXXXXXXXXXXXXXXXXXX Epoch 3/200
+epoch: 3, step: 100, rmse_loss: 0.02994306, rmse_loss 0.02994306
+epoch: 3, step: 200, rmse_loss: 0.03101428, rmse_loss 0.03101428
+epoch: 3, step: 300, rmse_loss: 0.02849075, rmse_loss 0.02849075
+epoch: 3, step: 400, rmse_loss: 0.02743042, rmse_loss 0.02743042
+epoch: 3, step: 500, rmse_loss: 0.02714734, rmse_loss 0.02714734
+epoch: 3, step: 600, rmse_loss: 0.02710883, rmse_loss 0.02710883
+epoch: 3, step: 700, rmse_loss: 0.02924938, rmse_loss 0.02924938
+epoch: 3, step: 800, rmse_loss: 0.02824698, rmse_loss 0.02824698
+epoch: 3, step: 900, rmse_loss: 0.02743223, rmse_loss 0.02743223
+epoch: 3, step: 1000, rmse_loss: 0.01974438, rmse_loss 0.01974438
+epoch: 3, step: 1100, rmse_loss: 0.02538213, rmse_loss 0.02538213
+epoch: 3, step: 1200, rmse_loss: 0.02784195, rmse_loss 0.02784195
+epoch: 3, step: 1300, rmse_loss: 0.01883500, rmse_loss 0.01883500
+epoch: 3, step: 1400, rmse_loss: 0.02538149, rmse_loss 0.02538149
+epoch: 3, step: 1500, rmse_loss: 0.02467465, rmse_loss 0.02467465
+epoch: 3, step: 1600, rmse_loss: 0.02424541, rmse_loss 0.02424541
+epoch: 3, train rmse_loss: 0.02299033, train rmse_loss 0.02299033, eval rmse_loss: 0.01323957, eval rmse_loss 0.01323957
+XXXXXXXXXXXXXXXXXXXXX Epoch 4/200
+epoch: 4, step: 100, rmse_loss: 0.02590786, rmse_loss 0.02590786
+epoch: 4, step: 200, rmse_loss: 0.02468103, rmse_loss 0.02468103
+epoch: 4, step: 300, rmse_loss: 0.02565724, rmse_loss 0.02565724
+epoch: 4, step: 400, rmse_loss: 0.01788890, rmse_loss 0.01788890
+epoch: 4, step: 500, rmse_loss: 0.02591901, rmse_loss 0.02591901
+epoch: 4, step: 600, rmse_loss: 0.02507409, rmse_loss 0.02507409
+epoch: 4, step: 700, rmse_loss: 0.02402149, rmse_loss 0.02402149
+epoch: 4, step: 800, rmse_loss: 0.01746268, rmse_loss 0.01746268
+epoch: 4, step: 900, rmse_loss: 0.01753132, rmse_loss 0.01753132
+epoch: 4, step: 1000, rmse_loss: 0.01750324, rmse_loss 0.01750324
+epoch: 4, step: 1100, rmse_loss: 0.02535325, rmse_loss 0.02535325
+epoch: 4, step: 1200, rmse_loss: 0.01705894, rmse_loss 0.01705894
+epoch: 4, step: 1300, rmse_loss: 0.01715350, rmse_loss 0.01715350
+epoch: 4, step: 1400, rmse_loss: 0.01651201, rmse_loss 0.01651201
+epoch: 4, step: 1500, rmse_loss: 0.02412798, rmse_loss 0.02412798
+epoch: 4, step: 1600, rmse_loss: 0.02202041, rmse_loss 0.02202041
+epoch: 4, train rmse_loss: 0.02003128, train rmse_loss 0.02003128, eval rmse_loss: 0.01121346, eval rmse_loss 0.01121346
+XXXXXXXXXXXXXXXXXXXXX Epoch 5/200
+epoch: 5, step: 100, rmse_loss: 0.02380976, rmse_loss 0.02380976
+epoch: 5, step: 200, rmse_loss: 0.01653177, rmse_loss 0.01653177
+epoch: 5, step: 300, rmse_loss: 0.02190893, rmse_loss 0.02190893
+epoch: 5, step: 400, rmse_loss: 0.02364470, rmse_loss 0.02364470
+epoch: 5, step: 500, rmse_loss: 0.01657092, rmse_loss 0.01657092
+epoch: 5, step: 600, rmse_loss: 0.01589500, rmse_loss 0.01589500
+epoch: 5, step: 700, rmse_loss: 0.02080243, rmse_loss 0.02080243
+epoch: 5, step: 800, rmse_loss: 0.01591074, rmse_loss 0.01591074
+epoch: 5, step: 900, rmse_loss: 0.02134728, rmse_loss 0.02134728
+epoch: 5, step: 1000, rmse_loss: 0.02303046, rmse_loss 0.02303046
+epoch: 5, step: 1100, rmse_loss: 0.02089888, rmse_loss 0.02089888
+epoch: 5, step: 1200, rmse_loss: 0.02233845, rmse_loss 0.02233845
+epoch: 5, step: 1300, rmse_loss: 0.02038934, rmse_loss 0.02038934
+epoch: 5, step: 1400, rmse_loss: 0.02237769, rmse_loss 0.02237769
+epoch: 5, step: 1500, rmse_loss: 0.02245177, rmse_loss 0.02245177
+epoch: 5, step: 1600, rmse_loss: 0.02038031, rmse_loss 0.02038031
+epoch: 5, train rmse_loss: 0.01812565, train rmse_loss 0.01812565, eval rmse_loss: 0.01063259, eval rmse_loss 0.01063259
+XXXXXXXXXXXXXXXXXXXXX Epoch 6/200
+epoch: 6, step: 100, rmse_loss: 0.02032707, rmse_loss 0.02032707
+epoch: 6, step: 200, rmse_loss: 0.02183277, rmse_loss 0.02183277
+epoch: 6, step: 300, rmse_loss: 0.02034937, rmse_loss 0.02034937
+epoch: 6, step: 400, rmse_loss: 0.02024725, rmse_loss 0.02024725
+epoch: 6, step: 500, rmse_loss: 0.01500602, rmse_loss 0.01500602
+epoch: 6, step: 600, rmse_loss: 0.02200225, rmse_loss 0.02200225
+epoch: 6, step: 700, rmse_loss: 0.02006173, rmse_loss 0.02006173
+epoch: 6, step: 800, rmse_loss: 0.02163317, rmse_loss 0.02163317
+epoch: 6, step: 900, rmse_loss: 0.02053052, rmse_loss 0.02053052
+epoch: 6, step: 1000, rmse_loss: 0.01419610, rmse_loss 0.01419610
+epoch: 6, step: 1100, rmse_loss: 0.01993890, rmse_loss 0.01993890
+epoch: 6, step: 1200, rmse_loss: 0.02051731, rmse_loss 0.02051731
+epoch: 6, step: 1300, rmse_loss: 0.01956823, rmse_loss 0.01956823
+epoch: 6, step: 1400, rmse_loss: 0.01424609, rmse_loss 0.01424609
+epoch: 6, step: 1500, rmse_loss: 0.01411583, rmse_loss 0.01411583
+epoch: 6, step: 1600, rmse_loss: 0.02151454, rmse_loss 0.02151454
+epoch: 6, train rmse_loss: 0.01679773, train rmse_loss 0.01679773, eval rmse_loss: 0.00955127, eval rmse_loss 0.00955127
+XXXXXXXXXXXXXXXXXXXXX Epoch 7/200
+epoch: 7, step: 100, rmse_loss: 0.01947054, rmse_loss 0.01947054
+epoch: 7, step: 200, rmse_loss: 0.01901139, rmse_loss 0.01901139
+epoch: 7, step: 300, rmse_loss: 0.01889823, rmse_loss 0.01889823
+epoch: 7, step: 400, rmse_loss: 0.02087033, rmse_loss 0.02087033
+epoch: 7, step: 500, rmse_loss: 0.01922487, rmse_loss 0.01922487
+epoch: 7, step: 600, rmse_loss: 0.01924371, rmse_loss 0.01924371
+epoch: 7, step: 700, rmse_loss: 0.01955052, rmse_loss 0.01955052
+epoch: 7, step: 800, rmse_loss: 0.01879999, rmse_loss 0.01879999
+epoch: 7, step: 900, rmse_loss: 0.02016149, rmse_loss 0.02016149
+epoch: 7, step: 1000, rmse_loss: 0.01907418, rmse_loss 0.01907418
+epoch: 7, step: 1100, rmse_loss: 0.02021196, rmse_loss 0.02021196
+epoch: 7, step: 1200, rmse_loss: 0.02017240, rmse_loss 0.02017240
+epoch: 7, step: 1300, rmse_loss: 0.01355046, rmse_loss 0.01355046
+epoch: 7, step: 1400, rmse_loss: 0.01336607, rmse_loss 0.01336607
+epoch: 7, step: 1500, rmse_loss: 0.02000379, rmse_loss 0.02000379
+epoch: 7, step: 1600, rmse_loss: 0.01319564, rmse_loss 0.01319564
+epoch: 7, train rmse_loss: 0.01586825, train rmse_loss 0.01586825, eval rmse_loss: 0.00957226, eval rmse_loss 0.00957226
+XXXXXXXXXXXXXXXXXXXXX Epoch 8/200
+epoch: 8, step: 100, rmse_loss: 0.01861217, rmse_loss 0.01861217
+epoch: 8, step: 200, rmse_loss: 0.01302501, rmse_loss 0.01302501
+epoch: 8, step: 300, rmse_loss: 0.01997463, rmse_loss 0.01997463
+epoch: 8, step: 400, rmse_loss: 0.01802723, rmse_loss 0.01802723
+epoch: 8, step: 500, rmse_loss: 0.01292851, rmse_loss 0.01292851
+epoch: 8, step: 600, rmse_loss: 0.01797010, rmse_loss 0.01797010
+epoch: 8, step: 700, rmse_loss: 0.01792295, rmse_loss 0.01792295
+epoch: 8, step: 800, rmse_loss: 0.01975100, rmse_loss 0.01975100
+epoch: 8, step: 900, rmse_loss: 0.01765985, rmse_loss 0.01765985
+epoch: 8, step: 1000, rmse_loss: 0.01800295, rmse_loss 0.01800295
+epoch: 8, step: 1100, rmse_loss: 0.01814693, rmse_loss 0.01814693
+epoch: 8, step: 1200, rmse_loss: 0.01738852, rmse_loss 0.01738852
+epoch: 8, step: 1300, rmse_loss: 0.01776966, rmse_loss 0.01776966
+epoch: 8, step: 1400, rmse_loss: 0.01748218, rmse_loss 0.01748218
+epoch: 8, step: 1500, rmse_loss: 0.01919040, rmse_loss 0.01919040
+epoch: 8, step: 1600, rmse_loss: 0.01807194, rmse_loss 0.01807194
+epoch: 8, train rmse_loss: 0.01491944, train rmse_loss 0.01491944, eval rmse_loss: 0.00864631, eval rmse_loss 0.00864631
+XXXXXXXXXXXXXXXXXXXXX Epoch 9/200
+epoch: 9, step: 100, rmse_loss: 0.01733192, rmse_loss 0.01733192
+epoch: 9, step: 200, rmse_loss: 0.01777179, rmse_loss 0.01777179
+epoch: 9, step: 300, rmse_loss: 0.01219254, rmse_loss 0.01219254
+epoch: 9, step: 400, rmse_loss: 0.01741852, rmse_loss 0.01741852
+epoch: 9, step: 500, rmse_loss: 0.01800453, rmse_loss 0.01800453
+epoch: 9, step: 600, rmse_loss: 0.01772963, rmse_loss 0.01772963
+epoch: 9, step: 700, rmse_loss: 0.01741905, rmse_loss 0.01741905
+epoch: 9, step: 800, rmse_loss: 0.01733516, rmse_loss 0.01733516
+epoch: 9, step: 900, rmse_loss: 0.01903571, rmse_loss 0.01903571
+epoch: 9, step: 1000, rmse_loss: 0.01726487, rmse_loss 0.01726487
+epoch: 9, step: 1100, rmse_loss: 0.01716363, rmse_loss 0.01716363
+epoch: 9, step: 1200, rmse_loss: 0.01694443, rmse_loss 0.01694443
+epoch: 9, step: 1300, rmse_loss: 0.01709162, rmse_loss 0.01709162
+epoch: 9, step: 1400, rmse_loss: 0.01750809, rmse_loss 0.01750809
+epoch: 9, step: 1500, rmse_loss: 0.01751417, rmse_loss 0.01751417
+epoch: 9, step: 1600, rmse_loss: 0.01696766, rmse_loss 0.01696766
+epoch: 9, train rmse_loss: 0.01440101, train rmse_loss 0.01440101, eval rmse_loss: 0.00896574, eval rmse_loss 0.00896574
+XXXXXXXXXXXXXXXXXXXXX Epoch 10/200
+epoch: 10, step: 100, rmse_loss: 0.01205071, rmse_loss 0.01205071
+epoch: 10, step: 200, rmse_loss: 0.01705567, rmse_loss 0.01705567
+epoch: 10, step: 300, rmse_loss: 0.01709321, rmse_loss 0.01709321
+epoch: 10, step: 400, rmse_loss: 0.01172765, rmse_loss 0.01172765
+epoch: 10, step: 500, rmse_loss: 0.01775694, rmse_loss 0.01775694
+epoch: 10, step: 600, rmse_loss: 0.01690216, rmse_loss 0.01690216
+epoch: 10, step: 700, rmse_loss: 0.01678355, rmse_loss 0.01678355
+epoch: 10, step: 800, rmse_loss: 0.01785788, rmse_loss 0.01785788
+epoch: 10, step: 900, rmse_loss: 0.01665586, rmse_loss 0.01665586
+epoch: 10, step: 1000, rmse_loss: 0.01819902, rmse_loss 0.01819902
+epoch: 10, step: 1100, rmse_loss: 0.01726751, rmse_loss 0.01726751
+epoch: 10, step: 1200, rmse_loss: 0.01171559, rmse_loss 0.01171559
+epoch: 10, step: 1300, rmse_loss: 0.01698042, rmse_loss 0.01698042
+epoch: 10, step: 1400, rmse_loss: 0.01681205, rmse_loss 0.01681205
+epoch: 10, step: 1500, rmse_loss: 0.01157293, rmse_loss 0.01157293
+epoch: 10, step: 1600, rmse_loss: 0.01140315, rmse_loss 0.01140315
+epoch: 10, train rmse_loss: 0.01388201, train rmse_loss 0.01388201, eval rmse_loss: 0.00806895, eval rmse_loss 0.00806895
+XXXXXXXXXXXXXXXXXXXXX Epoch 11/200
+epoch: 11, step: 100, rmse_loss: 0.01690620, rmse_loss 0.01690620
+epoch: 11, step: 200, rmse_loss: 0.01791904, rmse_loss 0.01791904
+epoch: 11, step: 300, rmse_loss: 0.01165759, rmse_loss 0.01165759
+epoch: 11, step: 400, rmse_loss: 0.01789291, rmse_loss 0.01789291
+epoch: 11, step: 500, rmse_loss: 0.01683200, rmse_loss 0.01683200
+epoch: 11, step: 600, rmse_loss: 0.01145697, rmse_loss 0.01145697
+epoch: 11, step: 700, rmse_loss: 0.01151146, rmse_loss 0.01151146
+epoch: 11, step: 800, rmse_loss: 0.01162800, rmse_loss 0.01162800
+epoch: 11, step: 900, rmse_loss: 0.01705134, rmse_loss 0.01705134
+epoch: 11, step: 1000, rmse_loss: 0.01644756, rmse_loss 0.01644756
+epoch: 11, step: 1100, rmse_loss: 0.01144170, rmse_loss 0.01144170
+epoch: 11, step: 1200, rmse_loss: 0.01761677, rmse_loss 0.01761677
+epoch: 11, step: 1300, rmse_loss: 0.01649336, rmse_loss 0.01649336
+epoch: 11, step: 1400, rmse_loss: 0.01162819, rmse_loss 0.01162819
+epoch: 11, step: 1500, rmse_loss: 0.01116099, rmse_loss 0.01116099
+epoch: 11, step: 1600, rmse_loss: 0.01112285, rmse_loss 0.01112285
+epoch: 11, train rmse_loss: 0.01355960, train rmse_loss 0.01355960, eval rmse_loss: 0.00834734, eval rmse_loss 0.00834734
+XXXXXXXXXXXXXXXXXXXXX Epoch 12/200
+epoch: 12, step: 100, rmse_loss: 0.01699421, rmse_loss 0.01699421
+epoch: 12, step: 200, rmse_loss: 0.01113074, rmse_loss 0.01113074
+epoch: 12, step: 300, rmse_loss: 0.01603112, rmse_loss 0.01603112
+epoch: 12, step: 400, rmse_loss: 0.01760160, rmse_loss 0.01760160
+epoch: 12, step: 500, rmse_loss: 0.01748507, rmse_loss 0.01748507
+epoch: 12, step: 600, rmse_loss: 0.01795964, rmse_loss 0.01795964
+epoch: 12, step: 700, rmse_loss: 0.01631966, rmse_loss 0.01631966
+epoch: 12, step: 800, rmse_loss: 0.01756300, rmse_loss 0.01756300
+epoch: 12, step: 900, rmse_loss: 0.01708734, rmse_loss 0.01708734
+epoch: 12, step: 1000, rmse_loss: 0.01591912, rmse_loss 0.01591912
+epoch: 12, step: 1100, rmse_loss: 0.01693095, rmse_loss 0.01693095
+epoch: 12, step: 1200, rmse_loss: 0.01689751, rmse_loss 0.01689751
+epoch: 12, step: 1300, rmse_loss: 0.01094470, rmse_loss 0.01094470
+epoch: 12, step: 1400, rmse_loss: 0.01624845, rmse_loss 0.01624845
+epoch: 12, step: 1500, rmse_loss: 0.01127582, rmse_loss 0.01127582
+epoch: 12, step: 1600, rmse_loss: 0.01079119, rmse_loss 0.01079119
+epoch: 12, train rmse_loss: 0.01328970, train rmse_loss 0.01328970, eval rmse_loss: 0.00876504, eval rmse_loss 0.00876504
+XXXXXXXXXXXXXXXXXXXXX Epoch 13/200
+epoch: 13, step: 100, rmse_loss: 0.01637125, rmse_loss 0.01637125
+epoch: 13, step: 200, rmse_loss: 0.01637105, rmse_loss 0.01637105
+epoch: 13, step: 300, rmse_loss: 0.01583772, rmse_loss 0.01583772
+epoch: 13, step: 400, rmse_loss: 0.01622918, rmse_loss 0.01622918
+epoch: 13, step: 500, rmse_loss: 0.01579948, rmse_loss 0.01579948
+epoch: 13, step: 600, rmse_loss: 0.01088746, rmse_loss 0.01088746
+epoch: 13, step: 700, rmse_loss: 0.01701126, rmse_loss 0.01701126
+epoch: 13, step: 800, rmse_loss: 0.01599889, rmse_loss 0.01599889
+epoch: 13, step: 900, rmse_loss: 0.01603453, rmse_loss 0.01603453
+epoch: 13, step: 1000, rmse_loss: 0.01582482, rmse_loss 0.01582482
+epoch: 13, step: 1100, rmse_loss: 0.01102042, rmse_loss 0.01102042
+epoch: 13, step: 1200, rmse_loss: 0.01064911, rmse_loss 0.01064911
+epoch: 13, step: 1300, rmse_loss: 0.01582914, rmse_loss 0.01582914
+epoch: 13, step: 1400, rmse_loss: 0.01561336, rmse_loss 0.01561336
+epoch: 13, step: 1500, rmse_loss: 0.01721863, rmse_loss 0.01721863
+epoch: 13, step: 1600, rmse_loss: 0.01601741, rmse_loss 0.01601741
+epoch: 13, train rmse_loss: 0.01295304, train rmse_loss 0.01295304, eval rmse_loss: 0.00793287, eval rmse_loss 0.00793287
+XXXXXXXXXXXXXXXXXXXXX Epoch 14/200
+epoch: 14, step: 100, rmse_loss: 0.01572770, rmse_loss 0.01572770
+epoch: 14, step: 200, rmse_loss: 0.01711822, rmse_loss 0.01711822
+epoch: 14, step: 300, rmse_loss: 0.01707229, rmse_loss 0.01707229
+epoch: 14, step: 400, rmse_loss: 0.01579526, rmse_loss 0.01579526
+epoch: 14, step: 500, rmse_loss: 0.01601089, rmse_loss 0.01601089
+epoch: 14, step: 600, rmse_loss: 0.01541509, rmse_loss 0.01541509
+epoch: 14, step: 700, rmse_loss: 0.01591827, rmse_loss 0.01591827
+epoch: 14, step: 800, rmse_loss: 0.01038408, rmse_loss 0.01038408
+epoch: 14, step: 900, rmse_loss: 0.01605590, rmse_loss 0.01605590
+epoch: 14, step: 1000, rmse_loss: 0.01766415, rmse_loss 0.01766415
+epoch: 14, step: 1100, rmse_loss: 0.01581516, rmse_loss 0.01581516
+epoch: 14, step: 1200, rmse_loss: 0.01559066, rmse_loss 0.01559066
+epoch: 14, step: 1300, rmse_loss: 0.01618649, rmse_loss 0.01618649
+epoch: 14, step: 1400, rmse_loss: 0.01563982, rmse_loss 0.01563982
+epoch: 14, step: 1500, rmse_loss: 0.01562417, rmse_loss 0.01562417
+epoch: 14, step: 1600, rmse_loss: 0.01034451, rmse_loss 0.01034451
+epoch: 14, train rmse_loss: 0.01276828, train rmse_loss 0.01276828, eval rmse_loss: 0.00774540, eval rmse_loss 0.00774540
+XXXXXXXXXXXXXXXXXXXXX Epoch 15/200
+epoch: 15, step: 100, rmse_loss: 0.01720915, rmse_loss 0.01720915
+epoch: 15, step: 200, rmse_loss: 0.01753422, rmse_loss 0.01753422
+epoch: 15, step: 300, rmse_loss: 0.01070050, rmse_loss 0.01070050
+epoch: 15, step: 400, rmse_loss: 0.01746703, rmse_loss 0.01746703
+epoch: 15, step: 500, rmse_loss: 0.01727446, rmse_loss 0.01727446
+epoch: 15, step: 600, rmse_loss: 0.01539907, rmse_loss 0.01539907
+epoch: 15, step: 700, rmse_loss: 0.01555731, rmse_loss 0.01555731
+epoch: 15, step: 800, rmse_loss: 0.01032910, rmse_loss 0.01032910
+epoch: 15, step: 900, rmse_loss: 0.01572004, rmse_loss 0.01572004
+epoch: 15, step: 1000, rmse_loss: 0.01711718, rmse_loss 0.01711718
+epoch: 15, step: 1100, rmse_loss: 0.01034334, rmse_loss 0.01034334
+epoch: 15, step: 1200, rmse_loss: 0.01048426, rmse_loss 0.01048426
+epoch: 15, step: 1300, rmse_loss: 0.01519329, rmse_loss 0.01519329
+epoch: 15, step: 1400, rmse_loss: 0.01019324, rmse_loss 0.01019324
+epoch: 15, step: 1500, rmse_loss: 0.01539581, rmse_loss 0.01539581
+epoch: 15, step: 1600, rmse_loss: 0.01021402, rmse_loss 0.01021402
+epoch: 15, train rmse_loss: 0.01252575, train rmse_loss 0.01252575, eval rmse_loss: 0.00781109, eval rmse_loss 0.00781109
+XXXXXXXXXXXXXXXXXXXXX Epoch 16/200
+epoch: 16, step: 100, rmse_loss: 0.01519985, rmse_loss 0.01519985
+epoch: 16, step: 200, rmse_loss: 0.01497795, rmse_loss 0.01497795
+epoch: 16, step: 300, rmse_loss: 0.01584595, rmse_loss 0.01584595
+epoch: 16, step: 400, rmse_loss: 0.01044602, rmse_loss 0.01044602
+epoch: 16, step: 500, rmse_loss: 0.01676150, rmse_loss 0.01676150
+epoch: 16, step: 600, rmse_loss: 0.01487274, rmse_loss 0.01487274
+epoch: 16, step: 700, rmse_loss: 0.01593020, rmse_loss 0.01593020
+epoch: 16, step: 800, rmse_loss: 0.01544812, rmse_loss 0.01544812
+epoch: 16, step: 900, rmse_loss: 0.01024336, rmse_loss 0.01024336
+epoch: 16, step: 1000, rmse_loss: 0.01022166, rmse_loss 0.01022166
+epoch: 16, step: 1100, rmse_loss: 0.01509740, rmse_loss 0.01509740
+epoch: 16, step: 1200, rmse_loss: 0.01563911, rmse_loss 0.01563911
+epoch: 16, step: 1300, rmse_loss: 0.01647692, rmse_loss 0.01647692
+epoch: 16, step: 1400, rmse_loss: 0.01487468, rmse_loss 0.01487468
+epoch: 16, step: 1500, rmse_loss: 0.01536061, rmse_loss 0.01536061
+epoch: 16, step: 1600, rmse_loss: 0.01506790, rmse_loss 0.01506790
+epoch: 16, train rmse_loss: 0.01239516, train rmse_loss 0.01239516, eval rmse_loss: 0.00727402, eval rmse_loss 0.00727402
+XXXXXXXXXXXXXXXXXXXXX Epoch 17/200
+epoch: 17, step: 100, rmse_loss: 0.01668511, rmse_loss 0.01668511
+epoch: 17, step: 200, rmse_loss: 0.01000634, rmse_loss 0.01000634
+epoch: 17, step: 300, rmse_loss: 0.01491678, rmse_loss 0.01491678
+epoch: 17, step: 400, rmse_loss: 0.01511064, rmse_loss 0.01511064
+epoch: 17, step: 500, rmse_loss: 0.01642651, rmse_loss 0.01642651
+epoch: 17, step: 600, rmse_loss: 0.01524550, rmse_loss 0.01524550
+epoch: 17, step: 700, rmse_loss: 0.01509591, rmse_loss 0.01509591
+epoch: 17, step: 800, rmse_loss: 0.01647395, rmse_loss 0.01647395
+epoch: 17, step: 900, rmse_loss: 0.01669098, rmse_loss 0.01669098
+epoch: 17, step: 1000, rmse_loss: 0.01024860, rmse_loss 0.01024860
+epoch: 17, step: 1100, rmse_loss: 0.01524831, rmse_loss 0.01524831
+epoch: 17, step: 1200, rmse_loss: 0.01629546, rmse_loss 0.01629546
+epoch: 17, step: 1300, rmse_loss: 0.01511991, rmse_loss 0.01511991
+epoch: 17, step: 1400, rmse_loss: 0.01518227, rmse_loss 0.01518227
+epoch: 17, step: 1500, rmse_loss: 0.01541977, rmse_loss 0.01541977
+epoch: 17, step: 1600, rmse_loss: 0.01633185, rmse_loss 0.01633185
+epoch: 17, train rmse_loss: 0.01221039, train rmse_loss 0.01221039, eval rmse_loss: 0.00766980, eval rmse_loss 0.00766980
+XXXXXXXXXXXXXXXXXXXXX Epoch 18/200
+epoch: 18, step: 100, rmse_loss: 0.01505485, rmse_loss 0.01505485
+epoch: 18, step: 200, rmse_loss: 0.01009266, rmse_loss 0.01009266
+epoch: 18, step: 300, rmse_loss: 0.01552527, rmse_loss 0.01552527
+epoch: 18, step: 400, rmse_loss: 0.01645765, rmse_loss 0.01645765
+epoch: 18, step: 500, rmse_loss: 0.01642020, rmse_loss 0.01642020
+epoch: 18, step: 600, rmse_loss: 0.01462554, rmse_loss 0.01462554
+epoch: 18, step: 700, rmse_loss: 0.01513031, rmse_loss 0.01513031
+epoch: 18, step: 800, rmse_loss: 0.01486884, rmse_loss 0.01486884
+epoch: 18, step: 900, rmse_loss: 0.01626714, rmse_loss 0.01626714
+epoch: 18, step: 1000, rmse_loss: 0.01532188, rmse_loss 0.01532188
+epoch: 18, step: 1100, rmse_loss: 0.01004571, rmse_loss 0.01004571
+epoch: 18, step: 1200, rmse_loss: 0.00979736, rmse_loss 0.00979736
+epoch: 18, step: 1300, rmse_loss: 0.01040159, rmse_loss 0.01040159
+epoch: 18, step: 1400, rmse_loss: 0.01464149, rmse_loss 0.01464149
+epoch: 18, step: 1500, rmse_loss: 0.01508646, rmse_loss 0.01508646
+epoch: 18, step: 1600, rmse_loss: 0.00998887, rmse_loss 0.00998887
+epoch: 18, train rmse_loss: 0.01212454, train rmse_loss 0.01212454, eval rmse_loss: 0.00727882, eval rmse_loss 0.00727882
+XXXXXXXXXXXXXXXXXXXXX Epoch 19/200
+epoch: 19, step: 100, rmse_loss: 0.01513655, rmse_loss 0.01513655
+epoch: 19, step: 200, rmse_loss: 0.01009591, rmse_loss 0.01009591
+epoch: 19, step: 300, rmse_loss: 0.01472342, rmse_loss 0.01472342
+epoch: 19, step: 400, rmse_loss: 0.01660032, rmse_loss 0.01660032
+epoch: 19, step: 500, rmse_loss: 0.01532809, rmse_loss 0.01532809
+epoch: 19, step: 600, rmse_loss: 0.00998353, rmse_loss 0.00998353
+epoch: 19, step: 700, rmse_loss: 0.01534759, rmse_loss 0.01534759
+epoch: 19, step: 800, rmse_loss: 0.00992487, rmse_loss 0.00992487
+epoch: 19, step: 900, rmse_loss: 0.01488201, rmse_loss 0.01488201
+epoch: 19, step: 1000, rmse_loss: 0.01490605, rmse_loss 0.01490605
+epoch: 19, step: 1100, rmse_loss: 0.01487962, rmse_loss 0.01487962
+epoch: 19, step: 1200, rmse_loss: 0.01511084, rmse_loss 0.01511084
+epoch: 19, step: 1300, rmse_loss: 0.01505973, rmse_loss 0.01505973
+epoch: 19, step: 1400, rmse_loss: 0.00952881, rmse_loss 0.00952881
+epoch: 19, step: 1500, rmse_loss: 0.01507130, rmse_loss 0.01507130
+epoch: 19, step: 1600, rmse_loss: 0.00985057, rmse_loss 0.00985057
+epoch: 19, train rmse_loss: 0.01197238, train rmse_loss 0.01197238, eval rmse_loss: 0.00919617, eval rmse_loss 0.00919617
+XXXXXXXXXXXXXXXXXXXXX Epoch 20/200
+epoch: 20, step: 100, rmse_loss: 0.01620569, rmse_loss 0.01620569
+epoch: 20, step: 200, rmse_loss: 0.01609858, rmse_loss 0.01609858
+epoch: 20, step: 300, rmse_loss: 0.01618018, rmse_loss 0.01618018
+epoch: 20, step: 400, rmse_loss: 0.01470907, rmse_loss 0.01470907
+epoch: 20, step: 500, rmse_loss: 0.01443346, rmse_loss 0.01443346
+epoch: 20, step: 600, rmse_loss: 0.01511506, rmse_loss 0.01511506
+epoch: 20, step: 700, rmse_loss: 0.00989272, rmse_loss 0.00989272
+epoch: 20, step: 800, rmse_loss: 0.01642746, rmse_loss 0.01642746
+epoch: 20, step: 900, rmse_loss: 0.01501783, rmse_loss 0.01501783
+epoch: 20, step: 1000, rmse_loss: 0.01540628, rmse_loss 0.01540628
+epoch: 20, step: 1100, rmse_loss: 0.01596568, rmse_loss 0.01596568
+epoch: 20, step: 1200, rmse_loss: 0.01497850, rmse_loss 0.01497850
+epoch: 20, step: 1300, rmse_loss: 0.01454896, rmse_loss 0.01454896
+epoch: 20, step: 1400, rmse_loss: 0.01630151, rmse_loss 0.01630151
+epoch: 20, step: 1500, rmse_loss: 0.01528331, rmse_loss 0.01528331
+epoch: 20, step: 1600, rmse_loss: 0.01444510, rmse_loss 0.01444510
+epoch: 20, train rmse_loss: 0.01194535, train rmse_loss 0.01194535, eval rmse_loss: 0.00775961, eval rmse_loss 0.00775961
+XXXXXXXXXXXXXXXXXXXXX Epoch 21/200
+epoch: 21, step: 100, rmse_loss: 0.01579532, rmse_loss 0.01579532
+epoch: 21, step: 200, rmse_loss: 0.01618024, rmse_loss 0.01618024
+epoch: 21, step: 300, rmse_loss: 0.01533017, rmse_loss 0.01533017
+epoch: 21, step: 400, rmse_loss: 0.01598029, rmse_loss 0.01598029
+epoch: 21, step: 500, rmse_loss: 0.01638728, rmse_loss 0.01638728
+epoch: 21, step: 600, rmse_loss: 0.01471858, rmse_loss 0.01471858
+epoch: 21, step: 700, rmse_loss: 0.00945640, rmse_loss 0.00945640
+epoch: 21, step: 800, rmse_loss: 0.01507688, rmse_loss 0.01507688
+epoch: 21, step: 900, rmse_loss: 0.01511467, rmse_loss 0.01511467
+epoch: 21, step: 1000, rmse_loss: 0.01625459, rmse_loss 0.01625459
+epoch: 21, step: 1100, rmse_loss: 0.01610114, rmse_loss 0.01610114
+epoch: 21, step: 1200, rmse_loss: 0.01485279, rmse_loss 0.01485279
+epoch: 21, step: 1300, rmse_loss: 0.00985632, rmse_loss 0.00985632
+epoch: 21, step: 1400, rmse_loss: 0.01536913, rmse_loss 0.01536913
+epoch: 21, step: 1500, rmse_loss: 0.01484959, rmse_loss 0.01484959
+epoch: 21, step: 1600, rmse_loss: 0.01615607, rmse_loss 0.01615607
+epoch: 21, train rmse_loss: 0.01176319, train rmse_loss 0.01176319, eval rmse_loss: 0.00723111, eval rmse_loss 0.00723111
+XXXXXXXXXXXXXXXXXXXXX Epoch 22/200
+epoch: 22, step: 100, rmse_loss: 0.00939528, rmse_loss 0.00939528
+epoch: 22, step: 200, rmse_loss: 0.01538432, rmse_loss 0.01538432
+epoch: 22, step: 300, rmse_loss: 0.01479325, rmse_loss 0.01479325
+epoch: 22, step: 400, rmse_loss: 0.01506491, rmse_loss 0.01506491
+epoch: 22, step: 500, rmse_loss: 0.01467286, rmse_loss 0.01467286
+epoch: 22, step: 600, rmse_loss: 0.00946514, rmse_loss 0.00946514
+epoch: 22, step: 700, rmse_loss: 0.01476969, rmse_loss 0.01476969
+epoch: 22, step: 800, rmse_loss: 0.00960572, rmse_loss 0.00960572
+epoch: 22, step: 900, rmse_loss: 0.00948703, rmse_loss 0.00948703
+epoch: 22, step: 1000, rmse_loss: 0.00962365, rmse_loss 0.00962365
+epoch: 22, step: 1100, rmse_loss: 0.01581887, rmse_loss 0.01581887
+epoch: 22, step: 1200, rmse_loss: 0.01477739, rmse_loss 0.01477739
+epoch: 22, step: 1300, rmse_loss: 0.01542524, rmse_loss 0.01542524
+epoch: 22, step: 1400, rmse_loss: 0.01586504, rmse_loss 0.01586504
+epoch: 22, step: 1500, rmse_loss: 0.00959988, rmse_loss 0.00959988
+epoch: 22, step: 1600, rmse_loss: 0.01421719, rmse_loss 0.01421719
+epoch: 22, train rmse_loss: 0.01180627, train rmse_loss 0.01180627, eval rmse_loss: 0.00731560, eval rmse_loss 0.00731560
+XXXXXXXXXXXXXXXXXXXXX Epoch 23/200
+epoch: 23, step: 100, rmse_loss: 0.01504722, rmse_loss 0.01504722
+epoch: 23, step: 200, rmse_loss: 0.00952860, rmse_loss 0.00952860
+epoch: 23, step: 300, rmse_loss: 0.01416559, rmse_loss 0.01416559
+epoch: 23, step: 400, rmse_loss: 0.00981282, rmse_loss 0.00981282
+epoch: 23, step: 500, rmse_loss: 0.00966670, rmse_loss 0.00966670
+epoch: 23, step: 600, rmse_loss: 0.00942537, rmse_loss 0.00942537
+epoch: 23, step: 700, rmse_loss: 0.01505429, rmse_loss 0.01505429
+epoch: 23, step: 800, rmse_loss: 0.00963518, rmse_loss 0.00963518
+epoch: 23, step: 900, rmse_loss: 0.01445390, rmse_loss 0.01445390
+epoch: 23, step: 1000, rmse_loss: 0.01624259, rmse_loss 0.01624259
+epoch: 23, step: 1100, rmse_loss: 0.01562740, rmse_loss 0.01562740
+epoch: 23, step: 1200, rmse_loss: 0.01450385, rmse_loss 0.01450385
+epoch: 23, step: 1300, rmse_loss: 0.01446504, rmse_loss 0.01446504
+epoch: 23, step: 1400, rmse_loss: 0.01659250, rmse_loss 0.01659250
+epoch: 23, step: 1500, rmse_loss: 0.01482934, rmse_loss 0.01482934
+epoch: 23, step: 1600, rmse_loss: 0.01588617, rmse_loss 0.01588617
+epoch: 23, train rmse_loss: 0.01170477, train rmse_loss 0.01170477, eval rmse_loss: 0.00754263, eval rmse_loss 0.00754263
+XXXXXXXXXXXXXXXXXXXXX Epoch 24/200
+epoch: 24, step: 100, rmse_loss: 0.01463499, rmse_loss 0.01463499
+epoch: 24, step: 200, rmse_loss: 0.00953288, rmse_loss 0.00953288
+epoch: 24, step: 300, rmse_loss: 0.01479190, rmse_loss 0.01479190
+epoch: 24, step: 400, rmse_loss: 0.01455984, rmse_loss 0.01455984
+epoch: 24, step: 500, rmse_loss: 0.01608631, rmse_loss 0.01608631
+epoch: 24, step: 600, rmse_loss: 0.01599495, rmse_loss 0.01599495
+epoch: 24, step: 700, rmse_loss: 0.01479876, rmse_loss 0.01479876
+epoch: 24, step: 800, rmse_loss: 0.01589251, rmse_loss 0.01589251
+epoch: 24, step: 900, rmse_loss: 0.01455918, rmse_loss 0.01455918
+epoch: 24, step: 1000, rmse_loss: 0.01594796, rmse_loss 0.01594796
+epoch: 24, step: 1100, rmse_loss: 0.01578094, rmse_loss 0.01578094
+epoch: 24, step: 1200, rmse_loss: 0.01464466, rmse_loss 0.01464466
+epoch: 24, step: 1300, rmse_loss: 0.01563749, rmse_loss 0.01563749
+epoch: 24, step: 1400, rmse_loss: 0.01451809, rmse_loss 0.01451809
+epoch: 24, step: 1500, rmse_loss: 0.01427929, rmse_loss 0.01427929
+epoch: 24, step: 1600, rmse_loss: 0.01485656, rmse_loss 0.01485656
+epoch: 24, train rmse_loss: 0.01162850, train rmse_loss 0.01162850, eval rmse_loss: 0.00699744, eval rmse_loss 0.00699744
+XXXXXXXXXXXXXXXXXXXXX Epoch 25/200
+epoch: 25, step: 100, rmse_loss: 0.00960505, rmse_loss 0.00960505
+epoch: 25, step: 200, rmse_loss: 0.01456911, rmse_loss 0.01456911
+epoch: 25, step: 300, rmse_loss: 0.00925421, rmse_loss 0.00925421
+epoch: 25, step: 400, rmse_loss: 0.01440369, rmse_loss 0.01440369
+epoch: 25, step: 500, rmse_loss: 0.00952352, rmse_loss 0.00952352
+epoch: 25, step: 600, rmse_loss: 0.01486823, rmse_loss 0.01486823
+epoch: 25, step: 700, rmse_loss: 0.01603391, rmse_loss 0.01603391
+epoch: 25, step: 800, rmse_loss: 0.01426692, rmse_loss 0.01426692
+epoch: 25, step: 900, rmse_loss: 0.01434340, rmse_loss 0.01434340
+epoch: 25, step: 1000, rmse_loss: 0.01491754, rmse_loss 0.01491754
+epoch: 25, step: 1100, rmse_loss: 0.00941922, rmse_loss 0.00941922
+epoch: 25, step: 1200, rmse_loss: 0.00947383, rmse_loss 0.00947383
+epoch: 25, step: 1300, rmse_loss: 0.01569873, rmse_loss 0.01569873
+epoch: 25, step: 1400, rmse_loss: 0.01464452, rmse_loss 0.01464452
+epoch: 25, step: 1500, rmse_loss: 0.01598862, rmse_loss 0.01598862
+epoch: 25, step: 1600, rmse_loss: 0.00953242, rmse_loss 0.00953242
+epoch: 25, train rmse_loss: 0.01161000, train rmse_loss 0.01161000, eval rmse_loss: 0.00700722, eval rmse_loss 0.00700722
+XXXXXXXXXXXXXXXXXXXXX Epoch 26/200
+epoch: 26, step: 100, rmse_loss: 0.00966617, rmse_loss 0.00966617
+epoch: 26, step: 200, rmse_loss: 0.01393747, rmse_loss 0.01393747
+epoch: 26, step: 300, rmse_loss: 0.00931181, rmse_loss 0.00931181
+epoch: 26, step: 400, rmse_loss: 0.01444236, rmse_loss 0.01444236
+epoch: 26, step: 500, rmse_loss: 0.00971111, rmse_loss 0.00971111
+epoch: 26, step: 600, rmse_loss: 0.01441279, rmse_loss 0.01441279
+epoch: 26, step: 700, rmse_loss: 0.01424225, rmse_loss 0.01424225
+epoch: 26, step: 800, rmse_loss: 0.01602323, rmse_loss 0.01602323
+epoch: 26, step: 900, rmse_loss: 0.00948241, rmse_loss 0.00948241
+epoch: 26, step: 1000, rmse_loss: 0.01394328, rmse_loss 0.01394328
+epoch: 26, step: 1100, rmse_loss: 0.01621162, rmse_loss 0.01621162
+epoch: 26, step: 1200, rmse_loss: 0.00937615, rmse_loss 0.00937615
+epoch: 26, step: 1300, rmse_loss: 0.00941899, rmse_loss 0.00941899
+epoch: 26, step: 1400, rmse_loss: 0.00930974, rmse_loss 0.00930974
+epoch: 26, step: 1500, rmse_loss: 0.01623269, rmse_loss 0.01623269
+epoch: 26, step: 1600, rmse_loss: 0.01595964, rmse_loss 0.01595964
+epoch: 26, train rmse_loss: 0.01141511, train rmse_loss 0.01141511, eval rmse_loss: 0.00695351, eval rmse_loss 0.00695351
+XXXXXXXXXXXXXXXXXXXXX Epoch 27/200
+epoch: 27, step: 100, rmse_loss: 0.00937437, rmse_loss 0.00937437
+epoch: 27, step: 200, rmse_loss: 0.01453548, rmse_loss 0.01453548
+epoch: 27, step: 300, rmse_loss: 0.01590659, rmse_loss 0.01590659
+epoch: 27, step: 400, rmse_loss: 0.01621193, rmse_loss 0.01621193
+epoch: 27, step: 500, rmse_loss: 0.01571388, rmse_loss 0.01571388
+epoch: 27, step: 600, rmse_loss: 0.00940474, rmse_loss 0.00940474
+epoch: 27, step: 700, rmse_loss: 0.00899473, rmse_loss 0.00899473
+epoch: 27, step: 800, rmse_loss: 0.01612657, rmse_loss 0.01612657
+epoch: 27, step: 900, rmse_loss: 0.01613194, rmse_loss 0.01613194
+epoch: 27, step: 1000, rmse_loss: 0.01586975, rmse_loss 0.01586975
+epoch: 27, step: 1100, rmse_loss: 0.01458488, rmse_loss 0.01458488
+epoch: 27, step: 1200, rmse_loss: 0.01468590, rmse_loss 0.01468590
+epoch: 27, step: 1300, rmse_loss: 0.01615686, rmse_loss 0.01615686
+epoch: 27, step: 1400, rmse_loss: 0.01454081, rmse_loss 0.01454081
+epoch: 27, step: 1500, rmse_loss: 0.01582828, rmse_loss 0.01582828
+epoch: 27, step: 1600, rmse_loss: 0.01414486, rmse_loss 0.01414486
+epoch: 27, train rmse_loss: 0.01145598, train rmse_loss 0.01145598, eval rmse_loss: 0.00719196, eval rmse_loss 0.00719196
+XXXXXXXXXXXXXXXXXXXXX Epoch 28/200
+epoch: 28, step: 100, rmse_loss: 0.01612471, rmse_loss 0.01612471
+epoch: 28, step: 200, rmse_loss: 0.01535714, rmse_loss 0.01535714
+epoch: 28, step: 300, rmse_loss: 0.00918954, rmse_loss 0.00918954
+epoch: 28, step: 400, rmse_loss: 0.01464641, rmse_loss 0.01464641
+epoch: 28, step: 500, rmse_loss: 0.01559489, rmse_loss 0.01559489
+epoch: 28, step: 600, rmse_loss: 0.01760209, rmse_loss 0.01760209
+epoch: 28, step: 700, rmse_loss: 0.00916692, rmse_loss 0.00916692
+epoch: 28, step: 800, rmse_loss: 0.00928803, rmse_loss 0.00928803
+epoch: 28, step: 900, rmse_loss: 0.01585560, rmse_loss 0.01585560
+epoch: 28, step: 1000, rmse_loss: 0.01427489, rmse_loss 0.01427489
+epoch: 28, step: 1100, rmse_loss: 0.01566308, rmse_loss 0.01566308
+epoch: 28, step: 1200, rmse_loss: 0.01452780, rmse_loss 0.01452780
+epoch: 28, step: 1300, rmse_loss: 0.01477919, rmse_loss 0.01477919
+epoch: 28, step: 1400, rmse_loss: 0.01494336, rmse_loss 0.01494336
+epoch: 28, step: 1500, rmse_loss: 0.00942978, rmse_loss 0.00942978
+epoch: 28, step: 1600, rmse_loss: 0.01440322, rmse_loss 0.01440322
+epoch: 28, train rmse_loss: 0.01144342, train rmse_loss 0.01144342, eval rmse_loss: 0.00801293, eval rmse_loss 0.00801293
+XXXXXXXXXXXXXXXXXXXXX Epoch 29/200
+epoch: 29, step: 100, rmse_loss: 0.01438869, rmse_loss 0.01438869
+epoch: 29, step: 200, rmse_loss: 0.01409259, rmse_loss 0.01409259
+epoch: 29, step: 300, rmse_loss: 0.01412875, rmse_loss 0.01412875
+epoch: 29, step: 400, rmse_loss: 0.01454048, rmse_loss 0.01454048
+epoch: 29, step: 500, rmse_loss: 0.01587698, rmse_loss 0.01587698
+epoch: 29, step: 600, rmse_loss: 0.00908576, rmse_loss 0.00908576
+epoch: 29, step: 700, rmse_loss: 0.01559466, rmse_loss 0.01559466
+epoch: 29, step: 800, rmse_loss: 0.01574494, rmse_loss 0.01574494
+epoch: 29, step: 900, rmse_loss: 0.00925458, rmse_loss 0.00925458
+epoch: 29, step: 1000, rmse_loss: 0.01410849, rmse_loss 0.01410849
+epoch: 29, step: 1100, rmse_loss: 0.01609684, rmse_loss 0.01609684
+epoch: 29, step: 1200, rmse_loss: 0.01466490, rmse_loss 0.01466490
+epoch: 29, step: 1300, rmse_loss: 0.00914071, rmse_loss 0.00914071
+epoch: 29, step: 1400, rmse_loss: 0.00925156, rmse_loss 0.00925156
+epoch: 29, step: 1500, rmse_loss: 0.00915483, rmse_loss 0.00915483
+epoch: 29, step: 1600, rmse_loss: 0.00926434, rmse_loss 0.00926434
+epoch: 29, train rmse_loss: 0.01132242, train rmse_loss 0.01132242, eval rmse_loss: 0.00749127, eval rmse_loss 0.00749127
+XXXXXXXXXXXXXXXXXXXXX Epoch 30/200
+epoch: 30, step: 100, rmse_loss: 0.01392596, rmse_loss 0.01392596
+epoch: 30, step: 200, rmse_loss: 0.01595147, rmse_loss 0.01595147
+epoch: 30, step: 300, rmse_loss: 0.01440477, rmse_loss 0.01440477
+epoch: 30, step: 400, rmse_loss: 0.01435796, rmse_loss 0.01435796
+epoch: 30, step: 500, rmse_loss: 0.00927996, rmse_loss 0.00927996
+epoch: 30, step: 600, rmse_loss: 0.00949545, rmse_loss 0.00949545
+epoch: 30, step: 700, rmse_loss: 0.00931251, rmse_loss 0.00931251
+epoch: 30, step: 800, rmse_loss: 0.01410431, rmse_loss 0.01410431
+epoch: 30, step: 900, rmse_loss: 0.01391882, rmse_loss 0.01391882
+epoch: 30, step: 1000, rmse_loss: 0.00926492, rmse_loss 0.00926492
+epoch: 30, step: 1100, rmse_loss: 0.01418597, rmse_loss 0.01418597
+epoch: 30, step: 1200, rmse_loss: 0.01601089, rmse_loss 0.01601089
+epoch: 30, step: 1300, rmse_loss: 0.01418994, rmse_loss 0.01418994
+epoch: 30, step: 1400, rmse_loss: 0.01403145, rmse_loss 0.01403145
+epoch: 30, step: 1500, rmse_loss: 0.00917711, rmse_loss 0.00917711
+epoch: 30, step: 1600, rmse_loss: 0.01384831, rmse_loss 0.01384831
+epoch: 30, train rmse_loss: 0.01142649, train rmse_loss 0.01142649, eval rmse_loss: 0.00691829, eval rmse_loss 0.00691829
+XXXXXXXXXXXXXXXXXXXXX Epoch 31/200
+epoch: 31, step: 100, rmse_loss: 0.00936310, rmse_loss 0.00936310
+epoch: 31, step: 200, rmse_loss: 0.00913930, rmse_loss 0.00913930
+epoch: 31, step: 300, rmse_loss: 0.00908762, rmse_loss 0.00908762
+epoch: 31, step: 400, rmse_loss: 0.01406352, rmse_loss 0.01406352
+epoch: 31, step: 500, rmse_loss: 0.01445853, rmse_loss 0.01445853
+epoch: 31, step: 600, rmse_loss: 0.01560540, rmse_loss 0.01560540
+epoch: 31, step: 700, rmse_loss: 0.01365269, rmse_loss 0.01365269
+epoch: 31, step: 800, rmse_loss: 0.01449138, rmse_loss 0.01449138
+epoch: 31, step: 900, rmse_loss: 0.00903228, rmse_loss 0.00903228
+epoch: 31, step: 1000, rmse_loss: 0.01566278, rmse_loss 0.01566278
+epoch: 31, step: 1100, rmse_loss: 0.01619293, rmse_loss 0.01619293
+epoch: 31, step: 1200, rmse_loss: 0.01401246, rmse_loss 0.01401246
+epoch: 31, step: 1300, rmse_loss: 0.00919220, rmse_loss 0.00919220
+epoch: 31, step: 1400, rmse_loss: 0.01441671, rmse_loss 0.01441671
+epoch: 31, step: 1500, rmse_loss: 0.01393555, rmse_loss 0.01393555
+epoch: 31, step: 1600, rmse_loss: 0.01584728, rmse_loss 0.01584728
+epoch: 31, train rmse_loss: 0.01130474, train rmse_loss 0.01130474, eval rmse_loss: 0.00725052, eval rmse_loss 0.00725052
+XXXXXXXXXXXXXXXXXXXXX Epoch 32/200
+epoch: 32, step: 100, rmse_loss: 0.01574902, rmse_loss 0.01574902
+epoch: 32, step: 200, rmse_loss: 0.01416107, rmse_loss 0.01416107
+epoch: 32, step: 300, rmse_loss: 0.01603196, rmse_loss 0.01603196
+epoch: 32, step: 400, rmse_loss: 0.00948588, rmse_loss 0.00948588
+epoch: 32, step: 500, rmse_loss: 0.01606025, rmse_loss 0.01606025
+epoch: 32, step: 600, rmse_loss: 0.00938662, rmse_loss 0.00938662
+epoch: 32, step: 700, rmse_loss: 0.01499566, rmse_loss 0.01499566
+epoch: 32, step: 800, rmse_loss: 0.01591814, rmse_loss 0.01591814
+epoch: 32, step: 900, rmse_loss: 0.00897021, rmse_loss 0.00897021
+epoch: 32, step: 1000, rmse_loss: 0.01417386, rmse_loss 0.01417386
+epoch: 32, step: 1100, rmse_loss: 0.01593113, rmse_loss 0.01593113
+epoch: 32, step: 1200, rmse_loss: 0.01436611, rmse_loss 0.01436611
+epoch: 32, step: 1300, rmse_loss: 0.01574624, rmse_loss 0.01574624
+epoch: 32, step: 1400, rmse_loss: 0.01418179, rmse_loss 0.01418179
+epoch: 32, step: 1500, rmse_loss: 0.01431475, rmse_loss 0.01431475
+epoch: 32, step: 1600, rmse_loss: 0.00934512, rmse_loss 0.00934512
+epoch: 32, train rmse_loss: 0.01128015, train rmse_loss 0.01128015, eval rmse_loss: 0.00777120, eval rmse_loss 0.00777120
+XXXXXXXXXXXXXXXXXXXXX Epoch 33/200
+epoch: 33, step: 100, rmse_loss: 0.00906020, rmse_loss 0.00906020
+epoch: 33, step: 200, rmse_loss: 0.01581742, rmse_loss 0.01581742
+epoch: 33, step: 300, rmse_loss: 0.00933044, rmse_loss 0.00933044
+epoch: 33, step: 400, rmse_loss: 0.00894362, rmse_loss 0.00894362
+epoch: 33, step: 500, rmse_loss: 0.01427591, rmse_loss 0.01427591
+epoch: 33, step: 600, rmse_loss: 0.01460140, rmse_loss 0.01460140
+epoch: 33, step: 700, rmse_loss: 0.01422326, rmse_loss 0.01422326
+epoch: 33, step: 800, rmse_loss: 0.01384111, rmse_loss 0.01384111
+epoch: 33, step: 900, rmse_loss: 0.01440972, rmse_loss 0.01440972
+epoch: 33, step: 1000, rmse_loss: 0.01422678, rmse_loss 0.01422678
+epoch: 33, step: 1100, rmse_loss: 0.01557750, rmse_loss 0.01557750
+epoch: 33, step: 1200, rmse_loss: 0.01612632, rmse_loss 0.01612632
+epoch: 33, step: 1300, rmse_loss: 0.01390653, rmse_loss 0.01390653
+epoch: 33, step: 1400, rmse_loss: 0.00916417, rmse_loss 0.00916417
+epoch: 33, step: 1500, rmse_loss: 0.01424108, rmse_loss 0.01424108
+epoch: 33, step: 1600, rmse_loss: 0.01551693, rmse_loss 0.01551693
+epoch: 33, train rmse_loss: 0.01123362, train rmse_loss 0.01123362, eval rmse_loss: 0.00734128, eval rmse_loss 0.00734128
+XXXXXXXXXXXXXXXXXXXXX Epoch 34/200
+epoch: 34, step: 100, rmse_loss: 0.00909695, rmse_loss 0.00909695
+epoch: 34, step: 200, rmse_loss: 0.01418177, rmse_loss 0.01418177
+epoch: 34, step: 300, rmse_loss: 0.01450356, rmse_loss 0.01450356
+epoch: 34, step: 400, rmse_loss: 0.00903487, rmse_loss 0.00903487
+epoch: 34, step: 500, rmse_loss: 0.01590372, rmse_loss 0.01590372
+epoch: 34, step: 600, rmse_loss: 0.00907327, rmse_loss 0.00907327
+epoch: 34, step: 700, rmse_loss: 0.01429002, rmse_loss 0.01429002
+epoch: 34, step: 800, rmse_loss: 0.01532653, rmse_loss 0.01532653
+epoch: 34, step: 900, rmse_loss: 0.00936277, rmse_loss 0.00936277
+epoch: 34, step: 1000, rmse_loss: 0.01447048, rmse_loss 0.01447048
+epoch: 34, step: 1100, rmse_loss: 0.01412475, rmse_loss 0.01412475
+epoch: 34, step: 1200, rmse_loss: 0.01567506, rmse_loss 0.01567506
+epoch: 34, step: 1300, rmse_loss: 0.01586179, rmse_loss 0.01586179
+epoch: 34, step: 1400, rmse_loss: 0.01395874, rmse_loss 0.01395874
+epoch: 34, step: 1500, rmse_loss: 0.01412294, rmse_loss 0.01412294
+epoch: 34, step: 1600, rmse_loss: 0.01566221, rmse_loss 0.01566221
+epoch: 34, train rmse_loss: 0.01122002, train rmse_loss 0.01122002, eval rmse_loss: 0.00737230, eval rmse_loss 0.00737230
+XXXXXXXXXXXXXXXXXXXXX Epoch 35/200
+epoch: 35, step: 100, rmse_loss: 0.01522279, rmse_loss 0.01522279
+epoch: 35, step: 200, rmse_loss: 0.00912346, rmse_loss 0.00912346
+epoch: 35, step: 300, rmse_loss: 0.01370918, rmse_loss 0.01370918
+epoch: 35, step: 400, rmse_loss: 0.00893225, rmse_loss 0.00893225
+epoch: 35, step: 500, rmse_loss: 0.01532419, rmse_loss 0.01532419
+epoch: 35, step: 600, rmse_loss: 0.01573667, rmse_loss 0.01573667
+epoch: 35, step: 700, rmse_loss: 0.01575203, rmse_loss 0.01575203
+epoch: 35, step: 800, rmse_loss: 0.01556770, rmse_loss 0.01556770
+epoch: 35, step: 900, rmse_loss: 0.00925999, rmse_loss 0.00925999
+epoch: 35, step: 1000, rmse_loss: 0.01463345, rmse_loss 0.01463345
+epoch: 35, step: 1100, rmse_loss: 0.01374033, rmse_loss 0.01374033
+epoch: 35, step: 1200, rmse_loss: 0.01414693, rmse_loss 0.01414693
+epoch: 35, step: 1300, rmse_loss: 0.00922221, rmse_loss 0.00922221
+epoch: 35, step: 1400, rmse_loss: 0.01444514, rmse_loss 0.01444514
+epoch: 35, step: 1500, rmse_loss: 0.01468760, rmse_loss 0.01468760
+epoch: 35, step: 1600, rmse_loss: 0.01420824, rmse_loss 0.01420824
+epoch: 35, train rmse_loss: 0.01120493, train rmse_loss 0.01120493, eval rmse_loss: 0.00717597, eval rmse_loss 0.00717597
+XXXXXXXXXXXXXXXXXXXXX Epoch 36/200
+epoch: 36, step: 100, rmse_loss: 0.01424616, rmse_loss 0.01424616
+epoch: 36, step: 200, rmse_loss: 0.01463532, rmse_loss 0.01463532
+epoch: 36, step: 300, rmse_loss: 0.00900884, rmse_loss 0.00900884
+epoch: 36, step: 400, rmse_loss: 0.00923714, rmse_loss 0.00923714
+epoch: 36, step: 500, rmse_loss: 0.01566958, rmse_loss 0.01566958
+epoch: 36, step: 600, rmse_loss: 0.00904411, rmse_loss 0.00904411
+epoch: 36, step: 700, rmse_loss: 0.01468792, rmse_loss 0.01468792
+epoch: 36, step: 800, rmse_loss: 0.01433040, rmse_loss 0.01433040
+epoch: 36, step: 900, rmse_loss: 0.01421905, rmse_loss 0.01421905
+epoch: 36, step: 1000, rmse_loss: 0.01450095, rmse_loss 0.01450095
+epoch: 36, step: 1100, rmse_loss: 0.01547108, rmse_loss 0.01547108
+epoch: 36, step: 1200, rmse_loss: 0.00925327, rmse_loss 0.00925327
+epoch: 36, step: 1300, rmse_loss: 0.01449142, rmse_loss 0.01449142
+epoch: 36, step: 1400, rmse_loss: 0.01412567, rmse_loss 0.01412567
+epoch: 36, step: 1500, rmse_loss: 0.01434787, rmse_loss 0.01434787
+epoch: 36, step: 1600, rmse_loss: 0.01429862, rmse_loss 0.01429862
+epoch: 36, train rmse_loss: 0.01117607, train rmse_loss 0.01117607, eval rmse_loss: 0.00765163, eval rmse_loss 0.00765163
+XXXXXXXXXXXXXXXXXXXXX Epoch 37/200
+epoch: 37, step: 100, rmse_loss: 0.01395126, rmse_loss 0.01395126
+epoch: 37, step: 200, rmse_loss: 0.01362931, rmse_loss 0.01362931
+epoch: 37, step: 300, rmse_loss: 0.01361662, rmse_loss 0.01361662
+epoch: 37, step: 400, rmse_loss: 0.01378611, rmse_loss 0.01378611
+epoch: 37, step: 500, rmse_loss: 0.01395860, rmse_loss 0.01395860
+epoch: 37, step: 600, rmse_loss: 0.01395399, rmse_loss 0.01395399
+epoch: 37, step: 700, rmse_loss: 0.00929100, rmse_loss 0.00929100
+epoch: 37, step: 800, rmse_loss: 0.00936803, rmse_loss 0.00936803
+epoch: 37, step: 900, rmse_loss: 0.01585543, rmse_loss 0.01585543
+epoch: 37, step: 1000, rmse_loss: 0.00913815, rmse_loss 0.00913815
+epoch: 37, step: 1100, rmse_loss: 0.01560660, rmse_loss 0.01560660
+epoch: 37, step: 1200, rmse_loss: 0.01443596, rmse_loss 0.01443596
+epoch: 37, step: 1300, rmse_loss: 0.01413977, rmse_loss 0.01413977
+epoch: 37, step: 1400, rmse_loss: 0.01410425, rmse_loss 0.01410425
+epoch: 37, step: 1500, rmse_loss: 0.01423631, rmse_loss 0.01423631
+epoch: 37, step: 1600, rmse_loss: 0.01637910, rmse_loss 0.01637910
+epoch: 37, train rmse_loss: 0.01116870, train rmse_loss 0.01116870, eval rmse_loss: 0.00741644, eval rmse_loss 0.00741644
+XXXXXXXXXXXXXXXXXXXXX Epoch 38/200
+epoch: 38, step: 100, rmse_loss: 0.01421891, rmse_loss 0.01421891
+epoch: 38, step: 200, rmse_loss: 0.00893900, rmse_loss 0.00893900
+epoch: 38, step: 300, rmse_loss: 0.00900227, rmse_loss 0.00900227
+epoch: 38, step: 400, rmse_loss: 0.00917859, rmse_loss 0.00917859
+epoch: 38, step: 500, rmse_loss: 0.01392587, rmse_loss 0.01392587
+epoch: 38, step: 600, rmse_loss: 0.00899028, rmse_loss 0.00899028
+epoch: 38, step: 700, rmse_loss: 0.00920774, rmse_loss 0.00920774
+epoch: 38, step: 800, rmse_loss: 0.01568784, rmse_loss 0.01568784
+epoch: 38, step: 900, rmse_loss: 0.01602255, rmse_loss 0.01602255
+epoch: 38, step: 1000, rmse_loss: 0.00877315, rmse_loss 0.00877315
+epoch: 38, step: 1100, rmse_loss: 0.01391260, rmse_loss 0.01391260
+epoch: 38, step: 1200, rmse_loss: 0.01402564, rmse_loss 0.01402564
+epoch: 38, step: 1300, rmse_loss: 0.01432746, rmse_loss 0.01432746
+epoch: 38, step: 1400, rmse_loss: 0.01557794, rmse_loss 0.01557794
+epoch: 38, step: 1500, rmse_loss: 0.01573376, rmse_loss 0.01573376
+epoch: 38, step: 1600, rmse_loss: 0.01457181, rmse_loss 0.01457181
+epoch: 38, train rmse_loss: 0.01115746, train rmse_loss 0.01115746, eval rmse_loss: 0.00710224, eval rmse_loss 0.00710224
+XXXXXXXXXXXXXXXXXXXXX Epoch 39/200
+epoch: 39, step: 100, rmse_loss: 0.01561918, rmse_loss 0.01561918
+epoch: 39, step: 200, rmse_loss: 0.01373137, rmse_loss 0.01373137
+epoch: 39, step: 300, rmse_loss: 0.01427069, rmse_loss 0.01427069
+epoch: 39, step: 400, rmse_loss: 0.01427500, rmse_loss 0.01427500
+epoch: 39, step: 500, rmse_loss: 0.01592927, rmse_loss 0.01592927
+epoch: 39, step: 600, rmse_loss: 0.01398301, rmse_loss 0.01398301
+epoch: 39, step: 700, rmse_loss: 0.01419776, rmse_loss 0.01419776
+epoch: 39, step: 800, rmse_loss: 0.01436894, rmse_loss 0.01436894
+epoch: 39, step: 900, rmse_loss: 0.01430051, rmse_loss 0.01430051
+epoch: 39, step: 1000, rmse_loss: 0.00896540, rmse_loss 0.00896540
+epoch: 39, step: 1100, rmse_loss: 0.01550725, rmse_loss 0.01550725
+epoch: 39, step: 1200, rmse_loss: 0.01373305, rmse_loss 0.01373305
+epoch: 39, step: 1300, rmse_loss: 0.01388783, rmse_loss 0.01388783
+epoch: 39, step: 1400, rmse_loss: 0.00904842, rmse_loss 0.00904842
+epoch: 39, step: 1500, rmse_loss: 0.01554440, rmse_loss 0.01554440
+epoch: 39, step: 1600, rmse_loss: 0.01409418, rmse_loss 0.01409418
+epoch: 39, train rmse_loss: 0.01118817, train rmse_loss 0.01118817, eval rmse_loss: 0.00709744, eval rmse_loss 0.00709744
+XXXXXXXXXXXXXXXXXXXXX Epoch 40/200
+epoch: 40, step: 100, rmse_loss: 0.01370655, rmse_loss 0.01370655
+epoch: 40, step: 200, rmse_loss: 0.01426947, rmse_loss 0.01426947
+epoch: 40, step: 300, rmse_loss: 0.01573098, rmse_loss 0.01573098
+epoch: 40, step: 400, rmse_loss: 0.01395978, rmse_loss 0.01395978
+epoch: 40, step: 500, rmse_loss: 0.00927780, rmse_loss 0.00927780
+epoch: 40, step: 600, rmse_loss: 0.01367179, rmse_loss 0.01367179
+epoch: 40, step: 700, rmse_loss: 0.00934343, rmse_loss 0.00934343
+epoch: 40, step: 800, rmse_loss: 0.01561819, rmse_loss 0.01561819
+epoch: 40, step: 900, rmse_loss: 0.00913890, rmse_loss 0.00913890
+epoch: 40, step: 1000, rmse_loss: 0.01590529, rmse_loss 0.01590529
+epoch: 40, step: 1100, rmse_loss: 0.01547596, rmse_loss 0.01547596
+epoch: 40, step: 1200, rmse_loss: 0.01418159, rmse_loss 0.01418159
+epoch: 40, step: 1300, rmse_loss: 0.01356238, rmse_loss 0.01356238
+epoch: 40, step: 1400, rmse_loss: 0.01377206, rmse_loss 0.01377206
+epoch: 40, step: 1500, rmse_loss: 0.01517963, rmse_loss 0.01517963
+epoch: 40, step: 1600, rmse_loss: 0.01458139, rmse_loss 0.01458139
+epoch: 40, train rmse_loss: 0.01112934, train rmse_loss 0.01112934, eval rmse_loss: 0.00673692, eval rmse_loss 0.00673692
+XXXXXXXXXXXXXXXXXXXXX Epoch 41/200
+epoch: 41, step: 100, rmse_loss: 0.01373009, rmse_loss 0.01373009
+epoch: 41, step: 200, rmse_loss: 0.01543486, rmse_loss 0.01543486
+epoch: 41, step: 300, rmse_loss: 0.00894376, rmse_loss 0.00894376
+epoch: 41, step: 400, rmse_loss: 0.01384826, rmse_loss 0.01384826
+epoch: 41, step: 500, rmse_loss: 0.01427149, rmse_loss 0.01427149
+epoch: 41, step: 600, rmse_loss: 0.01565064, rmse_loss 0.01565064
+epoch: 41, step: 700, rmse_loss: 0.01395569, rmse_loss 0.01395569
+epoch: 41, step: 800, rmse_loss: 0.01400933, rmse_loss 0.01400933
+epoch: 41, step: 900, rmse_loss: 0.00903311, rmse_loss 0.00903311
+epoch: 41, step: 1000, rmse_loss: 0.01566320, rmse_loss 0.01566320
+epoch: 41, step: 1100, rmse_loss: 0.01565615, rmse_loss 0.01565615
+epoch: 41, step: 1200, rmse_loss: 0.01549735, rmse_loss 0.01549735
+epoch: 41, step: 1300, rmse_loss: 0.01490888, rmse_loss 0.01490888
+epoch: 41, step: 1400, rmse_loss: 0.00899512, rmse_loss 0.00899512
+epoch: 41, step: 1500, rmse_loss: 0.01381290, rmse_loss 0.01381290
+epoch: 41, step: 1600, rmse_loss: 0.01562600, rmse_loss 0.01562600
+epoch: 41, train rmse_loss: 0.01103066, train rmse_loss 0.01103066, eval rmse_loss: 0.00685395, eval rmse_loss 0.00685395
+XXXXXXXXXXXXXXXXXXXXX Epoch 42/200
+epoch: 42, step: 100, rmse_loss: 0.00906652, rmse_loss 0.00906652
+epoch: 42, step: 200, rmse_loss: 0.00930632, rmse_loss 0.00930632
+epoch: 42, step: 300, rmse_loss: 0.01402174, rmse_loss 0.01402174
+epoch: 42, step: 400, rmse_loss: 0.00932161, rmse_loss 0.00932161
+epoch: 42, step: 500, rmse_loss: 0.00918294, rmse_loss 0.00918294
+epoch: 42, step: 600, rmse_loss: 0.01561419, rmse_loss 0.01561419
+epoch: 42, step: 700, rmse_loss: 0.01525741, rmse_loss 0.01525741
+epoch: 42, step: 800, rmse_loss: 0.00914640, rmse_loss 0.00914640
+epoch: 42, step: 900, rmse_loss: 0.00882510, rmse_loss 0.00882510
+epoch: 42, step: 1000, rmse_loss: 0.01423452, rmse_loss 0.01423452
+epoch: 42, step: 1100, rmse_loss: 0.01392890, rmse_loss 0.01392890
+epoch: 42, step: 1200, rmse_loss: 0.00880881, rmse_loss 0.00880881
+epoch: 42, step: 1300, rmse_loss: 0.01367532, rmse_loss 0.01367532
+epoch: 42, step: 1400, rmse_loss: 0.01526149, rmse_loss 0.01526149
+epoch: 42, step: 1500, rmse_loss: 0.01434716, rmse_loss 0.01434716
+epoch: 42, step: 1600, rmse_loss: 0.00893851, rmse_loss 0.00893851
+epoch: 42, train rmse_loss: 0.01102145, train rmse_loss 0.01102145, eval rmse_loss: 0.00765163, eval rmse_loss 0.00765163
+XXXXXXXXXXXXXXXXXXXXX Epoch 43/200
+epoch: 43, step: 100, rmse_loss: 0.01359648, rmse_loss 0.01359648
+epoch: 43, step: 200, rmse_loss: 0.01384472, rmse_loss 0.01384472
+epoch: 43, step: 300, rmse_loss: 0.00902013, rmse_loss 0.00902013
+epoch: 43, step: 400, rmse_loss: 0.01547071, rmse_loss 0.01547071
+epoch: 43, step: 500, rmse_loss: 0.01414332, rmse_loss 0.01414332
+epoch: 43, step: 600, rmse_loss: 0.01392764, rmse_loss 0.01392764
+epoch: 43, step: 700, rmse_loss: 0.01564930, rmse_loss 0.01564930
+epoch: 43, step: 800, rmse_loss: 0.01570437, rmse_loss 0.01570437
+epoch: 43, step: 900, rmse_loss: 0.01586706, rmse_loss 0.01586706
+epoch: 43, step: 1000, rmse_loss: 0.01410113, rmse_loss 0.01410113
+epoch: 43, step: 1100, rmse_loss: 0.01566751, rmse_loss 0.01566751
+epoch: 43, step: 1200, rmse_loss: 0.01411773, rmse_loss 0.01411773
+epoch: 43, step: 1300, rmse_loss: 0.01410546, rmse_loss 0.01410546
+epoch: 43, step: 1400, rmse_loss: 0.00898985, rmse_loss 0.00898985
+epoch: 43, step: 1500, rmse_loss: 0.00886620, rmse_loss 0.00886620
+epoch: 43, step: 1600, rmse_loss: 0.00892310, rmse_loss 0.00892310
+epoch: 43, train rmse_loss: 0.01101746, train rmse_loss 0.01101746, eval rmse_loss: 0.00685149, eval rmse_loss 0.00685149
+XXXXXXXXXXXXXXXXXXXXX Epoch 44/200
+epoch: 44, step: 100, rmse_loss: 0.00876004, rmse_loss 0.00876004
+epoch: 44, step: 200, rmse_loss: 0.00862719, rmse_loss 0.00862719
+epoch: 44, step: 300, rmse_loss: 0.00899955, rmse_loss 0.00899955
+epoch: 44, step: 400, rmse_loss: 0.00878581, rmse_loss 0.00878581
+epoch: 44, step: 500, rmse_loss: 0.00897147, rmse_loss 0.00897147
+epoch: 44, step: 600, rmse_loss: 0.01381404, rmse_loss 0.01381404
+epoch: 44, step: 700, rmse_loss: 0.01404802, rmse_loss 0.01404802
+epoch: 44, step: 800, rmse_loss: 0.01551003, rmse_loss 0.01551003
+epoch: 44, step: 900, rmse_loss: 0.01416572, rmse_loss 0.01416572
+epoch: 44, step: 1000, rmse_loss: 0.01394955, rmse_loss 0.01394955
+epoch: 44, step: 1100, rmse_loss: 0.01352165, rmse_loss 0.01352165
+epoch: 44, step: 1200, rmse_loss: 0.01432556, rmse_loss 0.01432556
+epoch: 44, step: 1300, rmse_loss: 0.01567395, rmse_loss 0.01567395
+epoch: 44, step: 1400, rmse_loss: 0.01388555, rmse_loss 0.01388555
+epoch: 44, step: 1500, rmse_loss: 0.00870394, rmse_loss 0.00870394
+epoch: 44, step: 1600, rmse_loss: 0.01563112, rmse_loss 0.01563112
+epoch: 44, train rmse_loss: 0.01097494, train rmse_loss 0.01097494, eval rmse_loss: 0.00717208, eval rmse_loss 0.00717208
+XXXXXXXXXXXXXXXXXXXXX Epoch 45/200
+epoch: 45, step: 100, rmse_loss: 0.01422264, rmse_loss 0.01422264
+epoch: 45, step: 200, rmse_loss: 0.00875865, rmse_loss 0.00875865
+epoch: 45, step: 300, rmse_loss: 0.00904318, rmse_loss 0.00904318
+epoch: 45, step: 400, rmse_loss: 0.01392698, rmse_loss 0.01392698
+epoch: 45, step: 500, rmse_loss: 0.01364909, rmse_loss 0.01364909
+epoch: 45, step: 600, rmse_loss: 0.01520350, rmse_loss 0.01520350
+epoch: 45, step: 700, rmse_loss: 0.00899898, rmse_loss 0.00899898
+epoch: 45, step: 800, rmse_loss: 0.01406546, rmse_loss 0.01406546
+epoch: 45, step: 900, rmse_loss: 0.01552563, rmse_loss 0.01552563
+epoch: 45, step: 1000, rmse_loss: 0.00885018, rmse_loss 0.00885018
+epoch: 45, step: 1100, rmse_loss: 0.01447324, rmse_loss 0.01447324
+epoch: 45, step: 1200, rmse_loss: 0.00921271, rmse_loss 0.00921271
+epoch: 45, step: 1300, rmse_loss: 0.00893748, rmse_loss 0.00893748
+epoch: 45, step: 1400, rmse_loss: 0.01362385, rmse_loss 0.01362385
+epoch: 45, step: 1500, rmse_loss: 0.01381214, rmse_loss 0.01381214
+epoch: 45, step: 1600, rmse_loss: 0.01546315, rmse_loss 0.01546315
+epoch: 45, train rmse_loss: 0.01102288, train rmse_loss 0.01102288, eval rmse_loss: 0.00697892, eval rmse_loss 0.00697892
+XXXXXXXXXXXXXXXXXXXXX Epoch 46/200
+epoch: 46, step: 100, rmse_loss: 0.00922711, rmse_loss 0.00922711
+epoch: 46, step: 200, rmse_loss: 0.01370950, rmse_loss 0.01370950
+epoch: 46, step: 300, rmse_loss: 0.01343890, rmse_loss 0.01343890
+epoch: 46, step: 400, rmse_loss: 0.01370356, rmse_loss 0.01370356
+epoch: 46, step: 500, rmse_loss: 0.00897740, rmse_loss 0.00897740
+epoch: 46, step: 600, rmse_loss: 0.01407517, rmse_loss 0.01407517
+epoch: 46, step: 700, rmse_loss: 0.01527462, rmse_loss 0.01527462
+epoch: 46, step: 800, rmse_loss: 0.01364128, rmse_loss 0.01364128
+epoch: 46, step: 900, rmse_loss: 0.01546040, rmse_loss 0.01546040
+epoch: 46, step: 1000, rmse_loss: 0.01367634, rmse_loss 0.01367634
+epoch: 46, step: 1100, rmse_loss: 0.01409922, rmse_loss 0.01409922
+epoch: 46, step: 1200, rmse_loss: 0.01387475, rmse_loss 0.01387475
+epoch: 46, step: 1300, rmse_loss: 0.01540304, rmse_loss 0.01540304
+epoch: 46, step: 1400, rmse_loss: 0.01369855, rmse_loss 0.01369855
+epoch: 46, step: 1500, rmse_loss: 0.01451981, rmse_loss 0.01451981
+epoch: 46, step: 1600, rmse_loss: 0.01373007, rmse_loss 0.01373007
+epoch: 46, train rmse_loss: 0.01095733, train rmse_loss 0.01095733, eval rmse_loss: 0.00670208, eval rmse_loss 0.00670208
+XXXXXXXXXXXXXXXXXXXXX Epoch 47/200
+epoch: 47, step: 100, rmse_loss: 0.01532565, rmse_loss 0.01532565
+epoch: 47, step: 200, rmse_loss: 0.00889564, rmse_loss 0.00889564
+epoch: 47, step: 300, rmse_loss: 0.01538218, rmse_loss 0.01538218
+epoch: 47, step: 400, rmse_loss: 0.01404998, rmse_loss 0.01404998
+epoch: 47, step: 500, rmse_loss: 0.01382316, rmse_loss 0.01382316
+epoch: 47, step: 600, rmse_loss: 0.00892527, rmse_loss 0.00892527
+epoch: 47, step: 700, rmse_loss: 0.01357705, rmse_loss 0.01357705
+epoch: 47, step: 800, rmse_loss: 0.01332063, rmse_loss 0.01332063
+epoch: 47, step: 900, rmse_loss: 0.01388758, rmse_loss 0.01388758
+epoch: 47, step: 1000, rmse_loss: 0.01530296, rmse_loss 0.01530296
+epoch: 47, step: 1100, rmse_loss: 0.01586397, rmse_loss 0.01586397
+epoch: 47, step: 1200, rmse_loss: 0.01512113, rmse_loss 0.01512113
+epoch: 47, step: 1300, rmse_loss: 0.01399388, rmse_loss 0.01399388
+epoch: 47, step: 1400, rmse_loss: 0.01372648, rmse_loss 0.01372648
+epoch: 47, step: 1500, rmse_loss: 0.01365826, rmse_loss 0.01365826
+epoch: 47, step: 1600, rmse_loss: 0.00880685, rmse_loss 0.00880685
+epoch: 47, train rmse_loss: 0.01096112, train rmse_loss 0.01096112, eval rmse_loss: 0.00698063, eval rmse_loss 0.00698063
+XXXXXXXXXXXXXXXXXXXXX Epoch 48/200
+epoch: 48, step: 100, rmse_loss: 0.00878347, rmse_loss 0.00878347
+epoch: 48, step: 200, rmse_loss: 0.01388924, rmse_loss 0.01388924
+epoch: 48, step: 300, rmse_loss: 0.01548367, rmse_loss 0.01548367
+epoch: 48, step: 400, rmse_loss: 0.01397269, rmse_loss 0.01397269
+epoch: 48, step: 500, rmse_loss: 0.00878045, rmse_loss 0.00878045
+epoch: 48, step: 600, rmse_loss: 0.01514179, rmse_loss 0.01514179
+epoch: 48, step: 700, rmse_loss: 0.01384086, rmse_loss 0.01384086
+epoch: 48, step: 800, rmse_loss: 0.01547068, rmse_loss 0.01547068
+epoch: 48, step: 900, rmse_loss: 0.01583185, rmse_loss 0.01583185
+epoch: 48, step: 1000, rmse_loss: 0.01549206, rmse_loss 0.01549206
+epoch: 48, step: 1100, rmse_loss: 0.00896190, rmse_loss 0.00896190
+epoch: 48, step: 1200, rmse_loss: 0.00881133, rmse_loss 0.00881133
+epoch: 48, step: 1300, rmse_loss: 0.01501777, rmse_loss 0.01501777
+epoch: 48, step: 1400, rmse_loss: 0.01347863, rmse_loss 0.01347863
+epoch: 48, step: 1500, rmse_loss: 0.01494162, rmse_loss 0.01494162
+epoch: 48, step: 1600, rmse_loss: 0.01492334, rmse_loss 0.01492334
+epoch: 48, train rmse_loss: 0.01094647, train rmse_loss 0.01094647, eval rmse_loss: 0.00661292, eval rmse_loss 0.00661292
+XXXXXXXXXXXXXXXXXXXXX Epoch 49/200
+epoch: 49, step: 100, rmse_loss: 0.01419446, rmse_loss 0.01419446
+epoch: 49, step: 200, rmse_loss: 0.00884939, rmse_loss 0.00884939
+epoch: 49, step: 300, rmse_loss: 0.01396415, rmse_loss 0.01396415
+epoch: 49, step: 400, rmse_loss: 0.01396483, rmse_loss 0.01396483
+epoch: 49, step: 500, rmse_loss: 0.01371752, rmse_loss 0.01371752
+epoch: 49, step: 600, rmse_loss: 0.01351243, rmse_loss 0.01351243
+epoch: 49, step: 700, rmse_loss: 0.01507613, rmse_loss 0.01507613
+epoch: 49, step: 800, rmse_loss: 0.00873087, rmse_loss 0.00873087
+epoch: 49, step: 900, rmse_loss: 0.00857710, rmse_loss 0.00857710
+epoch: 49, step: 1000, rmse_loss: 0.01532115, rmse_loss 0.01532115
+epoch: 49, step: 1100, rmse_loss: 0.00876770, rmse_loss 0.00876770
+epoch: 49, step: 1200, rmse_loss: 0.01530987, rmse_loss 0.01530987
+epoch: 49, step: 1300, rmse_loss: 0.01439479, rmse_loss 0.01439479
+epoch: 49, step: 1400, rmse_loss: 0.00883539, rmse_loss 0.00883539
+epoch: 49, step: 1500, rmse_loss: 0.01566741, rmse_loss 0.01566741
+epoch: 49, step: 1600, rmse_loss: 0.01390792, rmse_loss 0.01390792
+epoch: 49, train rmse_loss: 0.01091411, train rmse_loss 0.01091411, eval rmse_loss: 0.00682715, eval rmse_loss 0.00682715
+XXXXXXXXXXXXXXXXXXXXX Epoch 50/200
+epoch: 50, step: 100, rmse_loss: 0.01517685, rmse_loss 0.01517685
+epoch: 50, step: 200, rmse_loss: 0.01382995, rmse_loss 0.01382995
+epoch: 50, step: 300, rmse_loss: 0.01542094, rmse_loss 0.01542094
+epoch: 50, step: 400, rmse_loss: 0.00859448, rmse_loss 0.00859448
+epoch: 50, step: 500, rmse_loss: 0.01390764, rmse_loss 0.01390764
+epoch: 50, step: 600, rmse_loss: 0.00880463, rmse_loss 0.00880463
+epoch: 50, step: 700, rmse_loss: 0.01525398, rmse_loss 0.01525398
+epoch: 50, step: 800, rmse_loss: 0.01368762, rmse_loss 0.01368762
+epoch: 50, step: 900, rmse_loss: 0.01441784, rmse_loss 0.01441784
+epoch: 50, step: 1000, rmse_loss: 0.01347019, rmse_loss 0.01347019
+epoch: 50, step: 1100, rmse_loss: 0.00886040, rmse_loss 0.00886040
+epoch: 50, step: 1200, rmse_loss: 0.00880921, rmse_loss 0.00880921
+epoch: 50, step: 1300, rmse_loss: 0.01570931, rmse_loss 0.01570931
+epoch: 50, step: 1400, rmse_loss: 0.01410320, rmse_loss 0.01410320
+epoch: 50, step: 1500, rmse_loss: 0.01539391, rmse_loss 0.01539391
+epoch: 50, step: 1600, rmse_loss: 0.01383720, rmse_loss 0.01383720
+epoch: 50, train rmse_loss: 0.01088180, train rmse_loss 0.01088180, eval rmse_loss: 0.00650075, eval rmse_loss 0.00650075
+XXXXXXXXXXXXXXXXXXXXX Epoch 51/200
+epoch: 51, step: 100, rmse_loss: 0.01519515, rmse_loss 0.01519515
+epoch: 51, step: 200, rmse_loss: 0.00881543, rmse_loss 0.00881543
+epoch: 51, step: 300, rmse_loss: 0.01358089, rmse_loss 0.01358089
+epoch: 51, step: 400, rmse_loss: 0.00853187, rmse_loss 0.00853187
+epoch: 51, step: 500, rmse_loss: 0.00894001, rmse_loss 0.00894001
+epoch: 51, step: 600, rmse_loss: 0.00914813, rmse_loss 0.00914813
+epoch: 51, step: 700, rmse_loss: 0.01588204, rmse_loss 0.01588204
+epoch: 51, step: 800, rmse_loss: 0.01587084, rmse_loss 0.01587084
+epoch: 51, step: 900, rmse_loss: 0.01375854, rmse_loss 0.01375854
+epoch: 51, step: 1000, rmse_loss: 0.01350881, rmse_loss 0.01350881
+epoch: 51, step: 1100, rmse_loss: 0.01373550, rmse_loss 0.01373550
+epoch: 51, step: 1200, rmse_loss: 0.00893981, rmse_loss 0.00893981
+epoch: 51, step: 1300, rmse_loss: 0.01503035, rmse_loss 0.01503035
+epoch: 51, step: 1400, rmse_loss: 0.01411241, rmse_loss 0.01411241
+epoch: 51, step: 1500, rmse_loss: 0.01408475, rmse_loss 0.01408475
+epoch: 51, step: 1600, rmse_loss: 0.00911466, rmse_loss 0.00911466
+epoch: 51, train rmse_loss: 0.01092934, train rmse_loss 0.01092934, eval rmse_loss: 0.00705476, eval rmse_loss 0.00705476
+XXXXXXXXXXXXXXXXXXXXX Epoch 52/200
+epoch: 52, step: 100, rmse_loss: 0.01388966, rmse_loss 0.01388966
+epoch: 52, step: 200, rmse_loss: 0.01382708, rmse_loss 0.01382708
+epoch: 52, step: 300, rmse_loss: 0.01365912, rmse_loss 0.01365912
+epoch: 52, step: 400, rmse_loss: 0.01377668, rmse_loss 0.01377668
+epoch: 52, step: 500, rmse_loss: 0.01427697, rmse_loss 0.01427697
+epoch: 52, step: 600, rmse_loss: 0.01554412, rmse_loss 0.01554412
+epoch: 52, step: 700, rmse_loss: 0.01419290, rmse_loss 0.01419290
+epoch: 52, step: 800, rmse_loss: 0.01553184, rmse_loss 0.01553184
+epoch: 52, step: 900, rmse_loss: 0.01413738, rmse_loss 0.01413738
+epoch: 52, step: 1000, rmse_loss: 0.00854522, rmse_loss 0.00854522
+epoch: 52, step: 1100, rmse_loss: 0.01403859, rmse_loss 0.01403859
+epoch: 52, step: 1200, rmse_loss: 0.01386735, rmse_loss 0.01386735
+epoch: 52, step: 1300, rmse_loss: 0.00910759, rmse_loss 0.00910759
+epoch: 52, step: 1400, rmse_loss: 0.00873984, rmse_loss 0.00873984
+epoch: 52, step: 1500, rmse_loss: 0.01365836, rmse_loss 0.01365836
+epoch: 52, step: 1600, rmse_loss: 0.01532701, rmse_loss 0.01532701
+epoch: 52, train rmse_loss: 0.01094657, train rmse_loss 0.01094657, eval rmse_loss: 0.00660947, eval rmse_loss 0.00660947
+XXXXXXXXXXXXXXXXXXXXX Epoch 53/200
+epoch: 53, step: 100, rmse_loss: 0.00877019, rmse_loss 0.00877019
+epoch: 53, step: 200, rmse_loss: 0.01378526, rmse_loss 0.01378526
+epoch: 53, step: 300, rmse_loss: 0.01528432, rmse_loss 0.01528432
+epoch: 53, step: 400, rmse_loss: 0.01380512, rmse_loss 0.01380512
+epoch: 53, step: 500, rmse_loss: 0.01351151, rmse_loss 0.01351151
+epoch: 53, step: 600, rmse_loss: 0.01491542, rmse_loss 0.01491542
+epoch: 53, step: 700, rmse_loss: 0.00914506, rmse_loss 0.00914506
+epoch: 53, step: 800, rmse_loss: 0.01372906, rmse_loss 0.01372906
+epoch: 53, step: 900, rmse_loss: 0.01517918, rmse_loss 0.01517918
+epoch: 53, step: 1000, rmse_loss: 0.01354994, rmse_loss 0.01354994
+epoch: 53, step: 1100, rmse_loss: 0.00903467, rmse_loss 0.00903467
+epoch: 53, step: 1200, rmse_loss: 0.01385293, rmse_loss 0.01385293
+epoch: 53, step: 1300, rmse_loss: 0.01373652, rmse_loss 0.01373652
+epoch: 53, step: 1400, rmse_loss: 0.01412005, rmse_loss 0.01412005
+epoch: 53, step: 1500, rmse_loss: 0.00905848, rmse_loss 0.00905848
+epoch: 53, step: 1600, rmse_loss: 0.01380808, rmse_loss 0.01380808
+epoch: 53, train rmse_loss: 0.01086850, train rmse_loss 0.01086850, eval rmse_loss: 0.00697581, eval rmse_loss 0.00697581
+XXXXXXXXXXXXXXXXXXXXX Epoch 54/200
+epoch: 54, step: 100, rmse_loss: 0.01400864, rmse_loss 0.01400864
+epoch: 54, step: 200, rmse_loss: 0.01500932, rmse_loss 0.01500932
+epoch: 54, step: 300, rmse_loss: 0.01491467, rmse_loss 0.01491467
+epoch: 54, step: 400, rmse_loss: 0.00899576, rmse_loss 0.00899576
+epoch: 54, step: 500, rmse_loss: 0.01366622, rmse_loss 0.01366622
+epoch: 54, step: 600, rmse_loss: 0.01496670, rmse_loss 0.01496670
+epoch: 54, step: 700, rmse_loss: 0.00876995, rmse_loss 0.00876995
+epoch: 54, step: 800, rmse_loss: 0.00872021, rmse_loss 0.00872021
+epoch: 54, step: 900, rmse_loss: 0.00909919, rmse_loss 0.00909919
+epoch: 54, step: 1000, rmse_loss: 0.00880957, rmse_loss 0.00880957
+epoch: 54, step: 1100, rmse_loss: 0.00880851, rmse_loss 0.00880851
+epoch: 54, step: 1200, rmse_loss: 0.01412684, rmse_loss 0.01412684
+epoch: 54, step: 1300, rmse_loss: 0.01364748, rmse_loss 0.01364748
+epoch: 54, step: 1400, rmse_loss: 0.01390675, rmse_loss 0.01390675
+epoch: 54, step: 1500, rmse_loss: 0.01529795, rmse_loss 0.01529795
+epoch: 54, step: 1600, rmse_loss: 0.01353580, rmse_loss 0.01353580
+epoch: 54, train rmse_loss: 0.01095104, train rmse_loss 0.01095104, eval rmse_loss: 0.00681289, eval rmse_loss 0.00681289
+XXXXXXXXXXXXXXXXXXXXX Epoch 55/200
+epoch: 55, step: 100, rmse_loss: 0.01343846, rmse_loss 0.01343846
+epoch: 55, step: 200, rmse_loss: 0.01344018, rmse_loss 0.01344018
+epoch: 55, step: 300, rmse_loss: 0.01299960, rmse_loss 0.01299960
+epoch: 55, step: 400, rmse_loss: 0.01393289, rmse_loss 0.01393289
+epoch: 55, step: 500, rmse_loss: 0.01354852, rmse_loss 0.01354852
+epoch: 55, step: 600, rmse_loss: 0.01533977, rmse_loss 0.01533977
+epoch: 55, step: 700, rmse_loss: 0.01385706, rmse_loss 0.01385706
+epoch: 55, step: 800, rmse_loss: 0.01403764, rmse_loss 0.01403764
+epoch: 55, step: 900, rmse_loss: 0.00920398, rmse_loss 0.00920398
+epoch: 55, step: 1000, rmse_loss: 0.01520236, rmse_loss 0.01520236
+epoch: 55, step: 1100, rmse_loss: 0.01540483, rmse_loss 0.01540483
+epoch: 55, step: 1200, rmse_loss: 0.01537404, rmse_loss 0.01537404
+epoch: 55, step: 1300, rmse_loss: 0.00882635, rmse_loss 0.00882635
+epoch: 55, step: 1400, rmse_loss: 0.01396325, rmse_loss 0.01396325
+epoch: 55, step: 1500, rmse_loss: 0.01407509, rmse_loss 0.01407509
+epoch: 55, step: 1600, rmse_loss: 0.00895739, rmse_loss 0.00895739
+epoch: 55, train rmse_loss: 0.01094501, train rmse_loss 0.01094501, eval rmse_loss: 0.00719695, eval rmse_loss 0.00719695
+XXXXXXXXXXXXXXXXXXXXX Epoch 56/200
+epoch: 56, step: 100, rmse_loss: 0.01371931, rmse_loss 0.01371931
+epoch: 56, step: 200, rmse_loss: 0.00877818, rmse_loss 0.00877818
+epoch: 56, step: 300, rmse_loss: 0.00892099, rmse_loss 0.00892099
+epoch: 56, step: 400, rmse_loss: 0.01321952, rmse_loss 0.01321952
+epoch: 56, step: 500, rmse_loss: 0.01566248, rmse_loss 0.01566248
+epoch: 56, step: 600, rmse_loss: 0.01580899, rmse_loss 0.01580899
+epoch: 56, step: 700, rmse_loss: 0.01508463, rmse_loss 0.01508463
+epoch: 56, step: 800, rmse_loss: 0.01532136, rmse_loss 0.01532136
+epoch: 56, step: 900, rmse_loss: 0.01495790, rmse_loss 0.01495790
+epoch: 56, step: 1000, rmse_loss: 0.00904329, rmse_loss 0.00904329
+epoch: 56, step: 1100, rmse_loss: 0.01388730, rmse_loss 0.01388730
+epoch: 56, step: 1200, rmse_loss: 0.00883915, rmse_loss 0.00883915
+epoch: 56, step: 1300, rmse_loss: 0.01550707, rmse_loss 0.01550707
+epoch: 56, step: 1400, rmse_loss: 0.01530038, rmse_loss 0.01530038
+epoch: 56, step: 1500, rmse_loss: 0.01379844, rmse_loss 0.01379844
+epoch: 56, step: 1600, rmse_loss: 0.00891571, rmse_loss 0.00891571
+epoch: 56, train rmse_loss: 0.01095727, train rmse_loss 0.01095727, eval rmse_loss: 0.00652655, eval rmse_loss 0.00652655
+XXXXXXXXXXXXXXXXXXXXX Epoch 57/200
+epoch: 57, step: 100, rmse_loss: 0.00880747, rmse_loss 0.00880747
+epoch: 57, step: 200, rmse_loss: 0.01368810, rmse_loss 0.01368810
+epoch: 57, step: 300, rmse_loss: 0.01561312, rmse_loss 0.01561312
+epoch: 57, step: 400, rmse_loss: 0.01365774, rmse_loss 0.01365774
+epoch: 57, step: 500, rmse_loss: 0.00876438, rmse_loss 0.00876438
+epoch: 57, step: 600, rmse_loss: 0.01363401, rmse_loss 0.01363401
+epoch: 57, step: 700, rmse_loss: 0.01392811, rmse_loss 0.01392811
+epoch: 57, step: 800, rmse_loss: 0.01501457, rmse_loss 0.01501457
+epoch: 57, step: 900, rmse_loss: 0.01361790, rmse_loss 0.01361790
+epoch: 57, step: 1000, rmse_loss: 0.01344769, rmse_loss 0.01344769
+epoch: 57, step: 1100, rmse_loss: 0.01522068, rmse_loss 0.01522068
+epoch: 57, step: 1200, rmse_loss: 0.00882157, rmse_loss 0.00882157
+epoch: 57, step: 1300, rmse_loss: 0.01491497, rmse_loss 0.01491497
+epoch: 57, step: 1400, rmse_loss: 0.01346871, rmse_loss 0.01346871
+epoch: 57, step: 1500, rmse_loss: 0.01526964, rmse_loss 0.01526964
+epoch: 57, step: 1600, rmse_loss: 0.00893981, rmse_loss 0.00893981
+epoch: 57, train rmse_loss: 0.01090298, train rmse_loss 0.01090298, eval rmse_loss: 0.00715013, eval rmse_loss 0.00715013
+XXXXXXXXXXXXXXXXXXXXX Epoch 58/200
+epoch: 58, step: 100, rmse_loss: 0.00901604, rmse_loss 0.00901604
+epoch: 58, step: 200, rmse_loss: 0.01413021, rmse_loss 0.01413021
+epoch: 58, step: 300, rmse_loss: 0.01334306, rmse_loss 0.01334306
+epoch: 58, step: 400, rmse_loss: 0.01400090, rmse_loss 0.01400090
+epoch: 58, step: 500, rmse_loss: 0.01372805, rmse_loss 0.01372805
+epoch: 58, step: 600, rmse_loss: 0.00911624, rmse_loss 0.00911624
+epoch: 58, step: 700, rmse_loss: 0.01499931, rmse_loss 0.01499931
+epoch: 58, step: 800, rmse_loss: 0.01479570, rmse_loss 0.01479570
+epoch: 58, step: 900, rmse_loss: 0.01378901, rmse_loss 0.01378901
+epoch: 58, step: 1000, rmse_loss: 0.01343756, rmse_loss 0.01343756
+epoch: 58, step: 1100, rmse_loss: 0.00878676, rmse_loss 0.00878676
+epoch: 58, step: 1200, rmse_loss: 0.00903040, rmse_loss 0.00903040
+epoch: 58, step: 1300, rmse_loss: 0.01375514, rmse_loss 0.01375514
+epoch: 58, step: 1400, rmse_loss: 0.01382181, rmse_loss 0.01382181
+epoch: 58, step: 1500, rmse_loss: 0.01340795, rmse_loss 0.01340795
+epoch: 58, step: 1600, rmse_loss: 0.01553579, rmse_loss 0.01553579
+epoch: 58, train rmse_loss: 0.01084249, train rmse_loss 0.01084249, eval rmse_loss: 0.00654331, eval rmse_loss 0.00654331
+XXXXXXXXXXXXXXXXXXXXX Epoch 59/200
+epoch: 59, step: 100, rmse_loss: 0.01543377, rmse_loss 0.01543377
+epoch: 59, step: 200, rmse_loss: 0.01504180, rmse_loss 0.01504180
+epoch: 59, step: 300, rmse_loss: 0.01391714, rmse_loss 0.01391714
+epoch: 59, step: 400, rmse_loss: 0.01391874, rmse_loss 0.01391874
+epoch: 59, step: 500, rmse_loss: 0.01595957, rmse_loss 0.01595957
+epoch: 59, step: 600, rmse_loss: 0.00852277, rmse_loss 0.00852277
+epoch: 59, step: 700, rmse_loss: 0.00882540, rmse_loss 0.00882540
+epoch: 59, step: 800, rmse_loss: 0.01368015, rmse_loss 0.01368015
+epoch: 59, step: 900, rmse_loss: 0.01449742, rmse_loss 0.01449742
+epoch: 59, step: 1000, rmse_loss: 0.01351529, rmse_loss 0.01351529
+epoch: 59, step: 1100, rmse_loss: 0.00872507, rmse_loss 0.00872507
+epoch: 59, step: 1200, rmse_loss: 0.00843621, rmse_loss 0.00843621
+epoch: 59, step: 1300, rmse_loss: 0.00865536, rmse_loss 0.00865536
+epoch: 59, step: 1400, rmse_loss: 0.01387479, rmse_loss 0.01387479
+epoch: 59, step: 1500, rmse_loss: 0.01368685, rmse_loss 0.01368685
+epoch: 59, step: 1600, rmse_loss: 0.01349239, rmse_loss 0.01349239
+epoch: 59, train rmse_loss: 0.01080182, train rmse_loss 0.01080182, eval rmse_loss: 0.00702994, eval rmse_loss 0.00702994
+XXXXXXXXXXXXXXXXXXXXX Epoch 60/200
+epoch: 60, step: 100, rmse_loss: 0.01340828, rmse_loss 0.01340828
+epoch: 60, step: 200, rmse_loss: 0.01379175, rmse_loss 0.01379175
+epoch: 60, step: 300, rmse_loss: 0.01370055, rmse_loss 0.01370055
+epoch: 60, step: 400, rmse_loss: 0.00870522, rmse_loss 0.00870522
+epoch: 60, step: 500, rmse_loss: 0.00895258, rmse_loss 0.00895258
+epoch: 60, step: 600, rmse_loss: 0.00882456, rmse_loss 0.00882456
+epoch: 60, step: 700, rmse_loss: 0.00886355, rmse_loss 0.00886355
+epoch: 60, step: 800, rmse_loss: 0.01429891, rmse_loss 0.01429891
+epoch: 60, step: 900, rmse_loss: 0.00856298, rmse_loss 0.00856298
+epoch: 60, step: 1000, rmse_loss: 0.01346288, rmse_loss 0.01346288
+epoch: 60, step: 1100, rmse_loss: 0.01549787, rmse_loss 0.01549787
+epoch: 60, step: 1200, rmse_loss: 0.00887620, rmse_loss 0.00887620
+epoch: 60, step: 1300, rmse_loss: 0.00879171, rmse_loss 0.00879171
+epoch: 60, step: 1400, rmse_loss: 0.01344477, rmse_loss 0.01344477
+epoch: 60, step: 1500, rmse_loss: 0.00864725, rmse_loss 0.00864725
+epoch: 60, step: 1600, rmse_loss: 0.01392911, rmse_loss 0.01392911
+epoch: 60, train rmse_loss: 0.01076690, train rmse_loss 0.01076690, eval rmse_loss: 0.00661460, eval rmse_loss 0.00661460
+XXXXXXXXXXXXXXXXXXXXX Epoch 61/200
+epoch: 61, step: 100, rmse_loss: 0.01399395, rmse_loss 0.01399395
+epoch: 61, step: 200, rmse_loss: 0.00912426, rmse_loss 0.00912426
+epoch: 61, step: 300, rmse_loss: 0.00894903, rmse_loss 0.00894903
+epoch: 61, step: 400, rmse_loss: 0.01323795, rmse_loss 0.01323795
+epoch: 61, step: 500, rmse_loss: 0.01369882, rmse_loss 0.01369882
+epoch: 61, step: 600, rmse_loss: 0.01387534, rmse_loss 0.01387534
+epoch: 61, step: 700, rmse_loss: 0.01319839, rmse_loss 0.01319839
+epoch: 61, step: 800, rmse_loss: 0.01494408, rmse_loss 0.01494408
+epoch: 61, step: 900, rmse_loss: 0.01370958, rmse_loss 0.01370958
+epoch: 61, step: 1000, rmse_loss: 0.01358008, rmse_loss 0.01358008
+epoch: 61, step: 1100, rmse_loss: 0.00887546, rmse_loss 0.00887546
+epoch: 61, step: 1200, rmse_loss: 0.01345855, rmse_loss 0.01345855
+epoch: 61, step: 1300, rmse_loss: 0.00903542, rmse_loss 0.00903542
+epoch: 61, step: 1400, rmse_loss: 0.01391428, rmse_loss 0.01391428
+epoch: 61, step: 1500, rmse_loss: 0.01343017, rmse_loss 0.01343017
+epoch: 61, step: 1600, rmse_loss: 0.00889579, rmse_loss 0.00889579
+epoch: 61, train rmse_loss: 0.01087557, train rmse_loss 0.01087557, eval rmse_loss: 0.00691273, eval rmse_loss 0.00691273
+XXXXXXXXXXXXXXXXXXXXX Epoch 62/200
+epoch: 62, step: 100, rmse_loss: 0.01387294, rmse_loss 0.01387294
+epoch: 62, step: 200, rmse_loss: 0.01488277, rmse_loss 0.01488277
+epoch: 62, step: 300, rmse_loss: 0.01341761, rmse_loss 0.01341761
+epoch: 62, step: 400, rmse_loss: 0.01365922, rmse_loss 0.01365922
+epoch: 62, step: 500, rmse_loss: 0.01512641, rmse_loss 0.01512641
+epoch: 62, step: 600, rmse_loss: 0.01333121, rmse_loss 0.01333121
+epoch: 62, step: 700, rmse_loss: 0.01325289, rmse_loss 0.01325289
+epoch: 62, step: 800, rmse_loss: 0.00866192, rmse_loss 0.00866192
+epoch: 62, step: 900, rmse_loss: 0.01357881, rmse_loss 0.01357881
+epoch: 62, step: 1000, rmse_loss: 0.01518487, rmse_loss 0.01518487
+epoch: 62, step: 1100, rmse_loss: 0.01487086, rmse_loss 0.01487086
+epoch: 62, step: 1200, rmse_loss: 0.01501973, rmse_loss 0.01501973
+epoch: 62, step: 1300, rmse_loss: 0.01397724, rmse_loss 0.01397724
+epoch: 62, step: 1400, rmse_loss: 0.00879169, rmse_loss 0.00879169
+epoch: 62, step: 1500, rmse_loss: 0.01372272, rmse_loss 0.01372272
+epoch: 62, step: 1600, rmse_loss: 0.01527795, rmse_loss 0.01527795
+epoch: 62, train rmse_loss: 0.01090236, train rmse_loss 0.01090236, eval rmse_loss: 0.00657498, eval rmse_loss 0.00657498
+XXXXXXXXXXXXXXXXXXXXX Epoch 63/200
+epoch: 63, step: 100, rmse_loss: 0.00868958, rmse_loss 0.00868958
+epoch: 63, step: 200, rmse_loss: 0.01538618, rmse_loss 0.01538618
+epoch: 63, step: 300, rmse_loss: 0.00869063, rmse_loss 0.00869063
+epoch: 63, step: 400, rmse_loss: 0.01371741, rmse_loss 0.01371741
+epoch: 63, step: 500, rmse_loss: 0.01353668, rmse_loss 0.01353668
+epoch: 63, step: 600, rmse_loss: 0.01347088, rmse_loss 0.01347088
+epoch: 63, step: 700, rmse_loss: 0.01329472, rmse_loss 0.01329472
+epoch: 63, step: 800, rmse_loss: 0.01507938, rmse_loss 0.01507938
+epoch: 63, step: 900, rmse_loss: 0.00888973, rmse_loss 0.00888973
+epoch: 63, step: 1000, rmse_loss: 0.01525489, rmse_loss 0.01525489
+epoch: 63, step: 1100, rmse_loss: 0.01531543, rmse_loss 0.01531543
+epoch: 63, step: 1200, rmse_loss: 0.01354765, rmse_loss 0.01354765
+epoch: 63, step: 1300, rmse_loss: 0.01520790, rmse_loss 0.01520790
+epoch: 63, step: 1400, rmse_loss: 0.00888319, rmse_loss 0.00888319
+epoch: 63, step: 1500, rmse_loss: 0.00877334, rmse_loss 0.00877334
+epoch: 63, step: 1600, rmse_loss: 0.01519843, rmse_loss 0.01519843
+epoch: 63, train rmse_loss: 0.01077868, train rmse_loss 0.01077868, eval rmse_loss: 0.00673774, eval rmse_loss 0.00673774
+XXXXXXXXXXXXXXXXXXXXX Epoch 64/200
+epoch: 64, step: 100, rmse_loss: 0.00892892, rmse_loss 0.00892892
+epoch: 64, step: 200, rmse_loss: 0.01358925, rmse_loss 0.01358925
+epoch: 64, step: 300, rmse_loss: 0.01415045, rmse_loss 0.01415045
+epoch: 64, step: 400, rmse_loss: 0.01375795, rmse_loss 0.01375795
+epoch: 64, step: 500, rmse_loss: 0.00876959, rmse_loss 0.00876959
+epoch: 64, step: 600, rmse_loss: 0.01327135, rmse_loss 0.01327135
+epoch: 64, step: 700, rmse_loss: 0.01364079, rmse_loss 0.01364079
+epoch: 64, step: 800, rmse_loss: 0.00892460, rmse_loss 0.00892460
+epoch: 64, step: 900, rmse_loss: 0.00870214, rmse_loss 0.00870214
+epoch: 64, step: 1000, rmse_loss: 0.01383972, rmse_loss 0.01383972
+epoch: 64, step: 1100, rmse_loss: 0.01490618, rmse_loss 0.01490618
+epoch: 64, step: 1200, rmse_loss: 0.01373001, rmse_loss 0.01373001
+epoch: 64, step: 1300, rmse_loss: 0.00888406, rmse_loss 0.00888406
+epoch: 64, step: 1400, rmse_loss: 0.01480962, rmse_loss 0.01480962
+epoch: 64, step: 1500, rmse_loss: 0.00884446, rmse_loss 0.00884446
+epoch: 64, step: 1600, rmse_loss: 0.01344959, rmse_loss 0.01344959
+epoch: 64, train rmse_loss: 0.01076490, train rmse_loss 0.01076490, eval rmse_loss: 0.00700107, eval rmse_loss 0.00700107
+XXXXXXXXXXXXXXXXXXXXX Epoch 65/200
+epoch: 65, step: 100, rmse_loss: 0.01359332, rmse_loss 0.01359332
+epoch: 65, step: 200, rmse_loss: 0.01353595, rmse_loss 0.01353595
+epoch: 65, step: 300, rmse_loss: 0.01354204, rmse_loss 0.01354204
+epoch: 65, step: 400, rmse_loss: 0.00868447, rmse_loss 0.00868447
+epoch: 65, step: 500, rmse_loss: 0.01351725, rmse_loss 0.01351725
+epoch: 65, step: 600, rmse_loss: 0.00882952, rmse_loss 0.00882952
+epoch: 65, step: 700, rmse_loss: 0.01538148, rmse_loss 0.01538148
+epoch: 65, step: 800, rmse_loss: 0.01356372, rmse_loss 0.01356372
+epoch: 65, step: 900, rmse_loss: 0.00869107, rmse_loss 0.00869107
+epoch: 65, step: 1000, rmse_loss: 0.01377912, rmse_loss 0.01377912
+epoch: 65, step: 1100, rmse_loss: 0.01337390, rmse_loss 0.01337390
+epoch: 65, step: 1200, rmse_loss: 0.01321502, rmse_loss 0.01321502
+epoch: 65, step: 1300, rmse_loss: 0.00883664, rmse_loss 0.00883664
+epoch: 65, step: 1400, rmse_loss: 0.01317981, rmse_loss 0.01317981
+epoch: 65, step: 1500, rmse_loss: 0.01404434, rmse_loss 0.01404434
+epoch: 65, step: 1600, rmse_loss: 0.01534777, rmse_loss 0.01534777
+epoch: 65, train rmse_loss: 0.01075407, train rmse_loss 0.01075407, eval rmse_loss: 0.00691711, eval rmse_loss 0.00691711
+XXXXXXXXXXXXXXXXXXXXX Epoch 66/200
+epoch: 66, step: 100, rmse_loss: 0.01348146, rmse_loss 0.01348146
+epoch: 66, step: 200, rmse_loss: 0.01503411, rmse_loss 0.01503411
+epoch: 66, step: 300, rmse_loss: 0.01501830, rmse_loss 0.01501830
+epoch: 66, step: 400, rmse_loss: 0.01531934, rmse_loss 0.01531934
+epoch: 66, step: 500, rmse_loss: 0.01324590, rmse_loss 0.01324590
+epoch: 66, step: 600, rmse_loss: 0.00892244, rmse_loss 0.00892244
+epoch: 66, step: 700, rmse_loss: 0.01351791, rmse_loss 0.01351791
+epoch: 66, step: 800, rmse_loss: 0.00912467, rmse_loss 0.00912467
+epoch: 66, step: 900, rmse_loss: 0.00887174, rmse_loss 0.00887174
+epoch: 66, step: 1000, rmse_loss: 0.01383884, rmse_loss 0.01383884
+epoch: 66, step: 1100, rmse_loss: 0.00885890, rmse_loss 0.00885890
+epoch: 66, step: 1200, rmse_loss: 0.01548102, rmse_loss 0.01548102
+epoch: 66, step: 1300, rmse_loss: 0.01498751, rmse_loss 0.01498751
+epoch: 66, step: 1400, rmse_loss: 0.01357021, rmse_loss 0.01357021
+epoch: 66, step: 1500, rmse_loss: 0.01402212, rmse_loss 0.01402212
+epoch: 66, step: 1600, rmse_loss: 0.01542933, rmse_loss 0.01542933
+epoch: 66, train rmse_loss: 0.01072662, train rmse_loss 0.01072662, eval rmse_loss: 0.00675706, eval rmse_loss 0.00675706
+XXXXXXXXXXXXXXXXXXXXX Epoch 67/200
+epoch: 67, step: 100, rmse_loss: 0.01366212, rmse_loss 0.01366212
+epoch: 67, step: 200, rmse_loss: 0.01374187, rmse_loss 0.01374187
+epoch: 67, step: 300, rmse_loss: 0.01536922, rmse_loss 0.01536922
+epoch: 67, step: 400, rmse_loss: 0.00891290, rmse_loss 0.00891290
+epoch: 67, step: 500, rmse_loss: 0.00868374, rmse_loss 0.00868374
+epoch: 67, step: 600, rmse_loss: 0.01356452, rmse_loss 0.01356452
+epoch: 67, step: 700, rmse_loss: 0.01332272, rmse_loss 0.01332272
+epoch: 67, step: 800, rmse_loss: 0.00873531, rmse_loss 0.00873531
+epoch: 67, step: 900, rmse_loss: 0.01349612, rmse_loss 0.01349612
+epoch: 67, step: 1000, rmse_loss: 0.01291564, rmse_loss 0.01291564
+epoch: 67, step: 1100, rmse_loss: 0.00884300, rmse_loss 0.00884300
+epoch: 67, step: 1200, rmse_loss: 0.01532323, rmse_loss 0.01532323
+epoch: 67, step: 1300, rmse_loss: 0.01325327, rmse_loss 0.01325327
+epoch: 67, step: 1400, rmse_loss: 0.00844935, rmse_loss 0.00844935
+epoch: 67, step: 1500, rmse_loss: 0.00892073, rmse_loss 0.00892073
+epoch: 67, step: 1600, rmse_loss: 0.01391072, rmse_loss 0.01391072
+epoch: 67, train rmse_loss: 0.01078988, train rmse_loss 0.01078988, eval rmse_loss: 0.00675544, eval rmse_loss 0.00675544
+XXXXXXXXXXXXXXXXXXXXX Epoch 68/200
+epoch: 68, step: 100, rmse_loss: 0.01327583, rmse_loss 0.01327583
+epoch: 68, step: 200, rmse_loss: 0.01323786, rmse_loss 0.01323786
+epoch: 68, step: 300, rmse_loss: 0.01323661, rmse_loss 0.01323661
+epoch: 68, step: 400, rmse_loss: 0.01395220, rmse_loss 0.01395220
+epoch: 68, step: 500, rmse_loss: 0.00881519, rmse_loss 0.00881519
+epoch: 68, step: 600, rmse_loss: 0.01420173, rmse_loss 0.01420173
+epoch: 68, step: 700, rmse_loss: 0.01388790, rmse_loss 0.01388790
+epoch: 68, step: 800, rmse_loss: 0.01323196, rmse_loss 0.01323196
+epoch: 68, step: 900, rmse_loss: 0.01348735, rmse_loss 0.01348735
+epoch: 68, step: 1000, rmse_loss: 0.01369580, rmse_loss 0.01369580
+epoch: 68, step: 1100, rmse_loss: 0.01336231, rmse_loss 0.01336231
+epoch: 68, step: 1200, rmse_loss: 0.01324445, rmse_loss 0.01324445
+epoch: 68, step: 1300, rmse_loss: 0.01518530, rmse_loss 0.01518530
+epoch: 68, step: 1400, rmse_loss: 0.01400496, rmse_loss 0.01400496
+epoch: 68, step: 1500, rmse_loss: 0.01339904, rmse_loss 0.01339904
+epoch: 68, step: 1600, rmse_loss: 0.01530638, rmse_loss 0.01530638
+epoch: 68, train rmse_loss: 0.01080667, train rmse_loss 0.01080667, eval rmse_loss: 0.00751084, eval rmse_loss 0.00751084
+XXXXXXXXXXXXXXXXXXXXX Epoch 69/200
+epoch: 69, step: 100, rmse_loss: 0.01505785, rmse_loss 0.01505785
+epoch: 69, step: 200, rmse_loss: 0.00890791, rmse_loss 0.00890791
+epoch: 69, step: 300, rmse_loss: 0.00852362, rmse_loss 0.00852362
+epoch: 69, step: 400, rmse_loss: 0.01340393, rmse_loss 0.01340393
+epoch: 69, step: 500, rmse_loss: 0.01463763, rmse_loss 0.01463763
+epoch: 69, step: 600, rmse_loss: 0.01356081, rmse_loss 0.01356081
+epoch: 69, step: 700, rmse_loss: 0.00876774, rmse_loss 0.00876774
+epoch: 69, step: 800, rmse_loss: 0.01483308, rmse_loss 0.01483308
+epoch: 69, step: 900, rmse_loss: 0.00883022, rmse_loss 0.00883022
+epoch: 69, step: 1000, rmse_loss: 0.00858229, rmse_loss 0.00858229
+epoch: 69, step: 1100, rmse_loss: 0.00852616, rmse_loss 0.00852616
+epoch: 69, step: 1200, rmse_loss: 0.01334913, rmse_loss 0.01334913
+epoch: 69, step: 1300, rmse_loss: 0.01335303, rmse_loss 0.01335303
+epoch: 69, step: 1400, rmse_loss: 0.01310453, rmse_loss 0.01310453
+epoch: 69, step: 1500, rmse_loss: 0.01384477, rmse_loss 0.01384477
+epoch: 69, step: 1600, rmse_loss: 0.01394956, rmse_loss 0.01394956
+epoch: 69, train rmse_loss: 0.01073900, train rmse_loss 0.01073900, eval rmse_loss: 0.00692636, eval rmse_loss 0.00692636
+XXXXXXXXXXXXXXXXXXXXX Epoch 70/200
+epoch: 70, step: 100, rmse_loss: 0.00867239, rmse_loss 0.00867239
+epoch: 70, step: 200, rmse_loss: 0.01498030, rmse_loss 0.01498030
+epoch: 70, step: 300, rmse_loss: 0.01337615, rmse_loss 0.01337615
+epoch: 70, step: 400, rmse_loss: 0.01369663, rmse_loss 0.01369663
+epoch: 70, step: 500, rmse_loss: 0.01484289, rmse_loss 0.01484289
+epoch: 70, step: 600, rmse_loss: 0.01349411, rmse_loss 0.01349411
+epoch: 70, step: 700, rmse_loss: 0.01357690, rmse_loss 0.01357690
+epoch: 70, step: 800, rmse_loss: 0.01350563, rmse_loss 0.01350563
+epoch: 70, step: 900, rmse_loss: 0.00862808, rmse_loss 0.00862808
+epoch: 70, step: 1000, rmse_loss: 0.01522612, rmse_loss 0.01522612
+epoch: 70, step: 1100, rmse_loss: 0.00861366, rmse_loss 0.00861366
+epoch: 70, step: 1200, rmse_loss: 0.00893543, rmse_loss 0.00893543
+epoch: 70, step: 1300, rmse_loss: 0.01355982, rmse_loss 0.01355982
+epoch: 70, step: 1400, rmse_loss: 0.01365686, rmse_loss 0.01365686
+epoch: 70, step: 1500, rmse_loss: 0.01554411, rmse_loss 0.01554411
+epoch: 70, step: 1600, rmse_loss: 0.01339626, rmse_loss 0.01339626
+epoch: 70, train rmse_loss: 0.01074729, train rmse_loss 0.01074729, eval rmse_loss: 0.00654071, eval rmse_loss 0.00654071
+XXXXXXXXXXXXXXXXXXXXX Epoch 71/200
+epoch: 71, step: 100, rmse_loss: 0.00868398, rmse_loss 0.00868398
+epoch: 71, step: 200, rmse_loss: 0.00874319, rmse_loss 0.00874319
+epoch: 71, step: 300, rmse_loss: 0.01362811, rmse_loss 0.01362811
+epoch: 71, step: 400, rmse_loss: 0.00878527, rmse_loss 0.00878527
+epoch: 71, step: 500, rmse_loss: 0.01377769, rmse_loss 0.01377769
+epoch: 71, step: 600, rmse_loss: 0.01380415, rmse_loss 0.01380415
+epoch: 71, step: 700, rmse_loss: 0.01360621, rmse_loss 0.01360621
+epoch: 71, step: 800, rmse_loss: 0.00878566, rmse_loss 0.00878566
+epoch: 71, step: 900, rmse_loss: 0.01533641, rmse_loss 0.01533641
+epoch: 71, step: 1000, rmse_loss: 0.00863664, rmse_loss 0.00863664
+epoch: 71, step: 1100, rmse_loss: 0.01524931, rmse_loss 0.01524931
+epoch: 71, step: 1200, rmse_loss: 0.01496340, rmse_loss 0.01496340
+epoch: 71, step: 1300, rmse_loss: 0.01517627, rmse_loss 0.01517627
+epoch: 71, step: 1400, rmse_loss: 0.01492921, rmse_loss 0.01492921
+epoch: 71, step: 1500, rmse_loss: 0.01382480, rmse_loss 0.01382480
+epoch: 71, step: 1600, rmse_loss: 0.00857518, rmse_loss 0.00857518
+epoch: 71, train rmse_loss: 0.01068556, train rmse_loss 0.01068556, eval rmse_loss: 0.00709921, eval rmse_loss 0.00709921
+XXXXXXXXXXXXXXXXXXXXX Epoch 72/200
+epoch: 72, step: 100, rmse_loss: 0.00877112, rmse_loss 0.00877112
+epoch: 72, step: 200, rmse_loss: 0.00859421, rmse_loss 0.00859421
+epoch: 72, step: 300, rmse_loss: 0.01380170, rmse_loss 0.01380170
+epoch: 72, step: 400, rmse_loss: 0.01360072, rmse_loss 0.01360072
+epoch: 72, step: 500, rmse_loss: 0.01545843, rmse_loss 0.01545843
+epoch: 72, step: 600, rmse_loss: 0.01364711, rmse_loss 0.01364711
+epoch: 72, step: 700, rmse_loss: 0.01530906, rmse_loss 0.01530906
+epoch: 72, step: 800, rmse_loss: 0.01345207, rmse_loss 0.01345207
+epoch: 72, step: 900, rmse_loss: 0.01354153, rmse_loss 0.01354153
+epoch: 72, step: 1000, rmse_loss: 0.01519842, rmse_loss 0.01519842
+epoch: 72, step: 1100, rmse_loss: 0.01376469, rmse_loss 0.01376469
+epoch: 72, step: 1200, rmse_loss: 0.00866709, rmse_loss 0.00866709
+epoch: 72, step: 1300, rmse_loss: 0.01542588, rmse_loss 0.01542588
+epoch: 72, step: 1400, rmse_loss: 0.01498987, rmse_loss 0.01498987
+epoch: 72, step: 1500, rmse_loss: 0.01356677, rmse_loss 0.01356677
+epoch: 72, step: 1600, rmse_loss: 0.01342687, rmse_loss 0.01342687
+epoch: 72, train rmse_loss: 0.01075315, train rmse_loss 0.01075315, eval rmse_loss: 0.00760436, eval rmse_loss 0.00760436
+XXXXXXXXXXXXXXXXXXXXX Epoch 73/200
+epoch: 73, step: 100, rmse_loss: 0.00825546, rmse_loss 0.00825546
+epoch: 73, step: 200, rmse_loss: 0.00882304, rmse_loss 0.00882304
+epoch: 73, step: 300, rmse_loss: 0.01370443, rmse_loss 0.01370443
+epoch: 73, step: 400, rmse_loss: 0.01504996, rmse_loss 0.01504996
+epoch: 73, step: 500, rmse_loss: 0.01376634, rmse_loss 0.01376634
+epoch: 73, step: 600, rmse_loss: 0.01351893, rmse_loss 0.01351893
+epoch: 73, step: 700, rmse_loss: 0.01381971, rmse_loss 0.01381971
+epoch: 73, step: 800, rmse_loss: 0.01350952, rmse_loss 0.01350952
+epoch: 73, step: 900, rmse_loss: 0.00888216, rmse_loss 0.00888216
+epoch: 73, step: 1000, rmse_loss: 0.00876712, rmse_loss 0.00876712
+epoch: 73, step: 1100, rmse_loss: 0.00882070, rmse_loss 0.00882070
+epoch: 73, step: 1200, rmse_loss: 0.00885145, rmse_loss 0.00885145
+epoch: 73, step: 1300, rmse_loss: 0.01335527, rmse_loss 0.01335527
+epoch: 73, step: 1400, rmse_loss: 0.01371759, rmse_loss 0.01371759
+epoch: 73, step: 1500, rmse_loss: 0.01388461, rmse_loss 0.01388461
+epoch: 73, step: 1600, rmse_loss: 0.00900667, rmse_loss 0.00900667
+epoch: 73, train rmse_loss: 0.01075522, train rmse_loss 0.01075522, eval rmse_loss: 0.00696755, eval rmse_loss 0.00696755
+XXXXXXXXXXXXXXXXXXXXX Epoch 74/200
+epoch: 74, step: 100, rmse_loss: 0.01341060, rmse_loss 0.01341060
+epoch: 74, step: 200, rmse_loss: 0.01389401, rmse_loss 0.01389401
+epoch: 74, step: 300, rmse_loss: 0.00890249, rmse_loss 0.00890249
+epoch: 74, step: 400, rmse_loss: 0.01474391, rmse_loss 0.01474391
+epoch: 74, step: 500, rmse_loss: 0.01530087, rmse_loss 0.01530087
+epoch: 74, step: 600, rmse_loss: 0.01531293, rmse_loss 0.01531293
+epoch: 74, step: 700, rmse_loss: 0.01389160, rmse_loss 0.01389160
+epoch: 74, step: 800, rmse_loss: 0.00845801, rmse_loss 0.00845801
+epoch: 74, step: 900, rmse_loss: 0.01387887, rmse_loss 0.01387887
+epoch: 74, step: 1000, rmse_loss: 0.00858799, rmse_loss 0.00858799
+epoch: 74, step: 1100, rmse_loss: 0.01347898, rmse_loss 0.01347898
+epoch: 74, step: 1200, rmse_loss: 0.01348116, rmse_loss 0.01348116
+epoch: 74, step: 1300, rmse_loss: 0.01319824, rmse_loss 0.01319824
+epoch: 74, step: 1400, rmse_loss: 0.00856752, rmse_loss 0.00856752
+epoch: 74, step: 1500, rmse_loss: 0.00854627, rmse_loss 0.00854627
+epoch: 74, step: 1600, rmse_loss: 0.01475336, rmse_loss 0.01475336
+epoch: 74, train rmse_loss: 0.01070853, train rmse_loss 0.01070853, eval rmse_loss: 0.00662704, eval rmse_loss 0.00662704
+XXXXXXXXXXXXXXXXXXXXX Epoch 75/200
+epoch: 75, step: 100, rmse_loss: 0.00870319, rmse_loss 0.00870319
+epoch: 75, step: 200, rmse_loss: 0.00885484, rmse_loss 0.00885484
+epoch: 75, step: 300, rmse_loss: 0.00897250, rmse_loss 0.00897250
+epoch: 75, step: 400, rmse_loss: 0.01373378, rmse_loss 0.01373378
+epoch: 75, step: 500, rmse_loss: 0.01337951, rmse_loss 0.01337951
+epoch: 75, step: 600, rmse_loss: 0.01329467, rmse_loss 0.01329467
+epoch: 75, step: 700, rmse_loss: 0.01329053, rmse_loss 0.01329053
+epoch: 75, step: 800, rmse_loss: 0.01366253, rmse_loss 0.01366253
+epoch: 75, step: 900, rmse_loss: 0.01493084, rmse_loss 0.01493084
+epoch: 75, step: 1000, rmse_loss: 0.01387346, rmse_loss 0.01387346
+epoch: 75, step: 1100, rmse_loss: 0.01356637, rmse_loss 0.01356637
+epoch: 75, step: 1200, rmse_loss: 0.01371754, rmse_loss 0.01371754
+epoch: 75, step: 1300, rmse_loss: 0.00858505, rmse_loss 0.00858505
+epoch: 75, step: 1400, rmse_loss: 0.01373497, rmse_loss 0.01373497
+epoch: 75, step: 1500, rmse_loss: 0.01380287, rmse_loss 0.01380287
+epoch: 75, step: 1600, rmse_loss: 0.01354613, rmse_loss 0.01354613
+epoch: 75, train rmse_loss: 0.01077729, train rmse_loss 0.01077729, eval rmse_loss: 0.00694043, eval rmse_loss 0.00694043
+XXXXXXXXXXXXXXXXXXXXX Epoch 76/200
+epoch: 76, step: 100, rmse_loss: 0.01345448, rmse_loss 0.01345448
+epoch: 76, step: 200, rmse_loss: 0.01526190, rmse_loss 0.01526190
+epoch: 76, step: 300, rmse_loss: 0.01341799, rmse_loss 0.01341799
+epoch: 76, step: 400, rmse_loss: 0.00881851, rmse_loss 0.00881851
+epoch: 76, step: 500, rmse_loss: 0.00901963, rmse_loss 0.00901963
+epoch: 76, step: 600, rmse_loss: 0.01362986, rmse_loss 0.01362986
+epoch: 76, step: 700, rmse_loss: 0.00863949, rmse_loss 0.00863949
+epoch: 76, step: 800, rmse_loss: 0.00877083, rmse_loss 0.00877083
+epoch: 76, step: 900, rmse_loss: 0.01494798, rmse_loss 0.01494798
+epoch: 76, step: 1000, rmse_loss: 0.01406733, rmse_loss 0.01406733
+epoch: 76, step: 1100, rmse_loss: 0.01354398, rmse_loss 0.01354398
+epoch: 76, step: 1200, rmse_loss: 0.00884312, rmse_loss 0.00884312
+epoch: 76, step: 1300, rmse_loss: 0.01378632, rmse_loss 0.01378632
+epoch: 76, step: 1400, rmse_loss: 0.01350372, rmse_loss 0.01350372
+epoch: 76, step: 1500, rmse_loss: 0.01309201, rmse_loss 0.01309201
+epoch: 76, step: 1600, rmse_loss: 0.01485697, rmse_loss 0.01485697
+epoch: 76, train rmse_loss: 0.01065918, train rmse_loss 0.01065918, eval rmse_loss: 0.00650589, eval rmse_loss 0.00650589
+XXXXXXXXXXXXXXXXXXXXX Epoch 77/200
+epoch: 77, step: 100, rmse_loss: 0.01334596, rmse_loss 0.01334596
+epoch: 77, step: 200, rmse_loss: 0.01378030, rmse_loss 0.01378030
+epoch: 77, step: 300, rmse_loss: 0.01304727, rmse_loss 0.01304727
+epoch: 77, step: 400, rmse_loss: 0.00856355, rmse_loss 0.00856355
+epoch: 77, step: 500, rmse_loss: 0.01320674, rmse_loss 0.01320674
+epoch: 77, step: 600, rmse_loss: 0.00894582, rmse_loss 0.00894582
+epoch: 77, step: 700, rmse_loss: 0.01308167, rmse_loss 0.01308167
+epoch: 77, step: 800, rmse_loss: 0.01471163, rmse_loss 0.01471163
+epoch: 77, step: 900, rmse_loss: 0.01349129, rmse_loss 0.01349129
+epoch: 77, step: 1000, rmse_loss: 0.01512363, rmse_loss 0.01512363
+epoch: 77, step: 1100, rmse_loss: 0.01326501, rmse_loss 0.01326501
+epoch: 77, step: 1200, rmse_loss: 0.01514835, rmse_loss 0.01514835
+epoch: 77, step: 1300, rmse_loss: 0.01329077, rmse_loss 0.01329077
+epoch: 77, step: 1400, rmse_loss: 0.01524230, rmse_loss 0.01524230
+epoch: 77, step: 1500, rmse_loss: 0.01365153, rmse_loss 0.01365153
+epoch: 77, step: 1600, rmse_loss: 0.01316540, rmse_loss 0.01316540
+epoch: 77, train rmse_loss: 0.01071713, train rmse_loss 0.01071713, eval rmse_loss: 0.00670122, eval rmse_loss 0.00670122
+XXXXXXXXXXXXXXXXXXXXX Epoch 78/200
+epoch: 78, step: 100, rmse_loss: 0.01462122, rmse_loss 0.01462122
+epoch: 78, step: 200, rmse_loss: 0.00901708, rmse_loss 0.00901708
+epoch: 78, step: 300, rmse_loss: 0.00869569, rmse_loss 0.00869569
+epoch: 78, step: 400, rmse_loss: 0.00857073, rmse_loss 0.00857073
+epoch: 78, step: 500, rmse_loss: 0.01353775, rmse_loss 0.01353775
+epoch: 78, step: 600, rmse_loss: 0.00859606, rmse_loss 0.00859606
+epoch: 78, step: 700, rmse_loss: 0.00872039, rmse_loss 0.00872039
+epoch: 78, step: 800, rmse_loss: 0.01492916, rmse_loss 0.01492916
+epoch: 78, step: 900, rmse_loss: 0.00863769, rmse_loss 0.00863769
+epoch: 78, step: 1000, rmse_loss: 0.01309921, rmse_loss 0.01309921
+epoch: 78, step: 1100, rmse_loss: 0.01338633, rmse_loss 0.01338633
+epoch: 78, step: 1200, rmse_loss: 0.01442219, rmse_loss 0.01442219
+epoch: 78, step: 1300, rmse_loss: 0.01344327, rmse_loss 0.01344327
+epoch: 78, step: 1400, rmse_loss: 0.01499571, rmse_loss 0.01499571
+epoch: 78, step: 1500, rmse_loss: 0.00877231, rmse_loss 0.00877231
+epoch: 78, step: 1600, rmse_loss: 0.00867175, rmse_loss 0.00867175
+epoch: 78, train rmse_loss: 0.01062471, train rmse_loss 0.01062471, eval rmse_loss: 0.00758242, eval rmse_loss 0.00758242
+XXXXXXXXXXXXXXXXXXXXX Epoch 79/200
+epoch: 79, step: 100, rmse_loss: 0.01498099, rmse_loss 0.01498099
+epoch: 79, step: 200, rmse_loss: 0.01356502, rmse_loss 0.01356502
+epoch: 79, step: 300, rmse_loss: 0.01394966, rmse_loss 0.01394966
+epoch: 79, step: 400, rmse_loss: 0.01498711, rmse_loss 0.01498711
+epoch: 79, step: 500, rmse_loss: 0.01510810, rmse_loss 0.01510810
+epoch: 79, step: 600, rmse_loss: 0.01352376, rmse_loss 0.01352376
+epoch: 79, step: 700, rmse_loss: 0.00889174, rmse_loss 0.00889174
+epoch: 79, step: 800, rmse_loss: 0.00873488, rmse_loss 0.00873488
+epoch: 79, step: 900, rmse_loss: 0.01474003, rmse_loss 0.01474003
+epoch: 79, step: 1000, rmse_loss: 0.01302959, rmse_loss 0.01302959
+epoch: 79, step: 1100, rmse_loss: 0.01320163, rmse_loss 0.01320163
+epoch: 79, step: 1200, rmse_loss: 0.01351486, rmse_loss 0.01351486
+epoch: 79, step: 1300, rmse_loss: 0.01378799, rmse_loss 0.01378799
+epoch: 79, step: 1400, rmse_loss: 0.01511361, rmse_loss 0.01511361
+epoch: 79, step: 1500, rmse_loss: 0.01350910, rmse_loss 0.01350910
+epoch: 79, step: 1600, rmse_loss: 0.01323792, rmse_loss 0.01323792
+epoch: 79, train rmse_loss: 0.01061227, train rmse_loss 0.01061227, eval rmse_loss: 0.00686332, eval rmse_loss 0.00686332
+XXXXXXXXXXXXXXXXXXXXX Epoch 80/200
+epoch: 80, step: 100, rmse_loss: 0.01337520, rmse_loss 0.01337520
+epoch: 80, step: 200, rmse_loss: 0.01468812, rmse_loss 0.01468812
+epoch: 80, step: 300, rmse_loss: 0.00860571, rmse_loss 0.00860571
+epoch: 80, step: 400, rmse_loss: 0.00867322, rmse_loss 0.00867322
+epoch: 80, step: 500, rmse_loss: 0.00839848, rmse_loss 0.00839848
+epoch: 80, step: 600, rmse_loss: 0.01490070, rmse_loss 0.01490070
+epoch: 80, step: 700, rmse_loss: 0.00872410, rmse_loss 0.00872410
+epoch: 80, step: 800, rmse_loss: 0.01365100, rmse_loss 0.01365100
+epoch: 80, step: 900, rmse_loss: 0.01302140, rmse_loss 0.01302140
+epoch: 80, step: 1000, rmse_loss: 0.01452231, rmse_loss 0.01452231
+epoch: 80, step: 1100, rmse_loss: 0.01347825, rmse_loss 0.01347825
+epoch: 80, step: 1200, rmse_loss: 0.01359448, rmse_loss 0.01359448
+epoch: 80, step: 1300, rmse_loss: 0.01350137, rmse_loss 0.01350137
+epoch: 80, step: 1400, rmse_loss: 0.01352565, rmse_loss 0.01352565
+epoch: 80, step: 1500, rmse_loss: 0.01344396, rmse_loss 0.01344396
+epoch: 80, step: 1600, rmse_loss: 0.01476914, rmse_loss 0.01476914
+epoch: 80, train rmse_loss: 0.01062776, train rmse_loss 0.01062776, eval rmse_loss: 0.00657230, eval rmse_loss 0.00657230
+XXXXXXXXXXXXXXXXXXXXX Epoch 81/200
+epoch: 81, step: 100, rmse_loss: 0.00893863, rmse_loss 0.00893863
+epoch: 81, step: 200, rmse_loss: 0.01500065, rmse_loss 0.01500065
+epoch: 81, step: 300, rmse_loss: 0.01365460, rmse_loss 0.01365460
+epoch: 81, step: 400, rmse_loss: 0.01305700, rmse_loss 0.01305700
+epoch: 81, step: 500, rmse_loss: 0.01355588, rmse_loss 0.01355588
+epoch: 81, step: 600, rmse_loss: 0.01482786, rmse_loss 0.01482786
+epoch: 81, step: 700, rmse_loss: 0.01325500, rmse_loss 0.01325500
+epoch: 81, step: 800, rmse_loss: 0.00848361, rmse_loss 0.00848361
+epoch: 81, step: 900, rmse_loss: 0.01549846, rmse_loss 0.01549846
+epoch: 81, step: 1000, rmse_loss: 0.01332838, rmse_loss 0.01332838
+epoch: 81, step: 1100, rmse_loss: 0.01354522, rmse_loss 0.01354522
+epoch: 81, step: 1200, rmse_loss: 0.01335569, rmse_loss 0.01335569
+epoch: 81, step: 1300, rmse_loss: 0.01522693, rmse_loss 0.01522693
+epoch: 81, step: 1400, rmse_loss: 0.01377239, rmse_loss 0.01377239
+epoch: 81, step: 1500, rmse_loss: 0.00854608, rmse_loss 0.00854608
+epoch: 81, step: 1600, rmse_loss: 0.01503752, rmse_loss 0.01503752
+epoch: 81, train rmse_loss: 0.01063591, train rmse_loss 0.01063591, eval rmse_loss: 0.00696643, eval rmse_loss 0.00696643
+XXXXXXXXXXXXXXXXXXXXX Epoch 82/200
+epoch: 82, step: 100, rmse_loss: 0.01487124, rmse_loss 0.01487124
+epoch: 82, step: 200, rmse_loss: 0.01337690, rmse_loss 0.01337690
+epoch: 82, step: 300, rmse_loss: 0.00865416, rmse_loss 0.00865416
+epoch: 82, step: 400, rmse_loss: 0.01399309, rmse_loss 0.01399309
+epoch: 82, step: 500, rmse_loss: 0.01322556, rmse_loss 0.01322556
+epoch: 82, step: 600, rmse_loss: 0.01340699, rmse_loss 0.01340699
+epoch: 82, step: 700, rmse_loss: 0.01509237, rmse_loss 0.01509237
+epoch: 82, step: 800, rmse_loss: 0.01486193, rmse_loss 0.01486193
+epoch: 82, step: 900, rmse_loss: 0.01321031, rmse_loss 0.01321031
+epoch: 82, step: 1000, rmse_loss: 0.01334164, rmse_loss 0.01334164
+epoch: 82, step: 1100, rmse_loss: 0.01319352, rmse_loss 0.01319352
+epoch: 82, step: 1200, rmse_loss: 0.01361644, rmse_loss 0.01361644
+epoch: 82, step: 1300, rmse_loss: 0.01340532, rmse_loss 0.01340532
+epoch: 82, step: 1400, rmse_loss: 0.01315075, rmse_loss 0.01315075
+epoch: 82, step: 1500, rmse_loss: 0.01312978, rmse_loss 0.01312978
+epoch: 82, step: 1600, rmse_loss: 0.00843505, rmse_loss 0.00843505
+epoch: 82, train rmse_loss: 0.01059913, train rmse_loss 0.01059913, eval rmse_loss: 0.00750859, eval rmse_loss 0.00750859
+XXXXXXXXXXXXXXXXXXXXX Epoch 83/200
+epoch: 83, step: 100, rmse_loss: 0.01512611, rmse_loss 0.01512611
+epoch: 83, step: 200, rmse_loss: 0.00860141, rmse_loss 0.00860141
+epoch: 83, step: 300, rmse_loss: 0.01383135, rmse_loss 0.01383135
+epoch: 83, step: 400, rmse_loss: 0.01342095, rmse_loss 0.01342095
+epoch: 83, step: 500, rmse_loss: 0.01368186, rmse_loss 0.01368186
+epoch: 83, step: 600, rmse_loss: 0.01493296, rmse_loss 0.01493296
+epoch: 83, step: 700, rmse_loss: 0.01520874, rmse_loss 0.01520874
+epoch: 83, step: 800, rmse_loss: 0.00848120, rmse_loss 0.00848120
+epoch: 83, step: 900, rmse_loss: 0.00844587, rmse_loss 0.00844587
+epoch: 83, step: 1000, rmse_loss: 0.01332525, rmse_loss 0.01332525
+epoch: 83, step: 1100, rmse_loss: 0.00814686, rmse_loss 0.00814686
+epoch: 83, step: 1200, rmse_loss: 0.01332465, rmse_loss 0.01332465
+epoch: 83, step: 1300, rmse_loss: 0.01379710, rmse_loss 0.01379710
+epoch: 83, step: 1400, rmse_loss: 0.01310050, rmse_loss 0.01310050
+epoch: 83, step: 1500, rmse_loss: 0.01481922, rmse_loss 0.01481922
+epoch: 83, step: 1600, rmse_loss: 0.01512584, rmse_loss 0.01512584
+epoch: 83, train rmse_loss: 0.01063795, train rmse_loss 0.01063795, eval rmse_loss: 0.00689495, eval rmse_loss 0.00689495
+XXXXXXXXXXXXXXXXXXXXX Epoch 84/200
+epoch: 84, step: 100, rmse_loss: 0.01487038, rmse_loss 0.01487038
+epoch: 84, step: 200, rmse_loss: 0.01505379, rmse_loss 0.01505379
+epoch: 84, step: 300, rmse_loss: 0.00845727, rmse_loss 0.00845727
+epoch: 84, step: 400, rmse_loss: 0.01350508, rmse_loss 0.01350508
+epoch: 84, step: 500, rmse_loss: 0.01343650, rmse_loss 0.01343650
+epoch: 84, step: 600, rmse_loss: 0.00865226, rmse_loss 0.00865226
+epoch: 84, step: 700, rmse_loss: 0.01347397, rmse_loss 0.01347397
+epoch: 84, step: 800, rmse_loss: 0.01315355, rmse_loss 0.01315355
+epoch: 84, step: 900, rmse_loss: 0.01322122, rmse_loss 0.01322122
+epoch: 84, step: 1000, rmse_loss: 0.01496982, rmse_loss 0.01496982
+epoch: 84, step: 1100, rmse_loss: 0.01331708, rmse_loss 0.01331708
+epoch: 84, step: 1200, rmse_loss: 0.01288893, rmse_loss 0.01288893
+epoch: 84, step: 1300, rmse_loss: 0.01304514, rmse_loss 0.01304514
+epoch: 84, step: 1400, rmse_loss: 0.01318451, rmse_loss 0.01318451
+epoch: 84, step: 1500, rmse_loss: 0.01296534, rmse_loss 0.01296534
+epoch: 84, step: 1600, rmse_loss: 0.01328361, rmse_loss 0.01328361
+epoch: 84, train rmse_loss: 0.01065713, train rmse_loss 0.01065713, eval rmse_loss: 0.00653339, eval rmse_loss 0.00653339
+XXXXXXXXXXXXXXXXXXXXX Epoch 85/200
+epoch: 85, step: 100, rmse_loss: 0.01485671, rmse_loss 0.01485671
+epoch: 85, step: 200, rmse_loss: 0.01445971, rmse_loss 0.01445971
+epoch: 85, step: 300, rmse_loss: 0.00854664, rmse_loss 0.00854664
+epoch: 85, step: 400, rmse_loss: 0.01470420, rmse_loss 0.01470420
+epoch: 85, step: 500, rmse_loss: 0.00861180, rmse_loss 0.00861180
+epoch: 85, step: 600, rmse_loss: 0.01478918, rmse_loss 0.01478918
+epoch: 85, step: 700, rmse_loss: 0.01346041, rmse_loss 0.01346041
+epoch: 85, step: 800, rmse_loss: 0.01470881, rmse_loss 0.01470881
+epoch: 85, step: 900, rmse_loss: 0.01459190, rmse_loss 0.01459190
+epoch: 85, step: 1000, rmse_loss: 0.00873822, rmse_loss 0.00873822
+epoch: 85, step: 1100, rmse_loss: 0.01385900, rmse_loss 0.01385900
+epoch: 85, step: 1200, rmse_loss: 0.01480868, rmse_loss 0.01480868
+epoch: 85, step: 1300, rmse_loss: 0.01331173, rmse_loss 0.01331173
+epoch: 85, step: 1400, rmse_loss: 0.01493782, rmse_loss 0.01493782
+epoch: 85, step: 1500, rmse_loss: 0.01437296, rmse_loss 0.01437296
+epoch: 85, step: 1600, rmse_loss: 0.01458540, rmse_loss 0.01458540
+epoch: 85, train rmse_loss: 0.01063673, train rmse_loss 0.01063673, eval rmse_loss: 0.00699160, eval rmse_loss 0.00699160
+XXXXXXXXXXXXXXXXXXXXX Epoch 86/200
+epoch: 86, step: 100, rmse_loss: 0.00868834, rmse_loss 0.00868834
+epoch: 86, step: 200, rmse_loss: 0.01284752, rmse_loss 0.01284752
+epoch: 86, step: 300, rmse_loss: 0.01308180, rmse_loss 0.01308180
+epoch: 86, step: 400, rmse_loss: 0.01515926, rmse_loss 0.01515926
+epoch: 86, step: 500, rmse_loss: 0.01357065, rmse_loss 0.01357065
+epoch: 86, step: 600, rmse_loss: 0.00867758, rmse_loss 0.00867758
+epoch: 86, step: 700, rmse_loss: 0.01479759, rmse_loss 0.01479759
+epoch: 86, step: 800, rmse_loss: 0.01334226, rmse_loss 0.01334226
+epoch: 86, step: 900, rmse_loss: 0.01515532, rmse_loss 0.01515532
+epoch: 86, step: 1000, rmse_loss: 0.00886362, rmse_loss 0.00886362
+epoch: 86, step: 1100, rmse_loss: 0.00854086, rmse_loss 0.00854086
+epoch: 86, step: 1200, rmse_loss: 0.01507443, rmse_loss 0.01507443
+epoch: 86, step: 1300, rmse_loss: 0.00854911, rmse_loss 0.00854911
+epoch: 86, step: 1400, rmse_loss: 0.01308633, rmse_loss 0.01308633
+epoch: 86, step: 1500, rmse_loss: 0.01508188, rmse_loss 0.01508188
+epoch: 86, step: 1600, rmse_loss: 0.01316336, rmse_loss 0.01316336
+epoch: 86, train rmse_loss: 0.01052287, train rmse_loss 0.01052287, eval rmse_loss: 0.00650797, eval rmse_loss 0.00650797
+XXXXXXXXXXXXXXXXXXXXX Epoch 87/200
+epoch: 87, step: 100, rmse_loss: 0.01482318, rmse_loss 0.01482318
+epoch: 87, step: 200, rmse_loss: 0.00849575, rmse_loss 0.00849575
+epoch: 87, step: 300, rmse_loss: 0.01302958, rmse_loss 0.01302958
+epoch: 87, step: 400, rmse_loss: 0.01348711, rmse_loss 0.01348711
+epoch: 87, step: 500, rmse_loss: 0.00821243, rmse_loss 0.00821243
+epoch: 87, step: 600, rmse_loss: 0.01343906, rmse_loss 0.01343906
+epoch: 87, step: 700, rmse_loss: 0.01326393, rmse_loss 0.01326393
+epoch: 87, step: 800, rmse_loss: 0.01351298, rmse_loss 0.01351298
+epoch: 87, step: 900, rmse_loss: 0.01329074, rmse_loss 0.01329074
+epoch: 87, step: 1000, rmse_loss: 0.01374790, rmse_loss 0.01374790
+epoch: 87, step: 1100, rmse_loss: 0.01315508, rmse_loss 0.01315508
+epoch: 87, step: 1200, rmse_loss: 0.00888501, rmse_loss 0.00888501
+epoch: 87, step: 1300, rmse_loss: 0.00846596, rmse_loss 0.00846596
+epoch: 87, step: 1400, rmse_loss: 0.01523567, rmse_loss 0.01523567
+epoch: 87, step: 1500, rmse_loss: 0.01512116, rmse_loss 0.01512116
+epoch: 87, step: 1600, rmse_loss: 0.01476629, rmse_loss 0.01476629
+epoch: 87, train rmse_loss: 0.01055665, train rmse_loss 0.01055665, eval rmse_loss: 0.00666261, eval rmse_loss 0.00666261
+XXXXXXXXXXXXXXXXXXXXX Epoch 88/200
+epoch: 88, step: 100, rmse_loss: 0.01340122, rmse_loss 0.01340122
+epoch: 88, step: 200, rmse_loss: 0.00852147, rmse_loss 0.00852147
+epoch: 88, step: 300, rmse_loss: 0.01321894, rmse_loss 0.01321894
+epoch: 88, step: 400, rmse_loss: 0.01467969, rmse_loss 0.01467969
+epoch: 88, step: 500, rmse_loss: 0.01353370, rmse_loss 0.01353370
+epoch: 88, step: 600, rmse_loss: 0.01458281, rmse_loss 0.01458281
+epoch: 88, step: 700, rmse_loss: 0.01543337, rmse_loss 0.01543337
+epoch: 88, step: 800, rmse_loss: 0.01477246, rmse_loss 0.01477246
+epoch: 88, step: 900, rmse_loss: 0.01285407, rmse_loss 0.01285407
+epoch: 88, step: 1000, rmse_loss: 0.01353114, rmse_loss 0.01353114
+epoch: 88, step: 1100, rmse_loss: 0.00893913, rmse_loss 0.00893913
+epoch: 88, step: 1200, rmse_loss: 0.00897751, rmse_loss 0.00897751
+epoch: 88, step: 1300, rmse_loss: 0.01297817, rmse_loss 0.01297817
+epoch: 88, step: 1400, rmse_loss: 0.01352523, rmse_loss 0.01352523
+epoch: 88, step: 1500, rmse_loss: 0.00855588, rmse_loss 0.00855588
+epoch: 88, step: 1600, rmse_loss: 0.01465236, rmse_loss 0.01465236
+epoch: 88, train rmse_loss: 0.01064121, train rmse_loss 0.01064121, eval rmse_loss: 0.00756997, eval rmse_loss 0.00756997
+XXXXXXXXXXXXXXXXXXXXX Epoch 89/200
+epoch: 89, step: 100, rmse_loss: 0.00857749, rmse_loss 0.00857749
+epoch: 89, step: 200, rmse_loss: 0.01475465, rmse_loss 0.01475465
+epoch: 89, step: 300, rmse_loss: 0.00871422, rmse_loss 0.00871422
+epoch: 89, step: 400, rmse_loss: 0.01310928, rmse_loss 0.01310928
+epoch: 89, step: 500, rmse_loss: 0.01468466, rmse_loss 0.01468466
+epoch: 89, step: 600, rmse_loss: 0.01314575, rmse_loss 0.01314575
+epoch: 89, step: 700, rmse_loss: 0.00857369, rmse_loss 0.00857369
+epoch: 89, step: 800, rmse_loss: 0.01366442, rmse_loss 0.01366442
+epoch: 89, step: 900, rmse_loss: 0.01463960, rmse_loss 0.01463960
+epoch: 89, step: 1000, rmse_loss: 0.01454060, rmse_loss 0.01454060
+epoch: 89, step: 1100, rmse_loss: 0.01313532, rmse_loss 0.01313532
+epoch: 89, step: 1200, rmse_loss: 0.00856898, rmse_loss 0.00856898
+epoch: 89, step: 1300, rmse_loss: 0.01469615, rmse_loss 0.01469615
+epoch: 89, step: 1400, rmse_loss: 0.01479204, rmse_loss 0.01479204
+epoch: 89, step: 1500, rmse_loss: 0.01335478, rmse_loss 0.01335478
+epoch: 89, step: 1600, rmse_loss: 0.00863406, rmse_loss 0.00863406
+epoch: 89, train rmse_loss: 0.01064252, train rmse_loss 0.01064252, eval rmse_loss: 0.00687354, eval rmse_loss 0.00687354
+XXXXXXXXXXXXXXXXXXXXX Epoch 90/200
+epoch: 90, step: 100, rmse_loss: 0.01315521, rmse_loss 0.01315521
+epoch: 90, step: 200, rmse_loss: 0.01317490, rmse_loss 0.01317490
+epoch: 90, step: 300, rmse_loss: 0.01509234, rmse_loss 0.01509234
+epoch: 90, step: 400, rmse_loss: 0.01305903, rmse_loss 0.01305903
+epoch: 90, step: 500, rmse_loss: 0.01299247, rmse_loss 0.01299247
+epoch: 90, step: 600, rmse_loss: 0.01342355, rmse_loss 0.01342355
+epoch: 90, step: 700, rmse_loss: 0.01317808, rmse_loss 0.01317808
+epoch: 90, step: 800, rmse_loss: 0.00847563, rmse_loss 0.00847563
+epoch: 90, step: 900, rmse_loss: 0.01456742, rmse_loss 0.01456742
+epoch: 90, step: 1000, rmse_loss: 0.01341903, rmse_loss 0.01341903
+epoch: 90, step: 1100, rmse_loss: 0.01358630, rmse_loss 0.01358630
+epoch: 90, step: 1200, rmse_loss: 0.01482166, rmse_loss 0.01482166
+epoch: 90, step: 1300, rmse_loss: 0.01455749, rmse_loss 0.01455749
+epoch: 90, step: 1400, rmse_loss: 0.00850475, rmse_loss 0.00850475
+epoch: 90, step: 1500, rmse_loss: 0.00878891, rmse_loss 0.00878891
+epoch: 90, step: 1600, rmse_loss: 0.01481368, rmse_loss 0.01481368
+epoch: 90, train rmse_loss: 0.01056736, train rmse_loss 0.01056736, eval rmse_loss: 0.00644429, eval rmse_loss 0.00644429
+XXXXXXXXXXXXXXXXXXXXX Epoch 91/200
+epoch: 91, step: 100, rmse_loss: 0.01495746, rmse_loss 0.01495746
+epoch: 91, step: 200, rmse_loss: 0.01390069, rmse_loss 0.01390069
+epoch: 91, step: 300, rmse_loss: 0.01358070, rmse_loss 0.01358070
+epoch: 91, step: 400, rmse_loss: 0.01475567, rmse_loss 0.01475567
+epoch: 91, step: 500, rmse_loss: 0.01314352, rmse_loss 0.01314352
+epoch: 91, step: 600, rmse_loss: 0.01301845, rmse_loss 0.01301845
+epoch: 91, step: 700, rmse_loss: 0.01315566, rmse_loss 0.01315566
+epoch: 91, step: 800, rmse_loss: 0.01378274, rmse_loss 0.01378274
+epoch: 91, step: 900, rmse_loss: 0.01334612, rmse_loss 0.01334612
+epoch: 91, step: 1000, rmse_loss: 0.01355770, rmse_loss 0.01355770
+epoch: 91, step: 1100, rmse_loss: 0.01321732, rmse_loss 0.01321732
+epoch: 91, step: 1200, rmse_loss: 0.01332158, rmse_loss 0.01332158
+epoch: 91, step: 1300, rmse_loss: 0.01353825, rmse_loss 0.01353825
+epoch: 91, step: 1400, rmse_loss: 0.00858888, rmse_loss 0.00858888
+epoch: 91, step: 1500, rmse_loss: 0.01303411, rmse_loss 0.01303411
+epoch: 91, step: 1600, rmse_loss: 0.00823285, rmse_loss 0.00823285
+epoch: 91, train rmse_loss: 0.01057543, train rmse_loss 0.01057543, eval rmse_loss: 0.00697958, eval rmse_loss 0.00697958
+XXXXXXXXXXXXXXXXXXXXX Epoch 92/200
+epoch: 92, step: 100, rmse_loss: 0.00864813, rmse_loss 0.00864813
+epoch: 92, step: 200, rmse_loss: 0.01352193, rmse_loss 0.01352193
+epoch: 92, step: 300, rmse_loss: 0.01343352, rmse_loss 0.01343352
+epoch: 92, step: 400, rmse_loss: 0.01364115, rmse_loss 0.01364115
+epoch: 92, step: 500, rmse_loss: 0.01480863, rmse_loss 0.01480863
+epoch: 92, step: 600, rmse_loss: 0.00879310, rmse_loss 0.00879310
+epoch: 92, step: 700, rmse_loss: 0.01442305, rmse_loss 0.01442305
+epoch: 92, step: 800, rmse_loss: 0.00850335, rmse_loss 0.00850335
+epoch: 92, step: 900, rmse_loss: 0.01312106, rmse_loss 0.01312106
+epoch: 92, step: 1000, rmse_loss: 0.01370518, rmse_loss 0.01370518
+epoch: 92, step: 1100, rmse_loss: 0.01371621, rmse_loss 0.01371621
+epoch: 92, step: 1200, rmse_loss: 0.01340809, rmse_loss 0.01340809
+epoch: 92, step: 1300, rmse_loss: 0.00855157, rmse_loss 0.00855157
+epoch: 92, step: 1400, rmse_loss: 0.01373986, rmse_loss 0.01373986
+epoch: 92, step: 1500, rmse_loss: 0.01353912, rmse_loss 0.01353912
+epoch: 92, step: 1600, rmse_loss: 0.01461588, rmse_loss 0.01461588
+epoch: 92, train rmse_loss: 0.01053351, train rmse_loss 0.01053351, eval rmse_loss: 0.00647981, eval rmse_loss 0.00647981
+XXXXXXXXXXXXXXXXXXXXX Epoch 93/200
+epoch: 93, step: 100, rmse_loss: 0.01318530, rmse_loss 0.01318530
+epoch: 93, step: 200, rmse_loss: 0.01339311, rmse_loss 0.01339311
+epoch: 93, step: 300, rmse_loss: 0.01329583, rmse_loss 0.01329583
+epoch: 93, step: 400, rmse_loss: 0.00847444, rmse_loss 0.00847444
+epoch: 93, step: 500, rmse_loss: 0.01318805, rmse_loss 0.01318805
+epoch: 93, step: 600, rmse_loss: 0.00827725, rmse_loss 0.00827725
+epoch: 93, step: 700, rmse_loss: 0.01487534, rmse_loss 0.01487534
+epoch: 93, step: 800, rmse_loss: 0.01333248, rmse_loss 0.01333248
+epoch: 93, step: 900, rmse_loss: 0.01365489, rmse_loss 0.01365489
+epoch: 93, step: 1000, rmse_loss: 0.01341352, rmse_loss 0.01341352
+epoch: 93, step: 1100, rmse_loss: 0.01348622, rmse_loss 0.01348622
+epoch: 93, step: 1200, rmse_loss: 0.01330519, rmse_loss 0.01330519
+epoch: 93, step: 1300, rmse_loss: 0.01324465, rmse_loss 0.01324465
+epoch: 93, step: 1400, rmse_loss: 0.00874300, rmse_loss 0.00874300
+epoch: 93, step: 1500, rmse_loss: 0.01499195, rmse_loss 0.01499195
+epoch: 93, step: 1600, rmse_loss: 0.01303639, rmse_loss 0.01303639
+epoch: 93, train rmse_loss: 0.01054832, train rmse_loss 0.01054832, eval rmse_loss: 0.00679384, eval rmse_loss 0.00679384
+XXXXXXXXXXXXXXXXXXXXX Epoch 94/200
+epoch: 94, step: 100, rmse_loss: 0.00864865, rmse_loss 0.00864865
+epoch: 94, step: 200, rmse_loss: 0.00857163, rmse_loss 0.00857163
+epoch: 94, step: 300, rmse_loss: 0.00884168, rmse_loss 0.00884168
+epoch: 94, step: 400, rmse_loss: 0.00868646, rmse_loss 0.00868646
+epoch: 94, step: 500, rmse_loss: 0.00842024, rmse_loss 0.00842024
+epoch: 94, step: 600, rmse_loss: 0.01540308, rmse_loss 0.01540308
+epoch: 94, step: 700, rmse_loss: 0.01483229, rmse_loss 0.01483229
+epoch: 94, step: 800, rmse_loss: 0.00859207, rmse_loss 0.00859207
+epoch: 94, step: 900, rmse_loss: 0.01334406, rmse_loss 0.01334406
+epoch: 94, step: 1000, rmse_loss: 0.00844920, rmse_loss 0.00844920
+epoch: 94, step: 1100, rmse_loss: 0.01331682, rmse_loss 0.01331682
+epoch: 94, step: 1200, rmse_loss: 0.00844549, rmse_loss 0.00844549
+epoch: 94, step: 1300, rmse_loss: 0.01467732, rmse_loss 0.01467732
+epoch: 94, step: 1400, rmse_loss: 0.01357354, rmse_loss 0.01357354
+epoch: 94, step: 1500, rmse_loss: 0.01308720, rmse_loss 0.01308720
+epoch: 94, step: 1600, rmse_loss: 0.00864311, rmse_loss 0.00864311
+epoch: 94, train rmse_loss: 0.01056242, train rmse_loss 0.01056242, eval rmse_loss: 0.00749699, eval rmse_loss 0.00749699
+XXXXXXXXXXXXXXXXXXXXX Epoch 95/200
+epoch: 95, step: 100, rmse_loss: 0.01358216, rmse_loss 0.01358216
+epoch: 95, step: 200, rmse_loss: 0.01311749, rmse_loss 0.01311749
+epoch: 95, step: 300, rmse_loss: 0.00871644, rmse_loss 0.00871644
+epoch: 95, step: 400, rmse_loss: 0.01348728, rmse_loss 0.01348728
+epoch: 95, step: 500, rmse_loss: 0.00870387, rmse_loss 0.00870387
+epoch: 95, step: 600, rmse_loss: 0.01379432, rmse_loss 0.01379432
+epoch: 95, step: 700, rmse_loss: 0.00831480, rmse_loss 0.00831480
+epoch: 95, step: 800, rmse_loss: 0.00837638, rmse_loss 0.00837638
+epoch: 95, step: 900, rmse_loss: 0.01319524, rmse_loss 0.01319524
+epoch: 95, step: 1000, rmse_loss: 0.01298437, rmse_loss 0.01298437
+epoch: 95, step: 1100, rmse_loss: 0.01512100, rmse_loss 0.01512100
+epoch: 95, step: 1200, rmse_loss: 0.01464913, rmse_loss 0.01464913
+epoch: 95, step: 1300, rmse_loss: 0.01513742, rmse_loss 0.01513742
+epoch: 95, step: 1400, rmse_loss: 0.01489160, rmse_loss 0.01489160
+epoch: 95, step: 1500, rmse_loss: 0.01459117, rmse_loss 0.01459117
+epoch: 95, step: 1600, rmse_loss: 0.00865110, rmse_loss 0.00865110
+epoch: 95, train rmse_loss: 0.01051305, train rmse_loss 0.01051305, eval rmse_loss: 0.00702357, eval rmse_loss 0.00702357
+XXXXXXXXXXXXXXXXXXXXX Epoch 96/200
+epoch: 96, step: 100, rmse_loss: 0.00867725, rmse_loss 0.00867725
+epoch: 96, step: 200, rmse_loss: 0.01356439, rmse_loss 0.01356439
+epoch: 96, step: 300, rmse_loss: 0.00852123, rmse_loss 0.00852123
+epoch: 96, step: 400, rmse_loss: 0.01465507, rmse_loss 0.01465507
+epoch: 96, step: 500, rmse_loss: 0.01316851, rmse_loss 0.01316851
+epoch: 96, step: 600, rmse_loss: 0.01339637, rmse_loss 0.01339637
+epoch: 96, step: 700, rmse_loss: 0.01338714, rmse_loss 0.01338714
+epoch: 96, step: 800, rmse_loss: 0.01504878, rmse_loss 0.01504878
+epoch: 96, step: 900, rmse_loss: 0.00856506, rmse_loss 0.00856506
+epoch: 96, step: 1000, rmse_loss: 0.00815846, rmse_loss 0.00815846
+epoch: 96, step: 1100, rmse_loss: 0.01312341, rmse_loss 0.01312341
+epoch: 96, step: 1200, rmse_loss: 0.01332191, rmse_loss 0.01332191
+epoch: 96, step: 1300, rmse_loss: 0.01324432, rmse_loss 0.01324432
+epoch: 96, step: 1400, rmse_loss: 0.01314952, rmse_loss 0.01314952
+epoch: 96, step: 1500, rmse_loss: 0.00854157, rmse_loss 0.00854157
+epoch: 96, step: 1600, rmse_loss: 0.00860381, rmse_loss 0.00860381
+epoch: 96, train rmse_loss: 0.01049162, train rmse_loss 0.01049162, eval rmse_loss: 0.00652823, eval rmse_loss 0.00652823
+XXXXXXXXXXXXXXXXXXXXX Epoch 97/200
+epoch: 97, step: 100, rmse_loss: 0.01317223, rmse_loss 0.01317223
+epoch: 97, step: 200, rmse_loss: 0.00856230, rmse_loss 0.00856230
+epoch: 97, step: 300, rmse_loss: 0.01455443, rmse_loss 0.01455443
+epoch: 97, step: 400, rmse_loss: 0.00846673, rmse_loss 0.00846673
+epoch: 97, step: 500, rmse_loss: 0.00881684, rmse_loss 0.00881684
+epoch: 97, step: 600, rmse_loss: 0.00872786, rmse_loss 0.00872786
+epoch: 97, step: 700, rmse_loss: 0.01534555, rmse_loss 0.01534555
+epoch: 97, step: 800, rmse_loss: 0.00858730, rmse_loss 0.00858730
+epoch: 97, step: 900, rmse_loss: 0.00851392, rmse_loss 0.00851392
+epoch: 97, step: 1000, rmse_loss: 0.00853078, rmse_loss 0.00853078
+epoch: 97, step: 1100, rmse_loss: 0.01361788, rmse_loss 0.01361788
+epoch: 97, step: 1200, rmse_loss: 0.01514318, rmse_loss 0.01514318
+epoch: 97, step: 1300, rmse_loss: 0.01351663, rmse_loss 0.01351663
+epoch: 97, step: 1400, rmse_loss: 0.01383655, rmse_loss 0.01383655
+epoch: 97, step: 1500, rmse_loss: 0.01508049, rmse_loss 0.01508049
+epoch: 97, step: 1600, rmse_loss: 0.01356836, rmse_loss 0.01356836
+epoch: 97, train rmse_loss: 0.01048713, train rmse_loss 0.01048713, eval rmse_loss: 0.00701469, eval rmse_loss 0.00701469
+XXXXXXXXXXXXXXXXXXXXX Epoch 98/200
+epoch: 98, step: 100, rmse_loss: 0.01346650, rmse_loss 0.01346650
+epoch: 98, step: 200, rmse_loss: 0.01499987, rmse_loss 0.01499987
+epoch: 98, step: 300, rmse_loss: 0.01321263, rmse_loss 0.01321263
+epoch: 98, step: 400, rmse_loss: 0.00868214, rmse_loss 0.00868214
+epoch: 98, step: 500, rmse_loss: 0.00851806, rmse_loss 0.00851806
+epoch: 98, step: 600, rmse_loss: 0.01334645, rmse_loss 0.01334645
+epoch: 98, step: 700, rmse_loss: 0.01317056, rmse_loss 0.01317056
+epoch: 98, step: 800, rmse_loss: 0.00881687, rmse_loss 0.00881687
+epoch: 98, step: 900, rmse_loss: 0.01297372, rmse_loss 0.01297372
+epoch: 98, step: 1000, rmse_loss: 0.00847240, rmse_loss 0.00847240
+epoch: 98, step: 1100, rmse_loss: 0.01508205, rmse_loss 0.01508205
+epoch: 98, step: 1200, rmse_loss: 0.00843017, rmse_loss 0.00843017
+epoch: 98, step: 1300, rmse_loss: 0.01547608, rmse_loss 0.01547608
+epoch: 98, step: 1400, rmse_loss: 0.00840016, rmse_loss 0.00840016
+epoch: 98, step: 1500, rmse_loss: 0.01280981, rmse_loss 0.01280981
+epoch: 98, step: 1600, rmse_loss: 0.01342441, rmse_loss 0.01342441
+epoch: 98, train rmse_loss: 0.01056925, train rmse_loss 0.01056925, eval rmse_loss: 0.00640851, eval rmse_loss 0.00640851
+XXXXXXXXXXXXXXXXXXXXX Epoch 99/200
+epoch: 99, step: 100, rmse_loss: 0.01275176, rmse_loss 0.01275176
+epoch: 99, step: 200, rmse_loss: 0.01298677, rmse_loss 0.01298677
+epoch: 99, step: 300, rmse_loss: 0.00854053, rmse_loss 0.00854053
+epoch: 99, step: 400, rmse_loss: 0.01507158, rmse_loss 0.01507158
+epoch: 99, step: 500, rmse_loss: 0.01357523, rmse_loss 0.01357523
+epoch: 99, step: 600, rmse_loss: 0.01332440, rmse_loss 0.01332440
+epoch: 99, step: 700, rmse_loss: 0.01499969, rmse_loss 0.01499969
+epoch: 99, step: 800, rmse_loss: 0.01508611, rmse_loss 0.01508611
+epoch: 99, step: 900, rmse_loss: 0.01520893, rmse_loss 0.01520893
+epoch: 99, step: 1000, rmse_loss: 0.01326616, rmse_loss 0.01326616
+epoch: 99, step: 1100, rmse_loss: 0.01491946, rmse_loss 0.01491946
+epoch: 99, step: 1200, rmse_loss: 0.01337648, rmse_loss 0.01337648
+epoch: 99, step: 1300, rmse_loss: 0.01339528, rmse_loss 0.01339528
+epoch: 99, step: 1400, rmse_loss: 0.00863860, rmse_loss 0.00863860
+epoch: 99, step: 1500, rmse_loss: 0.00861504, rmse_loss 0.00861504
+epoch: 99, step: 1600, rmse_loss: 0.00867276, rmse_loss 0.00867276
+epoch: 99, train rmse_loss: 0.01052785, train rmse_loss 0.01052785, eval rmse_loss: 0.00670383, eval rmse_loss 0.00670383
+XXXXXXXXXXXXXXXXXXXXX Epoch 100/200
+epoch: 100, step: 100, rmse_loss: 0.00844913, rmse_loss 0.00844913
+epoch: 100, step: 200, rmse_loss: 0.00818472, rmse_loss 0.00818472
+epoch: 100, step: 300, rmse_loss: 0.00876539, rmse_loss 0.00876539
+epoch: 100, step: 400, rmse_loss: 0.00837587, rmse_loss 0.00837587
+epoch: 100, step: 500, rmse_loss: 0.00847943, rmse_loss 0.00847943
+epoch: 100, step: 600, rmse_loss: 0.01341857, rmse_loss 0.01341857
+epoch: 100, step: 700, rmse_loss: 0.01336202, rmse_loss 0.01336202
+epoch: 100, step: 800, rmse_loss: 0.01466554, rmse_loss 0.01466554
+epoch: 100, step: 900, rmse_loss: 0.01353657, rmse_loss 0.01353657
+epoch: 100, step: 1000, rmse_loss: 0.01333476, rmse_loss 0.01333476
+epoch: 100, step: 1100, rmse_loss: 0.01290034, rmse_loss 0.01290034
+epoch: 100, step: 1200, rmse_loss: 0.01371499, rmse_loss 0.01371499
+epoch: 100, step: 1300, rmse_loss: 0.01501439, rmse_loss 0.01501439
+epoch: 100, step: 1400, rmse_loss: 0.01311210, rmse_loss 0.01311210
+epoch: 100, step: 1500, rmse_loss: 0.00850956, rmse_loss 0.00850956
+epoch: 100, step: 1600, rmse_loss: 0.01496916, rmse_loss 0.01496916
+epoch: 100, train rmse_loss: 0.01049691, train rmse_loss 0.01049691, eval rmse_loss: 0.00650270, eval rmse_loss 0.00650270
