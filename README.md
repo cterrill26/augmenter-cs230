@@ -1,5 +1,17 @@
 # CS-230: Human body marker augmentation
 
+This project is forked from Antoine Falisse's [augmenter-cs230](https://github.com/antoinefalisse/augmenter-cs230) repository. We made minimal edits to the data generation portion of Antoine's work, and instead focused on modifying the training loop to work for a Pytorch-based transformer module. 
+
+### Models
+We experimented with multiple transformer models. The two most sucessful ones are located in `myTransformers.py`. The GPT-2-based model we ended up using for our report is named ```PretrainedGPT2```. 
+
+### Training
+The training script we used to train and evaluate the GPT-2-based transformer model is contained in `pretrainGPT.py`. In this file, lines 284 to 293 contain all 6 hyperparameters we referenced in our report, along with whether we were usign novel inputs and a frozen or unfrozen GPT-2 model.
+
+
+The rest of this README is copied from Antoine's [augmenter-cs230](https://github.com/antoinefalisse/augmenter-cs230) repository.
+
+
 ### Install requirements (see docker below too)
 1. Install [Anaconda](https://www.anaconda.com/)
 2. Clone the repository to your machine.
