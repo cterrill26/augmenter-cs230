@@ -287,6 +287,7 @@ activation = "relu" # can be "relu", "sigmoid", or "tanh"
 loss_function = "rmse" # can be "rmse", "l1", or "log_cosh"
 batch_size = 128
 learning_rate = 1e-3
+dropout = 0.1
 use_novel = False
 gpt_frozen = True
 ##END OF PARAMETERS
@@ -314,7 +315,7 @@ trg_dim = nResponse_markers
 if use_novel:
     src_dim += len(new_features)
 
-model = PretrainedGPT2(src_dim = src_dim, trg_dim = trg_dim, output_hidden_dim = intermediate_width, dropout = 0.1, activation = activation, gpt_frozen = gpt_frozen).to(device)
+model = PretrainedGPT2(src_dim = src_dim, trg_dim = trg_dim, output_hidden_dim = intermediate_width, dropout = dropout, activation = activation, gpt_frozen = gpt_frozen).to(device)
 
 mse_loss = nn.MSELoss()
 def rmse_loss(yhat,y):
